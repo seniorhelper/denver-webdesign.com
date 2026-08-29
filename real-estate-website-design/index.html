@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real Estate Website Design | IDX Alone Won't Rank You</title>
+<meta name="description" content="Your listings are on every agent site in your market. What actually earns traffic, what IDX is genuinely for, and how to tell whether yours is worth what you pay.">
+<link rel="canonical" href="https://denver-webdesign.com/real-estate-website-design/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#FBFCFD">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denver-webdesign.com/real-estate-website-design/">
+<meta property="og:site_name" content="Denver Web Design">
+<meta property="og:title" content="Real Estate Website Design | IDX Alone Won't Rank You">
+<meta property="og:description" content="Your listings are on every agent site in your market. What actually earns traffic, what IDX is genuinely for, and how to tell whether yours is worth what you pay.">
+<meta property="og:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Real Estate Website Design | IDX Alone Won't Rank You">
+<meta name="twitter:description" content="Your listings are on every agent site in your market. What actually earns traffic, what IDX is genuinely for, and how to tell whether yours is worth what you pay.">
+<meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
+  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
+  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
+  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
+  --display:'Outfit',system-ui,sans-serif;
+  --text:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
+h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+a{color:#0B63D8;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:82px 0}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
+.eyebrow.on-dark{color:var(--cyan)}
+.lede{font-size:1.13rem;max-width:62ch}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.brand img{height:57px;width:auto}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
+.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
+.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
+.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
+@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
+@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
+
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
+.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
+.hero h1{color:#fff}
+.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
+.hero-r{position:relative;min-height:530px;overflow:hidden}
+.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
+.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
+
+.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
+.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
+.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
+.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
+.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
+.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
+.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
+.float{animation:fl 6s ease-in-out infinite}
+.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
+@media(max-width:900px){
+  .hero-r{min-height:0;height:auto;padding:0}
+  .hero-r picture,.hero-r img{position:relative;height:230px}
+  .hero-r::after{display:none}
+  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
+  .pop{position:static;max-width:none;opacity:1;transform:none}
+  .float{animation:none}
+}
+.hero-tag{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
+.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
+.btn-s{border-color:var(--cyan);color:var(--cyan)}
+.btn-d{background:var(--ink);color:#fff;width:100%}
+.microtrust{font-size:.87rem;color:#8497BA}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-l{padding:52px 22px 44px}
+  .hero-r{min-height:260px;order:2}
+  .hero-r::after{display:none}
+}
+
+/* trustbar */
+.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
+.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
+.tbar li{display:flex;align-items:center;gap:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;font-size:.97rem}
+.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.p-mint{background:var(--mint);color:#065F46}
+.p-lilac{background:var(--lilac);color:#4C1D95}
+.p-peach{background:var(--peach);color:#9A3412}
+.p-cyan{background:#CCF7FE;color:#0E5A6B}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* scratch demo */
+.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.demo h2,.demo h3{color:#fff}
+.demo p{color:#AFBDD8}
+.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
+.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
+.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
+.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
+#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
+.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
+
+/* accordion */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
+.acc .acc-b p:last-child{margin-bottom:0}
+
+/* fuse */
+.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.fuse-sec h2{color:#fff}
+.fuse-sec p{color:#B9A9CE}
+.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
+#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
+.lit #fusepath{stroke-dashoffset:0}
+.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
+.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
+.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
+.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
+.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
+.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
+.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
+
+/* signal flow */
+.flow{background:#fff}
+.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
+.flow-svg{width:100%;height:auto}
+.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-30}}
+
+/* stat bars */
+.bars{margin:26px 0 0}
+.bar-row{margin-bottom:17px}
+.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar-lab b{font-family:var(--mono);color:var(--ink)}
+.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
+.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
+
+/* form */
+.formsec{background:var(--ink-2);color:#fff}
+.formsec h2{color:#fff}
+.formsec p{color:#B0BFDA}
+.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
+.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
+.fbox textarea{min-height:96px;resize:vertical}
+.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
+.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
+.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
+.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
+.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* footer */
+.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
+.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.ftr ul{list-style:none;padding:0;margin:0}
+.ftr li{margin-bottom:9px}
+.ftr a{color:var(--body)}
+.ftr img{height:51px;margin-bottom:16px}
+.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== PAGE THEME: market report ===== */
+.re{--ink7:#0B1220;--ink8:#141D30;--snow2:#FBFCFD;--sand:#F0EDE6;--mint:#12B981;--brass2:#C9922B;--slate7:#5A6577;--hair10:#DFE3E9}
+.re h1,.re h2,.re h3{font-family:'Epilogue',system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;color:var(--ink7);line-height:1.05}
+.re h1{font-size:clamp(2.2rem,4.6vw,3.5rem)}
+.re h2{font-size:clamp(1.85rem,3.6vw,2.7rem)}
+.re h3{font-size:1.13rem;font-weight:700;letter-spacing:-.02em}
+.re p{color:#414B5C;line-height:1.72;font-size:1.02rem}
+.re .lede{color:#232C3C;font-size:1.13rem;max-width:60ch}
+.re-sec{padding:78px 0;position:relative;overflow:hidden}
+.re-snow{background:var(--snow2)}
+.re-sand{background:var(--sand);border-top:1px solid var(--hair10);border-bottom:1px solid var(--hair10)}
+.re-ink{background:var(--ink7);color:#B8C2D2}
+.re-ink h2,.re-ink h3{color:#fff}
+.re-ink p{color:#8D99AC}
+.re-lab{font-family:var(--mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;margin:0 0 15px;color:var(--brass2)}
+.re-lab.mt{color:var(--mint)}
+.mintt{color:var(--mint)}
+.re-rule{border:0;border-top:2px solid var(--ink7);width:56px;margin:0 0 22px}
+.re-ink .re-rule{border-color:var(--brass2)}
+
+/* dup listing demo */
+.dupwrap{position:relative;margin-top:30px;min-height:330px}
+.lcard{background:#fff;border:1px solid var(--hair10);border-radius:6px;overflow:hidden;width:230px;box-shadow:0 10px 28px rgba(11,18,32,.12)}
+.lcard .ph{height:120px;background:linear-gradient(135deg,#C7D2E0,#9FB0C6);position:relative}
+.lcard .ph::after{content:"";position:absolute;left:22px;right:22px;bottom:18px;height:44px;background:rgba(255,255,255,.55);clip-path:polygon(0 100%,20% 42%,42% 74%,64% 22%,100% 68%,100% 100%)}
+.lcard .bd{padding:14px}
+.lcard .pr{font-family:'Epilogue',sans-serif;font-weight:800;font-size:1.15rem;color:var(--ink7);letter-spacing:-.03em}
+.lcard .ad{font-size:.82rem;color:var(--slate7);margin:5px 0 10px}
+.lcard .st{display:flex;gap:12px;font-family:var(--mono);font-size:.68rem;color:var(--slate7);border-top:1px solid var(--hair10);padding-top:9px}
+.dupstage{position:relative;height:330px}
+.dup{position:absolute;top:0;left:0;opacity:0;transform:translate(0,0) scale(1)}
+.dup.go{transition:opacity .6s ease,transform .9s cubic-bezier(.2,.8,.3,1)}
+.duplab{position:absolute;bottom:0;left:0;right:0;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate7);opacity:0;transition:opacity .5s}
+.duplab.go{opacity:1}
+.re-ink .duplab{color:#8D99AC}
+
+/* machine diagram */
+.mach{display:grid;grid-template-columns:1fr 54px 1fr;gap:0;align-items:center;margin-top:32px}
+@media(max-width:760px){.mach{grid-template-columns:1fr;gap:16px}}
+.mbox{border:2px solid var(--ink7);padding:26px;background:#fff}
+.re-ink .mbox{background:var(--ink8);border-color:rgba(255,255,255,.2)}
+.mbox h3{margin:0 0 8px}
+.mbox p{margin:0;font-size:.95rem}
+.mbox .mtag{font-family:var(--mono);font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass2);display:block;margin-bottom:10px}
+.marrow{display:grid;place-items:center;color:var(--mint)}
+.marrow svg{width:34px;height:34px;stroke:var(--mint);stroke-width:2.2;fill:none}
+@media(max-width:760px){.marrow svg{transform:rotate(90deg)}}
+
+/* stat cards */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--hair10);border-bottom:1px solid var(--hair10);margin-top:34px}
+@media(max-width:760px){.stats{grid-template-columns:1fr}}
+.re-ink .stats{border-color:rgba(255,255,255,.16)}
+.stat{padding:26px 24px 26px 0;border-right:1px solid var(--hair10)}
+.re-ink .stat{border-color:rgba(255,255,255,.16)}
+.stat:last-child{border-right:0}
+@media(max-width:760px){.stat{border-right:0;border-bottom:1px solid var(--hair10);padding-right:0}.stat:last-child{border-bottom:0}}
+.stat b{display:block;font-family:'Epilogue',sans-serif;font-weight:800;font-size:2.1rem;color:var(--ink7);letter-spacing:-.045em;line-height:1}
+.re-ink .stat b{color:#fff}
+.stat span{display:block;font-size:.9rem;color:var(--slate7);margin-top:9px}
+.re-ink .stat span{color:#8D99AC}
+
+/* page list */
+.pages{margin-top:28px;border-top:1px solid var(--hair10)}
+.prow{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;padding:19px 0;border-bottom:1px solid var(--hair10)}
+.prow h3{margin:0 0 5px}
+.prow p{margin:0;font-size:.95rem}
+.prow .pv{font-family:var(--mono);font-size:.65rem;letter-spacing:.13em;text-transform:uppercase;padding:5px 11px;white-space:nowrap;border:1px solid}
+.pv-y{border-color:var(--mint);color:#0A7A55}
+.pv-n{border-color:#C4553B;color:#A8412A}
+
+.re .card{background:#fff;border:1px solid var(--hair10);border-radius:6px}
+.re-ink .card{background:var(--ink8);border-color:rgba(255,255,255,.15)}
+.re-ink .card h3{color:#fff}.re-ink .card p{color:#8D99AC}
+.re .acc{border:1px solid var(--hair10);border-radius:6px;background:#fff}
+.re .acc summary{color:var(--ink7);font-family:'Epilogue',sans-serif;font-weight:700}
+.re .acc summary::after{border-color:var(--brass2)}
+.re .pill{border-radius:4px}
+.re .btn{border-radius:6px;font-family:'Epilogue',sans-serif;font-weight:700}
+.btn-mint{background:var(--mint);color:#04241A}
+.btn-mint:hover{background:#0EA372;color:#04241A}
+.btn-ink7{border:2px solid var(--ink7);color:var(--ink7)}
+.btn-ink7:hover{background:var(--ink7);color:#fff}
+.btn-brass2{border:2px solid var(--brass2);color:var(--brass2)}
+.btn-brass2:hover{background:var(--brass2);color:var(--ink7)}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="telm" href="tel:18004818638">1-800-481-8638</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/denver-web-design-company/">Web Design</a>
+      <a href="/denver-web-development/">Development</a>
+      <a href="/app-development-denver/">Apps</a>
+      <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/denver-web-design-pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+    </nav>
+  </div>
+</header>
+
+<main class="re">
+
+<section class="re-sec re-snow" style="padding-top:58px">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:center">
+      <div>
+        <p class="re-lab">Real estate website design</p>
+        <h1>Your listings are on <span class="mintt">four hundred other</span> agent websites</h1>
+        <p class="lede" style="margin-top:20px">IDX puts the whole MLS on your site. It also puts the identical data on every other agent's site in your market. Nobody is going to find you because of a listing feed &mdash; and most agents are paying for a site built entirely around one.</p>
+        <div class="cta-row" style="margin:28px 0 14px">
+          <a class="btn btn-mint" href="tel:18004818638">Call 1-800-481-8638</a>
+          <a class="btn btn-ink7" href="#machine">What actually works</a>
+        </div>
+        <p style="font-size:.87rem;color:var(--slate7)">From $99/month &middot; IDX when it earns its place &middot; Denver since 2012</p>
+      </div>
+      <div class="dupwrap">
+        <div class="dupstage" id="dupStage">
+          <div class="lcard dup" data-i="0" style="z-index:9">
+            <div class="ph"></div>
+            <div class="bd">
+              <p class="pr">$675,000</p>
+              <p class="ad">1428 Elm Street &middot; Denver, CO</p>
+              <div class="st"><span>3 bd</span><span>2 ba</span><span>1,940 sqft</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="duplab" id="dupLab">The same listing. Every agent site in your market.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tbar"><div class="wrap"><ul>
+  <li><span class="dot"></span>Content that only you can write</li>
+  <li><span class="dot"></span>IDX when it earns its cost</li>
+  <li><span class="dot"></span>Fast on a phone, where buyers are</li>
+  <li><span class="dot"></span>Denver since 2012</li>
+</ul></div></div>
+
+<section class="re-sec re-ink" id="machine">
+  <div class="wrap">
+    <p class="re-lab mt">The part nobody explains when they sell you IDX</p>
+    <h2 style="max-width:26ch">A real estate site is a two-part machine</h2>
+    <hr class="re-rule" style="margin-top:22px">
+    <p class="lede" style="color:#8D99AC">Content earns the traffic. IDX converts it. Skip the first half and the second half has nothing to work with, which is exactly why so many agents have an expensive IDX site that has never produced a lead.</p>
+
+    <div class="mach">
+      <div class="mbox">
+        <span class="mtag">Part one &middot; earns the visit</span>
+        <h3>Content only you can write</h3>
+        <p>Neighbourhood guides, honest market commentary, what it's actually like to live somewhere, service-area pages with real detail. This is the half that ranks, because nobody else has it.</p>
+      </div>
+      <div class="marrow"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      <div class="mbox">
+        <span class="mtag">Part two &middot; converts the visit</span>
+        <h3>Property search they'll come back to</h3>
+        <p>IDX gives a visitor a reason to return and a natural moment to register &mdash; saved searches, alerts, showing requests. It's a conversion tool, not a traffic tool.</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>~4&times;</b><span>the traffic that IDX sites are reported to receive versus sites without property search</span></div>
+      <div class="stat"><b>88%</b><span>of consumers will leave a site with poor user experience, making UX the deciding factor in whether visitors stay</span></div>
+      <div class="stat"><b>0</b><span>ranking value from duplicate listing pages alone. More copies of the same feed do not add up to authority</span></div>
+    </div>
+    <p style="font-size:.86rem;color:#75808F">Figures from published 2026 real estate web research. The third one is the finding most agents have never been told.</p>
+  </div>
+</section>
+
+<section class="re-sec re-snow">
+  <div class="wrap">
+    <p class="re-lab">The myth, stated plainly</p>
+    <h2 style="max-width:26ch">Thousands of listing pages will not make you rank</h2>
+    <hr class="re-rule" style="margin-top:22px">
+    <p class="lede">It's an appealing idea. Plug in the feed, get five thousand pages, watch the traffic arrive. It doesn't work, and it's worth understanding why before you buy a platform on that promise.</p>
+    <p class="lede">Those pages contain the same photographs, the same descriptions and the same specifications as every other IDX site pulling the same feed. Duplicate content at scale doesn't accumulate into authority. The listing sells, the agent changes, the page disappears, and whatever was building resets.</p>
+    <p class="lede">There is a narrow exception. A listing page with substantial original commentary &mdash; your honest read on the street, the school run, what the HOA is actually like &mdash; can rank for long-tail searches. But notice what's doing the work there. That's you writing, not the feed.</p>
+
+    <div class="grid g3" style="margin-top:32px">
+      <div class="card rv" style="padding:26px"><span class="pill p-peach">Doesn't work</span><h3>Buying IDX and waiting</h3><p>The most common real estate website purchase, and the most common disappointment. A feed with no content around it has nothing to send visitors into.</p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-peach">Doesn't work</span><h3>Auto-generated area pages</h3><p>Templated neighbourhood pages with the name swapped and market stats injected. Every competitor's platform generates the same thing from the same data.</p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-mint">Works</span><h3>Fewer pages, actually written</h3><p>Six neighbourhood guides you genuinely wrote will outperform sixty generated ones. This is the part agents avoid because it's work, and it's the part that separates them.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="re-sec re-sand">
+  <div class="wrap">
+    <p class="re-lab">Build order</p>
+    <h2 style="max-width:24ch">What earns its place on an agent site</h2>
+    <hr class="re-rule" style="margin-top:22px">
+    <p class="lede">Roughly in the order worth building them, and honestly about what most agents don't need on day one.</p>
+
+    <div class="pages">
+      <div class="prow rv"><div><h3>Neighbourhood guides you wrote yourself</h3><p>The single highest-return thing on this list. Schools, commute, what the street is actually like, honest pros and cons. Nobody can copy it because it's your knowledge.</p></div><span class="pv pv-y">Build first</span></div>
+      <div class="prow rv"><div><h3>Home valuation tool</h3><p>Consistently among the features most tied to lead generation, because it captures sellers at exactly the moment they're curious and before they've called anyone.</p></div><span class="pv pv-y">Build first</span></div>
+      <div class="prow rv"><div><h3>A page for each service area</h3><p>Real pages for the towns you genuinely work, each with a reason to exist beyond the name. Three substantial ones beat thirty thin ones.</p></div><span class="pv pv-y">Build first</span></div>
+      <div class="prow rv"><div><h3>Fast, mobile-first everything</h3><p>Buyers browse listings on phones, usually in gaps between other things. UX is the single biggest factor in whether a visitor stays at all.</p></div><span class="pv pv-y">Build first</span></div>
+      <div class="prow rv"><div><h3>IDX property search</h3><p>Genuinely valuable &mdash; it gives buyers a reason to return and creates natural registration moments. Just don't expect it to bring the traffic. Add it once there's content to send into it.</p></div><span class="pv pv-y">Add second</span></div>
+      <div class="prow rv"><div><h3>Saved searches and listing alerts</h3><p>Where IDX earns its money. A buyer who saves a search has told you what they want and given you a reason to be in touch.</p></div><span class="pv pv-y">Add second</span></div>
+      <div class="prow rv"><div><h3>Market reports for your area</h3><p>Worth it if you'll actually keep them current. A market report from eighteen months ago does more harm than not having one.</p></div><span class="pv pv-y">If maintained</span></div>
+      <div class="prow rv"><div><h3>Forced registration after two searches</h3><p>It does drive lead volume, and it also sends a share of visitors straight back to the portals. Worth testing, not worth assuming.</p></div><span class="pv pv-n">Think hard</span></div>
+      <div class="prow rv"><div><h3>Thousands of auto-generated listing pages</h3><p>Duplicate data on every agent site pulling the same feed. It won't rank and it dilutes the pages that could.</p></div><span class="pv pv-n">Skip</span></div>
+      <div class="prow rv"><div><h3>A full-screen video of the city</h3><p>Slows the page down for the buyer trying to check a listing on a phone in a car park. A single strong photo does the job.</p></div><span class="pv pv-n">Skip</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="re-sec re-snow">
+  <div class="wrap">
+    <p class="re-lab">Straight talk</p>
+    <h2 style="max-width:26ch">Do you actually need IDX?</h2>
+    <hr class="re-rule" style="margin-top:22px">
+    <div class="grid g2" style="gap:22px;margin-top:26px">
+      <div class="card" style="padding:28px">
+        <span class="pill p-mint">Yes, probably</span>
+        <h3 style="margin-top:12px">IDX earns its cost when</h3>
+        <ul style="list-style:none;padding:0;margin:14px 0 0;font-size:.95rem;color:#414B5C">
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">You work with buyers as much as sellers</li>
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">You already have content bringing people to the site</li>
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">You'll actually follow up on saved-search registrations</li>
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">You have a CRM, or you're prepared to get one</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:28px">
+        <span class="pill p-peach">Not yet</span>
+        <h3 style="margin-top:12px">Skip it for now if</h3>
+        <ul style="list-style:none;padding:0;margin:14px 0 0;font-size:.95rem;color:#414B5C">
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">Your business is mostly listings and referrals</li>
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">Nobody currently visits your website at all</li>
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">Leads would sit in an inbox unanswered for two days</li>
+          <li style="padding:9px 0;border-top:1px solid var(--hair10)">You're paying monthly for a feed and not sure why</li>
+        </ul>
+        <p style="margin:16px 0 0;font-size:.94rem">A credible site with real local content and a valuation tool beats an IDX site nobody visits &mdash; and costs less to run.</p>
+      </div>
+    </div>
+    <p class="rv" style="margin-top:24px">We build both. If you're already paying for IDX, bring us what you have and we'll tell you honestly whether it's earning its keep. <a href="/website-redesign-denver/">More on rebuilding without losing what works</a>.</p>
+  </div>
+</section>
+
+<section class="re-sec re-sand">
+  <div class="wrap">
+    <p class="re-lab">Straight answers</p>
+    <h2>Real estate website questions</h2>
+    <hr class="re-rule" style="margin-top:22px">
+    <div style="margin-top:26px;max-width:880px">
+      <details class="acc rv"><summary>Do IDX listing pages help my SEO?</summary><div class="acc-b"><p>Not on their own. Those pages carry the same photos, descriptions and specs as every other agent site pulling the same feed, and duplicate content at scale doesn't build authority. The exception is a listing page with substantial original commentary you wrote &mdash; but that's your writing ranking, not the feed.</p></div></details>
+      <details class="acc rv"><summary>What actually generates leads on a real estate website?</summary><div class="acc-b"><p>Published research consistently points at home valuation tools, IDX property search with saved-search alerts, market reports, and contact forms on listing detail pages. Underneath all of those sits the content that brought the visitor there in the first place, which is the part most agents skip.</p></div></details>
+      <details class="acc rv"><summary>How much does a real estate website cost?</summary><div class="acc-b"><p>Our custom-coded sites start at $99 a month with no setup fee. IDX is a separate ongoing cost from whichever provider connects to your MLS, and pricing varies enormously between a simple search widget and a full platform with a CRM attached. Get both numbers before committing to either.</p></div></details>
+      <details class="acc rv"><summary>Do I need IDX at all?</summary><div class="acc-b"><p>If you work with buyers and you have content bringing people to the site, yes &mdash; it gives them a reason to return and register. If nobody currently visits your website, IDX is machinery with nothing to process. Build the content half first and add the feed once there's traffic to convert.</p></div></details>
+      <details class="acc rv"><summary>Should I force visitors to register before searching?</summary><div class="acc-b"><p>It does increase lead volume, and it also sends a share of visitors straight back to the big portals where registration isn't required. It's worth testing rather than assuming. Capturing at the moment somebody saves a search generally converts better than a wall at the door.</p></div></details>
+      <details class="acc rv"><summary>What content should I write?</summary><div class="acc-b"><p>The things only a local agent knows. What a neighbourhood is genuinely like to live in, what the commute is actually like, honest assessments including drawbacks. Six guides you wrote yourself will outperform sixty generated pages, because the generated ones exist identically on every competitor's site.</p></div></details>
+      <details class="acc rv"><summary>Can you connect IDX to a custom site?</summary><div class="acc-b"><p>Yes. The important question is how it's integrated &mdash; an embedded widget behaves differently from a proper API integration where listings live on your own domain. The second is more work and it's the version that contributes anything to your search visibility.</p></div></details>
+      <details class="acc rv"><summary>My brokerage gives me a website. Do I need my own?</summary><div class="acc-b"><p>The brokerage site is usually a profile page inside somebody else's domain, and it disappears if you move. Your own site with your own domain is an asset you keep. Worth having even if you also use whatever the brokerage provides.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="start">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:start">
+      <div>
+        <p class="eyebrow on-dark">Free, no obligation</p>
+        <h2>Send us your agent site</h2>
+        <p class="lede">We'll tell you whether the IDX you're paying for is doing anything, what content would actually move you, and whether a rebuild is even the right call. If your money is better spent elsewhere, that's what you'll hear.</p>
+        <p style="font-size:1.05rem"><b style="color:#fff">Rather just talk?</b><br><a href="tel:18004818638" style="color:var(--cyan);font-family:var(--display);font-size:1.75rem;font-weight:700;letter-spacing:-.03em">1-800-481-8638</a></p>
+        <p style="font-size:.9rem">Denver, Colorado &middot; Answered within one business day</p>
+      </div>
+      <form class="fbox" id="leadform" novalidate>
+        <div class="frow">
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <label for="f-biz">Brokerage or team</label>
+        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <label for="f-area">Your main service area</label>
+        <input id="f-area" name="service_area" type="text" placeholder="Highlands Ranch, Arvada...">
+        <label for="f-site">Current website</label>
+        <input id="f-site" name="current_website" type="text" placeholder="youragentsite.com">
+        <label for="f-need">Where are you now?</label>
+        <select id="f-need" name="project_type">
+          <option>No website of my own yet</option><option>Have IDX, getting no leads</option>
+          <option>Paying for a platform I don't understand</option><option>Need content that ranks</option>
+          <option>Want to add a valuation tool</option><option>Not sure yet</option>
+        </select>
+        <label for="f-msg">Anything else we should know?</label>
+        <textarea id="f-msg" name="message"></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-d" type="submit" id="fsubmit">Send my request</button>
+        <p class="fnote">We'll never share your details. No newsletter, no spam, no automated call sequence.</p>
+        <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid g4">
+      <div>
+        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
+        <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
+        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+      </div>
+      <div>
+        <h4>Web Design</h4>
+        <ul>
+          <li><a href="/denver-web-design-company/">Denver web design company</a></li>
+          <li><a href="/website-designer-denver-co/">Denver web designer</a></li>
+          <li><a href="/web-design-near-me/">Web design near me</a></li>
+          <li><a href="/small-business-web-design/">Small business web design</a></li>
+          <li><a href="/custom-websites/">Custom websites</a></li>
+          <li><a href="/affordable-web-design/">Affordable web design</a></li>
+          <li><a href="/website-redesign-denver/">Website redesign</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build &amp; Grow</h4>
+        <ul>
+          <li><a href="/denver-web-development/">Web development</a></li>
+          <li><a href="/app-development-denver/">App development</a></li>
+          <li><a href="/ecommerce-website-design/">Ecommerce websites</a></li>
+          <li><a href="/shopify-website-design/">Shopify design</a></li>
+          <li><a href="/wordpress-website-design/">WordPress design</a></li>
+          <li><a href="/denver-seo-web-design/">SEO web design</a></li>
+          <li><a href="/ai-ready-websites-denver/">AI-ready websites</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides &amp; Company</h4>
+        <ul>
+          <li><a href="/denver-web-design-pricing/">Pricing</a></li>
+          <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
+          <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
+          <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
+          <li><a href="/real-estate-website-design/">Real estate websites</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
+      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* hero chips */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function(el){
+    if(rm){el.classList.add('show');return;}
+    setTimeout(function(){el.classList.add('show');},+el.dataset.d||0);
+  });
+})();
+
+/* nav */
+var bg=document.getElementById('burger'),nv=document.getElementById('nav');
+if(bg&&nv){
+bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');}});
+}
+
+/* reveal + bars + fuse */
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.bar-f').forEach(function(el){bo.observe(el);});
+  var fs=document.getElementById('fuse');
+  if(fs){
+    var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('lit');fo.unobserve(e.target);}});},{threshold:.45});
+    fo.observe(fs);
+  }
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  document.querySelectorAll('.bar-f').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  var fsr=document.getElementById('fuse'); if(fsr){fsr.classList.add('lit');}
+}
+
+/* scratch-off */
+(function(){
+  var c=document.getElementById('scratch');if(!c)return;
+  var ctx=c.getContext('2d'),drawing=false,cleared=false,hint=document.getElementById('shint');
+  function fill(){
+    var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+    var g=ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#C8D0DE');g.addColorStop(.5,'#9BA6BA');g.addColorStop(1,'#C8D0DE');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='700 13px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillText('SCRATCH HERE',r.width/2,r.height/2+5);
+  }
+  fill();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!cleared)fill();},220);});
+  function pt(e){var r=c.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top};}
+  function scr(e){
+    if(!drawing)return;e.preventDefault();var p=pt(e);
+    ctx.globalCompositeOperation='destination-out';
+    ctx.beginPath();ctx.arc(p.x,p.y,26,0,Math.PI*2);ctx.fill();
+    if(hint){hint.textContent='Keep going';}
+    check();
+  }
+  var last=0;
+  function check(){
+    var now=Date.now();if(now-last<260)return;last=now;
+    var d=ctx.getImageData(0,0,c.width,c.height).data,clear=0;
+    for(var i=3;i<d.length;i+=40){if(d[i]<40)clear++;}
+    if(clear/(d.length/40)>.42&&!cleared){cleared=true;c.classList.add('done');if(hint)hint.textContent='That is the whole pitch.';}
+  }
+  ['mousedown','touchstart'].forEach(function(ev){c.addEventListener(ev,function(e){drawing=true;scr(e);},{passive:false});});
+  ['mousemove','touchmove'].forEach(function(ev){c.addEventListener(ev,scr,{passive:false});});
+  ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
+})();
+
+/* form: honeypot + time trap + JS-assembled action */
+(function(){
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
+  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
+  if(document.readyState!=='loading'){loaded=Date.now();}
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData(f);
+    fd.delete('_honey');
+    fd.append('_subject','New lead — denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
+        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
+      })
+      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
+  });
+})();
+</script>
+<script>
+(function(){
+  var stage=document.getElementById('dupStage'); if(!stage)return;
+  var base=stage.querySelector('.lcard'), lab=document.getElementById('dupLab');
+  if(!base)return;
+  var offs=[[26,16],[52,32],[78,48],[104,64],[130,80],[156,96]];
+  var made=[];
+  offs.forEach(function(o,i){
+    var cl=base.cloneNode(true);
+    cl.style.zIndex=8-i;
+    cl.setAttribute('data-i',i+1);
+    cl.style.filter='saturate(.5)';
+    stage.insertBefore(cl,base);
+    made.push([cl,o,i]);
+  });
+  function run(){
+    base.style.opacity=1;
+    base.classList.add('go');
+    made.forEach(function(m){
+      var el=m[0],o=m[1],i=m[2];
+      setTimeout(function(){
+        el.classList.add('go');
+        el.style.opacity=String(0.72-i*0.09);
+        el.style.transform='translate('+o[0]+'px,'+o[1]+'px) scale('+(1-(i+1)*0.012)+')';
+      }, 480+i*130);
+    });
+    setTimeout(function(){ if(lab){lab.classList.add('go');} },1500);
+  }
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    base.style.opacity=1;
+    made.forEach(function(m){m[0].style.opacity=String(0.72-m[2]*0.09);m[0].style.transform='translate('+m[1][0]+'px,'+m[1][1]+'px)';});
+    if(lab){lab.classList.add('go');}
+    return;
+  }
+  if('IntersectionObserver' in window){
+    var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run();ob.unobserve(e.target);}});},{threshold:.3});
+    ob.observe(stage);
+  } else { run(); }
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/real-estate-website-design/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Real Estate Website Design", "item": "https://denver-webdesign.com/real-estate-website-design/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/real-estate-website-design/#service", "name": "Real estate website design", "serviceType": "Real estate website design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "audience": {"@type": "BusinessAudience", "name": "Real estate agents, teams and brokerages"}, "description": "Agent websites built around original local content that earns search traffic, with IDX property search added as a conversion tool rather than a traffic strategy.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Custom-coded real estate website from $99 per month"}}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/real-estate-website-design/#webpage", "url": "https://denver-webdesign.com/real-estate-website-design/", "name": "Real Estate Website Design | IDX Alone Won't Rank You", "description": "Your listings are on every agent site in your market. What actually earns traffic, what IDX is genuinely for, and how to tell whether yours is worth what you pay.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/real-estate-website-design/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-29", "dateModified": "2026-08-29", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/real-estate-website-design/#faq", "mainEntity": [{"@type": "Question", "name": "Do IDX listing pages help my SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Not on their own. Those pages carry the same photos, descriptions and specs as every other agent site pulling the same feed, and duplicate content at scale doesn't build authority. The exception is a listing page with substantial original commentary you wrote - but that's your writing ranking, not the feed."}}, {"@type": "Question", "name": "What actually generates leads on a real estate website?", "acceptedAnswer": {"@type": "Answer", "text": "Published research consistently points at home valuation tools, IDX property search with saved-search alerts, market reports, and contact forms on listing detail pages. Underneath all of those sits the content that brought the visitor there in the first place, which is the part most agents skip."}}, {"@type": "Question", "name": "How much does a real estate website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Our custom-coded sites start at $99 a month with no setup fee. IDX is a separate ongoing cost from whichever provider connects to your MLS, and pricing varies enormously between a simple search widget and a full platform with a CRM attached. Get both numbers before committing to either."}}, {"@type": "Question", "name": "Do I need IDX at all?", "acceptedAnswer": {"@type": "Answer", "text": "If you work with buyers and you have content bringing people to the site, yes - it gives them a reason to return and register. If nobody currently visits your website, IDX is machinery with nothing to process. Build the content half first and add the feed once there's traffic to convert."}}, {"@type": "Question", "name": "Should I force visitors to register before searching?", "acceptedAnswer": {"@type": "Answer", "text": "It does increase lead volume, and it also sends a share of visitors straight back to the big portals where registration isn't required. It's worth testing rather than assuming. Capturing at the moment somebody saves a search generally converts better than a wall at the door."}}, {"@type": "Question", "name": "What content should I write?", "acceptedAnswer": {"@type": "Answer", "text": "The things only a local agent knows. What a neighbourhood is genuinely like to live in, what the commute is actually like, honest assessments including drawbacks. Six guides you wrote yourself will outperform sixty generated pages, because the generated ones exist identically on every competitor's site."}}, {"@type": "Question", "name": "Can you connect IDX to a custom site?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The important question is how it's integrated - an embedded widget behaves differently from a proper API integration where listings live on your own domain. The second is more work and it's the version that contributes anything to your search visibility."}}, {"@type": "Question", "name": "My brokerage gives me a website. Do I need my own?", "acceptedAnswer": {"@type": "Answer", "text": "The brokerage site is usually a profile page inside somebody else's domain, and it disappears if you move. Your own site with your own domain is an asset you keep. Worth having even if you also use whatever the brokerage provides."}}]}]}
+</script>
+</body>
+</html>
