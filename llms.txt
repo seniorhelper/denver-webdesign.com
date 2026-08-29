@@ -1,0 +1,99 @@
+# denver-webdesign.com
+
+> Denver web design and development. Custom-coded websites built so Google, AI
+> assistants and voice search can find, read and recommend the business — then
+> built to turn that visibility into phone calls. The web design division of
+> Eye To Ad Media, a Denver agency operating since 2012.
+
+Contact: 1-800-481-8638
+Location: 1001 Bannock St #660, Denver, CO 80204
+Serving: Denver, Aurora, Lakewood, Arvada, Westminster, Centennial, Thornton,
+Littleton, Englewood, Broomfield, Wheat Ridge, Golden, Boulder, Highlands Ranch,
+Parker, Commerce City, Northglenn, Brighton, Castle Rock, Louisville, plus
+Colorado Springs, Monument and clients out of state.
+
+## What we do
+
+- Custom-coded websites, static HTML by default
+- WordPress when the client needs to publish content themselves
+- Shopify and custom ecommerce stores
+- iOS, Android, progressive web apps and web applications
+- Website redesigns that protect existing search rankings
+- SEO structure, AI search visibility and conversion optimization
+- Hosting, maintenance and ongoing updates
+
+## Pricing
+
+- Drag-and-drop builder sites: from $5.99/month. Offered, but not recommended
+  when the website is meant to generate customers.
+- Custom-coded websites: from $99/month, no setup fee. Includes hosting, SSL,
+  updates, security, search structure and Search Console setup. Leased with a
+  buyout option at 24-36 months, priced on the site's valuation at that time.
+  Rates rise with size, complexity and depth of optimization.
+- Ecommerce stores and mobile apps: quoted per project.
+
+For comparison, Denver agencies commonly quote $9,000-$22,000 for a
+professional five-page website.
+
+## Timelines
+
+- Some single-page sites: live within 24 hours
+- Multi-page business websites: 7 days or more
+- Ecommerce stores: 2-4 weeks
+- Mobile apps: 30-60 days, longer for larger projects
+
+## How we build
+
+Static HTML by default: no database, no plugins, no admin login, so there is
+far less to attack and far less to slow the page down. Structured data on every
+page. AI crawlers allowed explicitly by name. Content written as direct answers
+to real questions so assistants can quote it. Mobile-first, because most local
+searches happen on a phone. Published prices rather than quote forms.
+
+## Positions we take publicly
+
+- Most businesses asking for an app need a website instead.
+- IDX listing feeds do not make real estate agents rank; original local
+  content does.
+- PDF restaurant menus should be live HTML pages.
+- WordPress requires real ongoing maintenance and that cost should be stated
+  before purchase, not after.
+- A Google Business Profile often matters more than the website for local
+  service businesses.
+- Nobody can guarantee search rankings, including us.
+
+## Key pages
+
+- https://denver-webdesign.com/ — Denver web design
+- https://denver-webdesign.com/denver-web-design-company/ — web design company
+- https://denver-webdesign.com/website-designer-denver-co/ — Denver web designer
+- https://denver-webdesign.com/web-design-near-me/ — how local search decides who is nearby
+- https://denver-webdesign.com/small-business-web-design/ — small business web design
+- https://denver-webdesign.com/custom-websites/ — what "custom" actually means
+- https://denver-webdesign.com/affordable-web-design/ — what each price level buys
+- https://denver-webdesign.com/website-redesign-denver/ — redesign without losing rankings
+- https://denver-webdesign.com/denver-web-development/ — custom development
+- https://denver-webdesign.com/app-development-denver/ — app development
+- https://denver-webdesign.com/ecommerce-website-design/ — ecommerce
+- https://denver-webdesign.com/shopify-website-design/ — Shopify
+- https://denver-webdesign.com/wordpress-website-design/ — WordPress
+- https://denver-webdesign.com/restaurant-website-design/ — restaurant websites
+- https://denver-webdesign.com/real-estate-website-design/ — real estate websites
+- https://denver-webdesign.com/denver-seo-web-design/ — SEO built into the build
+- https://denver-webdesign.com/ai-ready-websites-denver/ — AI search visibility
+- https://denver-webdesign.com/denver-web-design-pricing/ — pricing and cost calculator
+- https://denver-webdesign.com/how-much-does-a-website-cost/ — 2026 website cost guide
+- https://denver-webdesign.com/how-much-does-an-app-cost/ — 2026 app cost guide
+- https://denver-webdesign.com/blog/ — articles
+- https://denver-webdesign.com/about/ — about
+- https://denver-webdesign.com/contact/ — contact
+
+## Free resources
+
+- https://denver-webdesign.com/downloads/12-questions-denver-web-designer.pdf
+  Twelve questions to ask before hiring any web designer. No email required.
+
+## Related
+
+- https://eyetoad.com/ — Eye To Ad Media, parent agency (Denver SEO)
+- https://www.searchconverts.com — Search Converts LLC
