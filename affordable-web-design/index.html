@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Affordable Web Design | Cheap and Worth Having Aren't the Same</title>
+<meta name="description" content="What every price level actually buys, the six ways a bargain website costs more, and what to do first if you can't afford anything yet. Custom builds from $99/month.">
+<link rel="canonical" href="https://denver-webdesign.com/affordable-web-design/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#F6F1E7">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denver-webdesign.com/affordable-web-design/">
+<meta property="og:site_name" content="Denver Web Design">
+<meta property="og:title" content="Affordable Web Design | Cheap and Worth Having Aren't the Same">
+<meta property="og:description" content="What every price level actually buys, the six ways a bargain website costs more, and what to do first if you can't afford anything yet. Custom builds from $99/month.">
+<meta property="og:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Affordable Web Design | Cheap and Worth Having Aren't the Same">
+<meta name="twitter:description" content="What every price level actually buys, the six ways a bargain website costs more, and what to do first if you can't afford anything yet. Custom builds from $99/month.">
+<meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
+  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
+  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
+  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
+  --display:'Outfit',system-ui,sans-serif;
+  --text:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
+h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+a{color:#0B63D8;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:82px 0}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
+.eyebrow.on-dark{color:var(--cyan)}
+.lede{font-size:1.13rem;max-width:62ch}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.brand img{height:57px;width:auto}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
+.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
+.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
+.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
+@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
+@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
+
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
+.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
+.hero h1{color:#fff}
+.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
+.hero-r{position:relative;min-height:530px;overflow:hidden}
+.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
+.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
+
+.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
+.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
+.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
+.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
+.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
+.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
+.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
+.float{animation:fl 6s ease-in-out infinite}
+.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
+@media(max-width:900px){
+  .hero-r{min-height:0;height:auto;padding:0}
+  .hero-r picture,.hero-r img{position:relative;height:230px}
+  .hero-r::after{display:none}
+  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
+  .pop{position:static;max-width:none;opacity:1;transform:none}
+  .float{animation:none}
+}
+.hero-tag{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
+.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
+.btn-s{border-color:var(--cyan);color:var(--cyan)}
+.btn-d{background:var(--ink);color:#fff;width:100%}
+.microtrust{font-size:.87rem;color:#8497BA}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-l{padding:52px 22px 44px}
+  .hero-r{min-height:260px;order:2}
+  .hero-r::after{display:none}
+}
+
+/* trustbar */
+.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
+.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
+.tbar li{display:flex;align-items:center;gap:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;font-size:.97rem}
+.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.p-mint{background:var(--mint);color:#065F46}
+.p-lilac{background:var(--lilac);color:#4C1D95}
+.p-peach{background:var(--peach);color:#9A3412}
+.p-cyan{background:#CCF7FE;color:#0E5A6B}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* scratch demo */
+.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.demo h2,.demo h3{color:#fff}
+.demo p{color:#AFBDD8}
+.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
+.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
+.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
+.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
+#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
+.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
+
+/* accordion */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
+.acc .acc-b p:last-child{margin-bottom:0}
+
+/* fuse */
+.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.fuse-sec h2{color:#fff}
+.fuse-sec p{color:#B9A9CE}
+.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
+#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
+.lit #fusepath{stroke-dashoffset:0}
+.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
+.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
+.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
+.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
+.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
+.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
+.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
+
+/* signal flow */
+.flow{background:#fff}
+.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
+.flow-svg{width:100%;height:auto}
+.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-30}}
+
+/* stat bars */
+.bars{margin:26px 0 0}
+.bar-row{margin-bottom:17px}
+.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar-lab b{font-family:var(--mono);color:var(--ink)}
+.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
+.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
+
+/* form */
+.formsec{background:var(--ink-2);color:#fff}
+.formsec h2{color:#fff}
+.formsec p{color:#B0BFDA}
+.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
+.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
+.fbox textarea{min-height:96px;resize:vertical}
+.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
+.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
+.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
+.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
+.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* footer */
+.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
+.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.ftr ul{list-style:none;padding:0;margin:0}
+.ftr li{margin-bottom:9px}
+.ftr a{color:var(--body)}
+.ftr img{height:51px;margin-bottom:16px}
+.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== PAGE THEME: honest value / kraft ===== */
+.af{--kraft:#F6F1E7;--kraft2:#EBE2D2;--ink6:#221F1A;--green6:#1F7A4D;--flag:#E24B2A;--blue6:#2C5D96;--hair8:#D9CFBB;--mute8:#77705F}
+.af h1,.af h2,.af h3{font-family:'Figtree',system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;color:var(--ink6);line-height:1.06}
+.af h1{font-size:clamp(2.25rem,4.8vw,3.6rem)}
+.af h2{font-size:clamp(1.85rem,3.6vw,2.7rem)}
+.af h3{font-size:1.12rem;font-weight:700;letter-spacing:-.02em}
+.af p{color:#474235;line-height:1.72;font-size:1.02rem}
+.af .lede{color:#2C2820;font-size:1.13rem;line-height:1.62;max-width:60ch}
+.af-sec{padding:76px 0;position:relative}
+.af-k{background:var(--kraft)}
+.af-k2{background:var(--kraft2);border-top:1px solid var(--hair8);border-bottom:1px solid var(--hair8)}
+.af-dk{background:var(--ink6);color:#C9C2B4}
+.af-dk h2,.af-dk h3{color:#fff}
+.af-dk p{color:#A29A8A}
+.af-lab{font-family:var(--mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;margin:0 0 15px;color:var(--flag)}
+.af-lab.lt{color:#F2A48C}
+.flagt{color:var(--flag)}
+.af-rule{border:0;border-top:2px solid var(--ink6);margin:0 0 24px;width:64px}
+
+/* price ladder */
+.ladder{margin-top:32px;border-top:2px solid var(--ink6)}
+.rung{display:grid;grid-template-columns:150px 1fr 130px;gap:20px;padding:22px 0;border-bottom:1px solid var(--hair8);align-items:center}
+@media(max-width:760px){.rung{grid-template-columns:1fr;gap:6px;padding:20px 0}}
+.rung-p{font-family:'Figtree',sans-serif;font-weight:800;font-size:1.5rem;color:var(--ink6);letter-spacing:-.04em}
+.rung-p small{display:block;font-size:.78rem;font-weight:500;color:var(--mute8);letter-spacing:0;margin-top:3px}
+.rung h3{margin:0 0 5px}
+.rung p{margin:0;font-size:.95rem}
+.rung-v{font-family:var(--mono);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;padding:6px 10px;text-align:center;border:1px solid}
+.v-ok{border-color:var(--green6);color:var(--green6)}
+.v-mid{border-color:#B58A1E;color:#8A6706}
+.v-bad{border-color:var(--flag);color:var(--flag)}
+@media(max-width:760px){.rung-v{justify-self:start;margin-top:8px}}
+
+/* trap cards */
+.trap{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:2px solid var(--ink6);margin-top:30px}
+@media(max-width:760px){.trap{grid-template-columns:1fr}}
+.tc2{padding:26px;border-right:1px solid var(--hair8);border-bottom:1px solid var(--hair8)}
+.tc2:nth-child(2n){border-right:0}
+.tc2 .tn{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--flag);display:block;margin-bottom:10px}
+.tc2 h3{margin:0 0 8px}
+.tc2 p{margin:0;font-size:.95rem}
+
+/* what you get */
+.gets{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:28px;border-top:1px solid rgba(255,255,255,.16)}
+@media(max-width:700px){.gets{grid-template-columns:1fr}}
+.get{display:grid;grid-template-columns:26px 1fr;gap:14px;padding:16px 24px 16px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.get i{width:20px;height:20px;border:2px solid #4ED18B;display:grid;place-items:center;margin-top:2px}
+.get i svg{width:11px;height:11px;stroke:#4ED18B;stroke-width:3.4;fill:none}
+.get b{display:block;color:#fff;font-family:'Figtree',sans-serif;font-weight:700;font-size:1rem;margin-bottom:3px}
+.get span{font-size:.92rem;color:#A29A8A}
+
+.af .card{background:#fff;border:1px solid var(--hair8);border-radius:4px}
+.af-dk .card{background:#2E2A22;border-color:rgba(255,255,255,.13)}
+.af-dk .card h3{color:#fff}.af-dk .card p{color:#A29A8A}
+.af .acc{border:1px solid var(--hair8);border-radius:4px;background:#fff}
+.af .acc summary{color:var(--ink6);font-family:'Figtree',sans-serif;font-weight:700}
+.af .acc summary::after{border-color:var(--flag)}
+.af .pill{border-radius:3px}
+.af .btn{border-radius:4px;font-family:'Figtree',sans-serif;font-weight:700}
+.btn-flag{background:var(--flag);color:#fff}
+.btn-flag:hover{background:#C63C1E;color:#fff}
+.btn-ink6{border:2px solid var(--ink6);color:var(--ink6)}
+.btn-ink6:hover{background:var(--ink6);color:#fff}
+.btn-lite6{border:2px solid rgba(255,255,255,.5);color:#fff}
+.btn-lite6:hover{background:#fff;color:var(--ink6)}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="telm" href="tel:18004818638">1-800-481-8638</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/denver-web-design-company/">Web Design</a>
+      <a href="/denver-web-development/">Development</a>
+      <a href="/app-development-denver/">Apps</a>
+      <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/denver-web-design-pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+    </nav>
+  </div>
+</header>
+
+<main class="af">
+
+<section class="af-sec af-k" style="padding-top:58px">
+  <div class="wrap">
+    <div class="grid g2" style="gap:46px;align-items:center">
+      <div>
+        <p class="af-lab">Affordable web design</p>
+        <h1>Cheap and <span class="flagt">worth having</span> are not the same thing</h1>
+        <p class="lede" style="margin-top:20px">You can get a website for nothing. You can also spend $9,000 and end up with something slower and harder to find than the free one. Price tells you almost nothing on its own &mdash; what matters is what you're actually buying at each level.</p>
+        <div class="cta-row" style="margin:28px 0 14px">
+          <a class="btn btn-flag" href="tel:18004818638">Call 1-800-481-8638</a>
+          <a class="btn btn-ink6" href="#ladder">See what each price buys</a>
+        </div>
+        <p style="font-size:.87rem;color:var(--mute8)">From $5.99/month &middot; Custom builds from $99/month &middot; No setup fee</p>
+      </div>
+      <div class="card" style="padding:30px">
+        <p class="af-lab" style="margin-bottom:14px">The short answer</p>
+        <p style="font-size:1.05rem;margin-bottom:16px"><b>If the website is decoration</b>, use a builder. Around $5.99 a month, you build it, it looks like a template, and that's completely fine.</p>
+        <hr style="border:0;border-top:1px solid var(--hair8);margin:0 0 16px">
+        <p style="font-size:1.05rem;margin-bottom:16px"><b>If it's meant to bring in customers</b>, you need control over the code, and that starts at $99 a month here.</p>
+        <hr style="border:0;border-top:1px solid var(--hair8);margin:0 0 16px">
+        <p style="font-size:1.05rem;margin:0"><b>What you should never do</b> is pay custom prices for template work. That's the expensive mistake, and it's common.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tbar"><div class="wrap"><ul>
+  <li><span class="dot"></span>Real prices published</li>
+  <li><span class="dot"></span>No setup fee on custom builds</li>
+  <li><span class="dot"></span>We'll point you at the cheap option when it fits</li>
+  <li><span class="dot"></span>Denver since 2012</li>
+</ul></div></div>
+
+<section class="af-sec" id="ladder">
+  <div class="wrap">
+    <p class="af-lab rv">The ladder</p>
+    <h2 class="rv" style="max-width:24ch">What each price actually buys</h2>
+    <hr class="af-rule" style="margin-top:20px">
+    <p class="lede rv">Every rung is a legitimate purchase for somebody. The question is which one matches what you need the site to do.</p>
+
+    <div class="ladder">
+      <div class="rung rv">
+        <div class="rung-p">$0<small>free builders</small></div>
+        <div><h3>A free plan on a website builder</h3><p>Their branding on your site, their subdomain in your address, and severe limits on what you can change. Genuinely fine for testing an idea for a fortnight.</p></div>
+        <div class="rung-v v-bad">Not for business</div>
+      </div>
+      <div class="rung rv">
+        <div class="rung-p">$5.99<small>per month</small></div>
+        <div><h3>A builder plan, built by you</h3><p>Your own domain, a template, and a weekend of your time. Search performance is limited because you don't control the underlying code. We sell these and we'll set you up with one if it fits.</p></div>
+        <div class="rung-v v-mid">Fine as a placeholder</div>
+      </div>
+      <div class="rung rv">
+        <div class="rung-p">$99<small>per month</small></div>
+        <div><h3>Custom-coded, built for you</h3><p>Hand-written, designed around your services, hosting and updates included, structured for search and AI from the start. No setup fee. Leased with a buyout option at 24&ndash;36 months.</p></div>
+        <div class="rung-v v-ok">Built to earn</div>
+      </div>
+      <div class="rung rv">
+        <div class="rung-p">$500<small>&ndash;$2,000 one-off</small></div>
+        <div><h3>A freelancer on a marketplace</h3><p>Wildly variable. Some are excellent. The risk is what happens in eighteen months when something breaks and they've moved on, and whether anyone thought about search at all.</p></div>
+        <div class="rung-v v-mid">Depends entirely</div>
+      </div>
+      <div class="rung rv">
+        <div class="rung-p">$3k&ndash;$8k<small>freelancer, custom</small></div>
+        <div><h3>A professional freelance build</h3><p>Published 2026 research puts most freelance custom work here. You own it outright, which is worth something. Hosting and maintenance are usually separate and ongoing.</p></div>
+        <div class="rung-v v-ok">Legitimate</div>
+      </div>
+      <div class="rung rv">
+        <div class="rung-p">$9k&ndash;$22k<small>Denver agency</small></div>
+        <div><h3>A full agency project</h3><p>What Denver agencies commonly quote for a professional five-page site. Real process, real overhead. Right for companies with several stakeholders, oversized for a sole trader.</p></div>
+        <div class="rung-v v-mid">Right for some</div>
+      </div>
+    </div>
+    <p class="rv" style="margin-top:22px"><a href="/how-much-does-a-website-cost/">Full 2026 cost breakdown, every route</a> &middot; <a href="/denver-web-design-pricing/">our pricing and three-year calculator</a></p>
+  </div>
+</section>
+
+<section class="af-sec af-k2">
+  <div class="wrap">
+    <p class="af-lab rv">Where cheap gets expensive</p>
+    <h2 class="rv" style="max-width:26ch">Six ways a bargain website costs you more</h2>
+    <hr class="af-rule" style="margin-top:20px">
+    <p class="lede rv">None of these are arguments against spending less. They're the specific places where spending less turns into spending twice.</p>
+
+    <div class="trap">
+      <div class="tc2 rv"><span class="tn">Trap 01</span><h3>The setup fee you find at the end</h3><p>An attractive monthly price with a build fee revealed once you're invested in the conversation. Ask for the total first-year cost in writing before anything else. Ours has no setup fee and that's on the pricing page, not held back.</p></div>
+      <div class="tc2 rv"><span class="tn">Trap 02</span><h3>The domain in somebody else's name</h3><p>The single worst outcome on this list. If the designer registers your domain to themselves, leaving becomes a negotiation. Your domain should be registered to you from day one. Check it before you pay anybody.</p></div>
+      <div class="tc2 rv"><span class="tn">Trap 03</span><h3>Edits billed by the hour</h3><p>A cheap build with $95-an-hour changes. New phone number, new service, updated hours &mdash; you'll need dozens of those over the years, and most people stop bothering, which is worse than the cost.</p></div>
+      <div class="tc2 rv"><span class="tn">Trap 04</span><h3>Nobody thought about search</h3><p>A site with no structure has to be partly rebuilt before any marketing works. That's paying twice for the same thing, and it's the most common reason a cheap site turns out expensive.</p></div>
+      <div class="tc2 rv"><span class="tn">Trap 05</span><h3>Maintenance that never happens</h3><p>On WordPress, no maintenance means an outdated plugin eventually gets found by an automated scan. Cleaning up a compromised site costs far more than the upkeep would have.</p></div>
+      <div class="tc2 rv" style="border-bottom:0"><span class="tn">Trap 06</span><h3>The developer who disappears</h3><p>More common than you'd think. If you can't reach them and don't have hosting or domain access, recovery is possible but slow and irritating. Ask who else can get in before you need to know.</p></div>
+    </div>
+    <p class="rv" style="margin-top:22px"><a href="/downloads/12-questions-denver-web-designer.pdf" download><b>Free checklist: 12 questions to ask before hiring anyone</b></a> &mdash; no email needed.</p>
+  </div>
+</section>
+
+<section class="af-sec af-dk">
+  <div class="wrap">
+    <p class="af-lab lt rv">At $99 a month</p>
+    <h2 class="rv" style="max-width:26ch">What's actually included, with nothing held back for an upsell</h2>
+    <p class="lede rv" style="color:#A29A8A">This is the whole list. There is no premium tier where the important things live.</p>
+
+    <div class="gets">
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>Custom design and build</b><span>Hand-coded for your business, not a theme with your logo dropped in</span></span></div>
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>Hosting</b><span>Included, fast, and not a separate invoice</span></span></div>
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>SSL certificate</b><span>Secure on every page, no annual fee</span></span></div>
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>Updates and edits</b><span>Send us the change, usually done the same day, not billed hourly</span></span></div>
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>Search structure</b><span>Schema, headings, sitemap, clean URLs &mdash; the whole 32-point checklist</span></span></div>
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>AI crawler access</b><span>Readable and quotable by ChatGPT, Perplexity and AI Overviews</span></span></div>
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>Search Console setup</b><span>Submitted properly so Google knows the site exists</span></span></div>
+      <div class="get rv"><i><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></i><span><b>No setup fee</b><span>Zero. The monthly price is the price.</span></span></div>
+    </div>
+
+    <div class="card rv" style="padding:26px;margin-top:32px">
+      <h3>The honest caveats</h3>
+      <p style="margin-top:10px">$99 is where custom builds <em>start</em>. A fifteen-page site with a booking system is not $99, and we'd rather say that here than reveal it at the end of a call.</p>
+      <p style="margin:12px 0 0">The monthly plan is a lease with a buyout option at 24 to 36 months, priced on what the site is worth then. Your domain and your content stay yours regardless. Ask exactly how the buyout is calculated before you sign &mdash; with us or with anyone.</p>
+    </div>
+  </div>
+</section>
+
+<section class="af-sec af-k">
+  <div class="wrap">
+    <p class="af-lab rv">Straight advice</p>
+    <h2 class="rv" style="max-width:24ch">Spending nothing at all, done properly</h2>
+    <hr class="af-rule" style="margin-top:20px">
+    <p class="lede rv">If money is genuinely the constraint right now, here's what to do this week for free. We'd rather you did this than borrowed to buy a website.</p>
+
+    <div class="grid g3" style="margin-top:28px">
+      <div class="card rv" style="padding:26px"><span class="pill p-mint">Free &middot; do first</span><h3>Claim your Google Business Profile</h3><p>For most local trades this produces more enquiries than a website does, because the map results sit above everything else. Costs nothing and takes an afternoon to fill in properly.</p><p style="margin:12px 0 0"><a href="/blog/google-business-profile-vs-website/">How to do it well &rarr;</a></p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-mint">Free &middot; do next</span><h3>Check what's wrong with what you have</h3><p>Five free tests tell you whether your problem is speed, visibility or conversion. Knowing which one saves you from paying to fix the wrong thing.</p><p style="margin:12px 0 0"><a href="/blog/free-website-health-checks/">The five checks &rarr;</a></p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-mint">Free &middot; then</span><h3>Fix the phone number</h3><p>Visible before scrolling, on every page, tappable. If it's currently in a footer or baked into an image, this fifteen-minute change is often worth more than a redesign.</p><p style="margin:12px 0 0"><a href="/blog/website-traffic-but-no-phone-calls/">Why calls don't happen &rarr;</a></p></div>
+    </div>
+    <p class="rv" style="margin-top:24px">Do those three and then decide whether you still need to spend anything. Plenty of people call, get told to do exactly this, and come back six months later when the business can carry a build. That's a better outcome than selling somebody a website they couldn't afford.</p>
+  </div>
+</section>
+
+<section class="af-sec af-k2">
+  <div class="wrap">
+    <p class="af-lab rv">Straight answers</p>
+    <h2 class="rv">Affordable web design questions</h2>
+    <div style="margin-top:26px;max-width:880px">
+      <details class="acc rv"><summary>What is the cheapest way to get a business website?</summary><div class="acc-b"><p>A drag-and-drop builder plan, roughly $5.99 a month on the plans we resell, built by you. It's genuinely the cheapest real option. Be honest about whether the site is a formality or is supposed to generate customers, because builders are limited at the second job.</p></div></details>
+      <details class="acc rv"><summary>Is a cheap website bad for SEO?</summary><div class="acc-b"><p>Not automatically, but template builders limit what you can control &mdash; page structure, speed, schema, URL patterns. A cheap site built with those in mind beats an expensive one built without. What matters is control over the code, not the price tag.</p></div></details>
+      <details class="acc rv"><summary>How can you build custom sites for $99 a month?</summary><div class="acc-b"><p>Low overhead and a monthly model. There's no office, no account manager and no sales team to fund, and spreading the cost over time means we don't need a five-figure invoice up front. It also keeps us responsible after launch, because the site still has to be working in year two.</p></div></details>
+      <details class="acc rv"><summary>What's the catch with cheap web design?</summary><div class="acc-b"><p>Usually one of six things: a setup fee revealed late, your domain registered to somebody else, edits billed hourly, no search structure at all, no maintenance, or a developer who disappears. Ask about each of those specifically and most of the risk goes away.</p></div></details>
+      <details class="acc rv"><summary>Should I use Wix, Squarespace or something similar?</summary><div class="acc-b"><p>They're solid products and we sell builder plans ourselves. They suit businesses where the website is a formality or where you genuinely want to do it yourself. Where they struggle is competitive local search, because you can't control enough of the underlying code.</p></div></details>
+      <details class="acc rv"><summary>Can I start cheap and upgrade later?</summary><div class="acc-b"><p>Yes, and plenty of people do exactly that. Start on a builder, prove the business works, move to a custom build when it can carry it. The only thing to protect is your domain &mdash; keep it registered to you so moving is straightforward.</p></div></details>
+      <details class="acc rv"><summary>Do you offer discounts or payment plans?</summary><div class="acc-b"><p>The monthly pricing is the discount, in effect &mdash; it removes the upfront barrier that stops most small businesses getting a decent site at all. Larger projects get quoted individually and structured sensibly for the scope.</p></div></details>
+      <details class="acc rv"><summary>What if I can't afford anything right now?</summary><div class="acc-b"><p>Then don't buy a website. Claim your Google Business Profile, make your phone number tappable, and run the free checks. Call and we'll walk you through it anyway. We'd rather you came back in six months able to afford it than took on cost you can't carry.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="start">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:start">
+      <div>
+        <p class="eyebrow on-dark">Free, no obligation</p>
+        <h2>Tell us your budget honestly</h2>
+        <p class="lede">Including if it's nothing. We'll tell you what's realistic at that number and what to do first if the answer is "not a website yet." Nobody gets talked into something they can't carry.</p>
+        <p style="font-size:1.05rem"><b style="color:#fff">Rather just talk?</b><br><a href="tel:18004818638" style="color:var(--cyan);font-family:var(--display);font-size:1.75rem;font-weight:700;letter-spacing:-.03em">1-800-481-8638</a></p>
+        <p style="font-size:.9rem">Denver, Colorado &middot; Answered within one business day</p>
+      </div>
+      <form class="fbox" id="leadform" novalidate>
+        <div class="frow">
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <label for="f-biz">Business name</label>
+        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <label for="f-site">Current website (if you have one)</label>
+        <input id="f-site" name="current_website" type="text" placeholder="yourbusiness.com">
+        <label for="f-need">Roughly what can you spend?</label>
+        <select id="f-need" name="project_type">
+          <option>Almost nothing right now</option><option>Under $50 a month</option><option>Around $99 a month</option>
+          <option>More than $99 a month</option><option>I'd rather pay once, up front</option><option>Not sure yet</option>
+        </select>
+        <label for="f-msg">What does the business do?</label>
+        <textarea id="f-msg" name="message"></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-d" type="submit" id="fsubmit">Send my request</button>
+        <p class="fnote">We'll never share your details. No newsletter, no spam, no automated call sequence.</p>
+        <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid g4">
+      <div>
+        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
+        <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
+        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+      </div>
+      <div>
+        <h4>Web Design</h4>
+        <ul>
+          <li><a href="/denver-web-design-company/">Denver web design company</a></li>
+          <li><a href="/website-designer-denver-co/">Denver web designer</a></li>
+          <li><a href="/web-design-near-me/">Web design near me</a></li>
+          <li><a href="/small-business-web-design/">Small business web design</a></li>
+          <li><a href="/custom-websites/">Custom websites</a></li>
+          <li><a href="/affordable-web-design/">Affordable web design</a></li>
+          <li><a href="/website-redesign-denver/">Website redesign</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build &amp; Grow</h4>
+        <ul>
+          <li><a href="/denver-web-development/">Web development</a></li>
+          <li><a href="/app-development-denver/">App development</a></li>
+          <li><a href="/ecommerce-website-design/">Ecommerce websites</a></li>
+          <li><a href="/shopify-website-design/">Shopify design</a></li>
+          <li><a href="/wordpress-website-design/">WordPress design</a></li>
+          <li><a href="/denver-seo-web-design/">SEO web design</a></li>
+          <li><a href="/ai-ready-websites-denver/">AI-ready websites</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides &amp; Company</h4>
+        <ul>
+          <li><a href="/denver-web-design-pricing/">Pricing</a></li>
+          <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
+          <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
+          <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
+          <li><a href="/real-estate-website-design/">Real estate websites</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
+      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* hero chips */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function(el){
+    if(rm){el.classList.add('show');return;}
+    setTimeout(function(){el.classList.add('show');},+el.dataset.d||0);
+  });
+})();
+
+/* nav */
+var bg=document.getElementById('burger'),nv=document.getElementById('nav');
+if(bg&&nv){
+bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');}});
+}
+
+/* reveal + bars + fuse */
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.bar-f').forEach(function(el){bo.observe(el);});
+  var fs=document.getElementById('fuse');
+  if(fs){
+    var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('lit');fo.unobserve(e.target);}});},{threshold:.45});
+    fo.observe(fs);
+  }
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  document.querySelectorAll('.bar-f').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  var fsr=document.getElementById('fuse'); if(fsr){fsr.classList.add('lit');}
+}
+
+/* scratch-off */
+(function(){
+  var c=document.getElementById('scratch');if(!c)return;
+  var ctx=c.getContext('2d'),drawing=false,cleared=false,hint=document.getElementById('shint');
+  function fill(){
+    var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+    var g=ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#C8D0DE');g.addColorStop(.5,'#9BA6BA');g.addColorStop(1,'#C8D0DE');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='700 13px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillText('SCRATCH HERE',r.width/2,r.height/2+5);
+  }
+  fill();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!cleared)fill();},220);});
+  function pt(e){var r=c.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top};}
+  function scr(e){
+    if(!drawing)return;e.preventDefault();var p=pt(e);
+    ctx.globalCompositeOperation='destination-out';
+    ctx.beginPath();ctx.arc(p.x,p.y,26,0,Math.PI*2);ctx.fill();
+    if(hint){hint.textContent='Keep going';}
+    check();
+  }
+  var last=0;
+  function check(){
+    var now=Date.now();if(now-last<260)return;last=now;
+    var d=ctx.getImageData(0,0,c.width,c.height).data,clear=0;
+    for(var i=3;i<d.length;i+=40){if(d[i]<40)clear++;}
+    if(clear/(d.length/40)>.42&&!cleared){cleared=true;c.classList.add('done');if(hint)hint.textContent='That is the whole pitch.';}
+  }
+  ['mousedown','touchstart'].forEach(function(ev){c.addEventListener(ev,function(e){drawing=true;scr(e);},{passive:false});});
+  ['mousemove','touchmove'].forEach(function(ev){c.addEventListener(ev,scr,{passive:false});});
+  ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
+})();
+
+/* form: honeypot + time trap + JS-assembled action */
+(function(){
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
+  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
+  if(document.readyState!=='loading'){loaded=Date.now();}
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData(f);
+    fd.delete('_honey');
+    fd.append('_subject','New lead — denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
+        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
+      })
+      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/affordable-web-design/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Affordable Web Design", "item": "https://denver-webdesign.com/affordable-web-design/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/affordable-web-design/#service", "name": "Affordable web design", "serviceType": "Web design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "description": "Low-cost website options explained honestly, from builder plans at $5.99 per month to hand-coded custom sites from $99 per month with no setup fee.", "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "5.99", "highPrice": "99", "offerCount": "2", "seller": {"@id": "https://denver-webdesign.com/#org"}}}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/affordable-web-design/#webpage", "url": "https://denver-webdesign.com/affordable-web-design/", "name": "Affordable Web Design | Cheap and Worth Having Aren't the Same", "description": "What every price level actually buys, the six ways a bargain website costs more, and what to do first if you can't afford anything yet. Custom builds from $99/month.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/affordable-web-design/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-29", "dateModified": "2026-08-29", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/affordable-web-design/#faq", "mainEntity": [{"@type": "Question", "name": "What is the cheapest way to get a business website?", "acceptedAnswer": {"@type": "Answer", "text": "A drag-and-drop builder plan, roughly $5.99 a month on the plans we resell, built by you. It's genuinely the cheapest real option. Be honest about whether the site is a formality or is supposed to generate customers, because builders are limited at the second job."}}, {"@type": "Question", "name": "Is a cheap website bad for SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically, but template builders limit what you can control - page structure, speed, schema, URL patterns. A cheap site built with those in mind beats an expensive one built without. What matters is control over the code, not the price tag."}}, {"@type": "Question", "name": "How can you build custom sites for $99 a month?", "acceptedAnswer": {"@type": "Answer", "text": "Low overhead and a monthly model. There's no office, no account manager and no sales team to fund, and spreading the cost over time means we don't need a five-figure invoice up front. It also keeps us responsible after launch, because the site still has to be working in year two."}}, {"@type": "Question", "name": "What's the catch with cheap web design?", "acceptedAnswer": {"@type": "Answer", "text": "Usually one of six things: a setup fee revealed late, your domain registered to somebody else, edits billed hourly, no search structure at all, no maintenance, or a developer who disappears. Ask about each of those specifically and most of the risk goes away."}}, {"@type": "Question", "name": "Should I use Wix, Squarespace or something similar?", "acceptedAnswer": {"@type": "Answer", "text": "They're solid products and we sell builder plans ourselves. They suit businesses where the website is a formality or where you genuinely want to do it yourself. Where they struggle is competitive local search, because you can't control enough of the underlying code."}}, {"@type": "Question", "name": "Can I start cheap and upgrade later?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and plenty of people do exactly that. Start on a builder, prove the business works, move to a custom build when it can carry it. The only thing to protect is your domain - keep it registered to you so moving is straightforward."}}, {"@type": "Question", "name": "Do you offer discounts or payment plans?", "acceptedAnswer": {"@type": "Answer", "text": "The monthly pricing is the discount, in effect - it removes the upfront barrier that stops most small businesses getting a decent site at all. Larger projects get quoted individually and structured sensibly for the scope."}}, {"@type": "Question", "name": "What if I can't afford anything right now?", "acceptedAnswer": {"@type": "Answer", "text": "Then don't buy a website. Claim your Google Business Profile, make your phone number tappable, and run the free checks. Call and we'll walk you through it anyway. We'd rather you came back in six months able to afford it than took on cost you can't carry."}}]}]}
+</script>
+</body>
+</html>
