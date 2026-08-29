@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Small Business Web Design | No Minimum Project Size</title>
+<meta name="description" content="Web design for small businesses that agencies won't take. Work out what one extra customer is worth to you. Custom sites from $99/month, no setup fee.">
+<link rel="canonical" href="https://denver-webdesign.com/small-business-web-design/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#FDFBF4">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denver-webdesign.com/small-business-web-design/">
+<meta property="og:site_name" content="Denver Web Design">
+<meta property="og:title" content="Small Business Web Design | No Minimum Project Size">
+<meta property="og:description" content="Web design for small businesses that agencies won't take. Work out what one extra customer is worth to you. Custom sites from $99/month, no setup fee.">
+<meta property="og:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Small Business Web Design | No Minimum Project Size">
+<meta name="twitter:description" content="Web design for small businesses that agencies won't take. Work out what one extra customer is worth to you. Custom sites from $99/month, no setup fee.">
+<meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
+  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
+  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
+  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
+  --display:'Outfit',system-ui,sans-serif;
+  --text:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
+h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+a{color:#0B63D8;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:82px 0}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
+.eyebrow.on-dark{color:var(--cyan)}
+.lede{font-size:1.13rem;max-width:62ch}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.brand img{height:57px;width:auto}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
+.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
+.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
+.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
+@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
+@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
+
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
+.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
+.hero h1{color:#fff}
+.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
+.hero-r{position:relative;min-height:530px;overflow:hidden}
+.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
+.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
+
+.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
+.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
+.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
+.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
+.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
+.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
+.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
+.float{animation:fl 6s ease-in-out infinite}
+.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
+@media(max-width:900px){
+  .hero-r{min-height:0;height:auto;padding:0}
+  .hero-r picture,.hero-r img{position:relative;height:230px}
+  .hero-r::after{display:none}
+  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
+  .pop{position:static;max-width:none;opacity:1;transform:none}
+  .float{animation:none}
+}
+.hero-tag{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
+.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
+.btn-s{border-color:var(--cyan);color:var(--cyan)}
+.btn-d{background:var(--ink);color:#fff;width:100%}
+.microtrust{font-size:.87rem;color:#8497BA}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-l{padding:52px 22px 44px}
+  .hero-r{min-height:260px;order:2}
+  .hero-r::after{display:none}
+}
+
+/* trustbar */
+.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
+.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
+.tbar li{display:flex;align-items:center;gap:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;font-size:.97rem}
+.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.p-mint{background:var(--mint);color:#065F46}
+.p-lilac{background:var(--lilac);color:#4C1D95}
+.p-peach{background:var(--peach);color:#9A3412}
+.p-cyan{background:#CCF7FE;color:#0E5A6B}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* scratch demo */
+.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.demo h2,.demo h3{color:#fff}
+.demo p{color:#AFBDD8}
+.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
+.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
+.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
+.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
+#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
+.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
+
+/* accordion */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
+.acc .acc-b p:last-child{margin-bottom:0}
+
+/* fuse */
+.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.fuse-sec h2{color:#fff}
+.fuse-sec p{color:#B9A9CE}
+.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
+#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
+.lit #fusepath{stroke-dashoffset:0}
+.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
+.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
+.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
+.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
+.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
+.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
+.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
+
+/* signal flow */
+.flow{background:#fff}
+.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
+.flow-svg{width:100%;height:auto}
+.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-30}}
+
+/* stat bars */
+.bars{margin:26px 0 0}
+.bar-row{margin-bottom:17px}
+.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar-lab b{font-family:var(--mono);color:var(--ink)}
+.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
+.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
+
+/* form */
+.formsec{background:var(--ink-2);color:#fff}
+.formsec h2{color:#fff}
+.formsec p{color:#B0BFDA}
+.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
+.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
+.fbox textarea{min-height:96px;resize:vertical}
+.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
+.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
+.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
+.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
+.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* footer */
+.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
+.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.ftr ul{list-style:none;padding:0;margin:0}
+.ftr li{margin-bottom:9px}
+.ftr a{color:var(--body)}
+.ftr img{height:51px;margin-bottom:16px}
+.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== PAGE THEME: notebook / graph paper ===== */
+.nb{--pap2:#FDFBF4;--grid2:#E4E9F2;--navy:#16233D;--pen:#1F4FD8;--red:#E03B3B;--hi:#FFE86B;--teal2:#0FA88C;--tape:#F0E4C0;--soft:#54607A}
+.nb h1,.nb h2,.nb h3{font-family:'Newsreader',Georgia,serif;color:var(--navy);letter-spacing:-.02em;font-weight:600}
+.nb h1{font-size:clamp(2.15rem,4.4vw,3.4rem);line-height:1.06}
+.nb h2{font-size:clamp(1.85rem,3.6vw,2.7rem);line-height:1.08}
+.nb h3{font-size:1.22rem;font-weight:600}
+.nb p{color:#3C4759}
+.nb .lede{color:#2A3547;font-size:1.11rem}
+.nb-sec{padding:76px 0;position:relative}
+.nb-pap{background:var(--pap2);background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px);background-size:26px 26px}
+.nb-navy{background:var(--navy);color:#C9D3E6}
+.nb-navy h2,.nb-navy h3{color:#fff}
+.nb-navy p{color:#93A2BE}
+.nb-lab{font-family:var(--mono);font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;margin:0 0 15px;color:var(--red)}
+.nb-lab.lt{color:var(--hi)}
+.hiy{background:linear-gradient(180deg,transparent 56%,var(--hi) 56%,var(--hi) 92%,transparent 92%);padding:0 2px}
+.penline{position:relative;display:inline-block}
+.penline::after{content:"";position:absolute;left:-2%;right:-2%;bottom:-6px;height:8px;background:no-repeat center/100% 100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10'%3E%3Cpath d='M2 7C40 2 70 8 108 4s60 2 90-1' stroke='%23E03B3B' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")}
+
+/* index card */
+.icard{background:#fff;border:1px solid #DCE3EE;border-radius:4px;padding:26px 26px 26px 46px;position:relative;box-shadow:0 10px 26px rgba(22,35,61,.09)}
+.icard::before{content:"";position:absolute;left:30px;top:0;bottom:0;width:2px;background:#F2C4C4}
+.icard::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(180deg,transparent 0 27px,#E9EEF6 27px 28px);pointer-events:none;opacity:.75}
+.icard>*{position:relative;z-index:2}
+.tape{position:absolute;top:-13px;left:50%;transform:translateX(-50%) rotate(-1.6deg);width:110px;height:26px;background:var(--tape);opacity:.9;border-radius:2px;box-shadow:0 2px 5px rgba(0,0,0,.09)}
+
+/* sticky notes */
+.stick{background:var(--hi);padding:22px;border-radius:2px;box-shadow:3px 4px 12px rgba(22,35,61,.16);transform:rotate(-1deg);transition:transform .2s}
+.stick:nth-child(even){transform:rotate(1.2deg);background:#CFF3EA}
+.stick:hover{transform:rotate(0) translateY(-3px)}
+.stick h3{margin-bottom:8px;font-size:1.1rem}
+.stick p{margin:0;font-size:.93rem;color:#2E3A4D}
+.stick .who{font-family:var(--mono);font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:#6A6033;display:block;margin-bottom:9px}
+.stick:nth-child(even) .who{color:#0B6E5C}
+
+/* value calculator */
+.vc{background:#fff;border:3px solid var(--navy);border-radius:6px;padding:30px;box-shadow:8px 8px 0 var(--hi)}
+.vc-row{margin-bottom:22px}
+.vc-row label{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--soft);margin-bottom:9px}
+.vc-in{display:flex;align-items:center;gap:10px}
+.vc-in span{font-family:'Newsreader',serif;font-size:1.35rem;color:var(--navy)}
+.vc-in input[type=number]{width:130px;padding:11px 12px;border:2px solid var(--navy);border-radius:4px;font:inherit;font-size:1.05rem;font-family:var(--mono);color:var(--navy);background:#fff}
+.vc-in input[type=range]{flex:1;accent-color:var(--red)}
+.vc-out{border-top:3px dashed var(--grid2);margin-top:6px;padding-top:22px}
+.vc-line{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px dotted var(--grid2);font-size:.96rem;color:#3C4759}
+.vc-line b{font-family:var(--mono);font-weight:700;color:var(--navy);font-size:1.05rem}
+.vc-big{margin-top:18px;padding:20px;background:var(--navy);border-radius:5px;text-align:center}
+.vc-big span{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;color:#8FA0BF;margin-bottom:8px}
+.vc-big b{font-family:'Newsreader',serif;font-size:clamp(2.1rem,5.4vw,3.1rem);color:var(--hi);line-height:1;display:block}
+.vc-big em{display:block;font-style:normal;font-size:.9rem;color:#9FAFCC;margin-top:12px;line-height:1.55}
+.vc-note{font-size:.83rem;color:var(--soft);margin-top:16px;line-height:1.6}
+
+/* checklist rows */
+.crow{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--grid2)}
+.nb-navy .crow{border-color:rgba(255,255,255,.13)}
+.crow:last-child{border-bottom:0}
+.cmark{width:26px;height:26px;border:2px solid var(--teal2);border-radius:4px;display:grid;place-items:center;margin-top:2px}
+.cmark svg{width:14px;height:14px;stroke:var(--teal2);stroke-width:3.4;fill:none}
+.cmark.x{border-color:var(--red)}
+.cmark.x svg{stroke:var(--red)}
+.crow h3{margin:0 0 5px;font-size:1.08rem}
+.crow p{margin:0;font-size:.94rem}
+
+.nb .card{background:#fff;border:1px solid #DCE3EE;border-radius:5px}
+.nb-navy .card{background:#1E2E4D;border-color:rgba(255,255,255,.13)}
+.nb-navy .card h3{color:#fff}.nb-navy .card p{color:#93A2BE}
+.nb .acc{border:1px solid #DCE3EE;border-radius:5px;background:#fff}
+.nb .acc summary{color:var(--navy);font-family:'Newsreader',Georgia,serif;font-weight:600}
+.nb .acc summary::after{border-color:var(--red)}
+.nb .pill{border-radius:3px}
+.btn-pen{background:var(--navy);color:#fff;border-radius:4px}
+.btn-pen:hover{background:#243458;color:#fff}
+.btn-out{border:2px solid var(--navy);color:var(--navy);border-radius:4px}
+.btn-out:hover{background:var(--navy);color:#fff}
+.btn-hi{border:2px solid var(--hi);color:var(--hi);border-radius:4px}
+.btn-hi:hover{background:var(--hi);color:var(--navy)}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="telm" href="tel:18004818638">1-800-481-8638</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/denver-web-design-company/">Web Design</a>
+      <a href="/denver-web-development/">Development</a>
+      <a href="/app-development-denver/">Apps</a>
+      <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/denver-web-design-pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+    </nav>
+  </div>
+</header>
+
+<main class="nb">
+
+<section class="nb-sec nb-pap" style="padding-top:58px">
+  <div class="wrap">
+    <div class="grid g2" style="gap:46px;align-items:center">
+      <div>
+        <p class="nb-lab">Web design for small business</p>
+        <h1>Yes, we'll take a <span class="penline">five-page site</span> for a two-person business</h1>
+        <p class="lede" style="margin-top:22px">Most agencies have a minimum project size. Nobody says it on the website &mdash; you find out on the call, after you've explained your business to a stranger for twenty minutes. We don't have one. A plumber with three services and a phone number is a completely normal job here.</p>
+        <div class="cta-row" style="margin:28px 0 14px">
+          <a class="btn btn-pen" href="tel:18004818638">Call 1-800-481-8638</a>
+          <a class="btn btn-out" href="#worth">What one more customer is worth</a>
+        </div>
+        <p style="font-size:.87rem;color:#5C6982">From $99/month &middot; No setup fee &middot; Some sites live in 24 hours</p>
+      </div>
+
+      <div class="icard">
+        <span class="tape"></span>
+        <p class="nb-lab" style="margin-bottom:12px">What a small business site needs</p>
+        <div class="crow"><span class="cmark"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div><h3>To be found</h3><p>By people already looking for what you sell, in the area you work.</p></div></div>
+        <div class="crow"><span class="cmark"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div><h3>To load fast on a phone</h3><p>Because that's where nearly all of them will see it, often on bad signal.</p></div></div>
+        <div class="crow"><span class="cmark"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div><h3>To make calling obvious</h3><p>Number visible before scrolling, tappable, on every single page.</p></div></div>
+        <div class="crow"><span class="cmark x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><h3>A brand strategy workshop</h3><p>Genuinely valuable for a company with a marketing department. Not for you.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tbar"><div class="wrap"><ul>
+  <li><span class="dot"></span>No minimum project size</li>
+  <li><span class="dot"></span>No setup fee</li>
+  <li><span class="dot"></span>You talk to the person building it</li>
+  <li><span class="dot"></span>Denver since 2012</li>
+</ul></div></div>
+
+<section class="nb-sec">
+  <div class="wrap">
+    <p class="nb-lab rv">The thing you keep running into</p>
+    <h2 class="rv" style="max-width:24ch">Agencies aren't built for a business your size</h2>
+    <p class="lede rv">This isn't a criticism of them. A twenty-person agency has an office, account managers, project managers and a sales team. That structure costs money every month whether or not anyone is working on your site. To cover it they need projects above a certain size, which is why published Denver pricing lands between $9,000 and $22,000 for a professional five-page site.</p>
+    <p class="lede rv">If you're a two-person operation doing good work in Arvada, you're not the customer that model was designed for. You'll either be quoted something you can't justify, or quietly deprioritised in favour of the client paying five times more.</p>
+
+    <div class="grid g3 rv" style="margin-top:34px">
+      <div class="stick">
+        <span class="who">What you hear</span>
+        <h3>"Let's schedule a discovery call"</h3>
+        <p>Forty-five minutes about your brand values before anyone mentions a number. You wanted to know if you can afford it.</p>
+      </div>
+      <div class="stick">
+        <span class="who">What it means</span>
+        <h3>They're sizing your budget</h3>
+        <p>Nothing sinister. But the price often gets set by what they think you'll pay, which is why nobody publishes it.</p>
+      </div>
+      <div class="stick">
+        <span class="who">What we do</span>
+        <h3>The number is on the site</h3>
+        <p>From $99 a month. If that doesn't work for you, you found out in ten seconds instead of two weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nb-sec nb-navy" id="worth">
+  <div class="wrap">
+    <p class="nb-lab lt rv">Do the arithmetic</p>
+    <h2 class="rv" style="max-width:26ch">What is one more customer a month actually worth to you?</h2>
+    <p class="lede rv" style="color:#93A2BE">This is the calculation that decides whether a website is worth anything to a small business, and almost nobody runs it. Your numbers, not ours. Nothing is sent anywhere.</p>
+
+    <div class="grid g2" style="margin-top:30px;gap:26px;align-items:start">
+      <div class="vc rv">
+        <div class="vc-row">
+          <label for="vJob">What is an average job or sale worth to you?</label>
+          <div class="vc-in"><span>$</span><input type="number" id="vJob" value="2000" min="50" max="500000" step="50"></div>
+        </div>
+        <div class="vc-row">
+          <label for="vClose">Out of ten enquiries, how many turn into work?</label>
+          <div class="vc-in"><input type="range" id="vClose" min="1" max="10" step="1" value="3"><span id="vCloseL" style="font-family:var(--mono);font-size:1.05rem;min-width:2ch">3</span></div>
+        </div>
+        <div class="vc-row" style="margin-bottom:8px">
+          <label for="vLeads">How many extra enquiries a month would be realistic?</label>
+          <div class="vc-in"><input type="range" id="vLeads" min="1" max="20" step="1" value="3"><span id="vLeadsL" style="font-family:var(--mono);font-size:1.05rem;min-width:2ch">3</span></div>
+        </div>
+
+        <div class="vc-out">
+          <div class="vc-line"><span>Extra jobs won per month</span><b id="oJobs">&mdash;</b></div>
+          <div class="vc-line"><span>Extra revenue per month</span><b id="oMonth">&mdash;</b></div>
+          <div class="vc-line"><span>Website cost per month</span><b>$99</b></div>
+          <div class="vc-big">
+            <span>Extra revenue in year one</span>
+            <b id="oYear">&mdash;</b>
+            <em id="oNote"></em>
+          </div>
+          <p class="vc-note">This is arithmetic on numbers you entered, not a projection or a promise. No website guarantees enquiries. The point is to work out what a single extra customer is worth to you, so you can judge any marketing spend against a real figure instead of a feeling.</p>
+        </div>
+      </div>
+
+      <div class="rv">
+        <h3 style="color:#fff">Why this matters more than the price</h3>
+        <p>Small business owners tend to evaluate a website as a cost. The better question is how many customers it needs to bring in before it pays for itself, and for most trades that number is startlingly low.</p>
+        <p>A remodeler with a $6,000 average job needs one extra customer roughly every five years to cover $99 a month. A restaurant with a $40 ticket needs about thirty extra covers a month. Those are very different propositions, and it's worth knowing which one you are before you spend anything.</p>
+        <p>It also works in reverse. If you run the numbers and a website couldn't realistically move them &mdash; because your work comes entirely from referral, or nobody searches for what you do &mdash; that's genuinely useful to know. We'd rather you spent the money somewhere it works.</p>
+        <p style="margin-bottom:0"><a href="/denver-web-design-pricing/" style="color:var(--hi)">See the full three-year cost comparison</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="nb-sec nb-pap">
+  <div class="wrap">
+    <p class="nb-lab rv">Priorities</p>
+    <h2 class="rv" style="max-width:26ch">What to spend on, and what to <span class="hiy">skip entirely</span></h2>
+    <p class="lede rv">Small business websites go wrong by buying things that sound professional but do nothing, while missing the boring items that actually produce calls.</p>
+
+    <div class="grid g2" style="margin-top:30px;gap:26px">
+      <div class="card rv" style="padding:28px">
+        <span class="pill p-mint">Spend here</span>
+        <h3 style="margin-bottom:14px">Worth every dollar</h3>
+        <div class="crow"><span class="cmark"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div><h3>A page for each service you sell</h3><p>Five services on one page can't rank for five things. This single change does more than any redesign.</p></div></div>
+        <div class="crow"><span class="cmark"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div><h3>Speed on a phone</h3><p>Free to test at Google's PageSpeed Insights. A slow site loses people before they read a word.</p></div></div>
+        <div class="crow"><span class="cmark"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div><h3>Your Google Business Profile</h3><p>Free, and for most local trades it matters more than the website. Map results sit above everything else.</p></div></div>
+        <div class="crow"><span class="cmark"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div><h3>Real photos of your work</h3><p>Original images build more trust than stock, with customers and with search engines. Your phone is fine.</p></div></div>
+      </div>
+
+      <div class="card rv" style="padding:28px">
+        <span class="pill p-peach">Skip for now</span>
+        <h3 style="margin-bottom:14px">Not yet, and maybe not ever</h3>
+        <div class="crow"><span class="cmark x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><h3>A custom logo package</h3><p>If you have something serviceable, keep it. A logo has never won anybody a plumbing job.</p></div></div>
+        <div class="crow"><span class="cmark x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><h3>Animations and video backgrounds</h3><p>They slow the page down, which costs you more customers than they impress.</p></div></div>
+        <div class="crow"><span class="cmark x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><h3>A blog you won't maintain</h3><p>Four posts from two years ago reads worse than no blog. Only start one if you'll keep it going.</p></div></div>
+        <div class="crow"><span class="cmark x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><h3>Booking systems you don't need</h3><p>If you take jobs by phone and that works, adding software adds cost and something else to break.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nb-sec">
+  <div class="wrap">
+    <p class="nb-lab rv">The five that actually cost you money</p>
+    <h2 class="rv">Mistakes we see constantly</h2>
+    <div style="margin-top:28px;max-width:880px">
+      <details class="acc rv" open><summary>Every service crammed onto one page</summary><div class="acc-b"><p>The most common and most expensive mistake. If you do bathrooms, kitchens and basements, that's three searches, three sets of competitors and three different customers. One page listing all three competes properly for none of them. Splitting them is usually the single highest-return change available to a small business site.</p></div></details>
+      <details class="acc rv"><summary>The phone number as an image</summary><div class="acc-b"><p>Sometimes done to avoid scrapers. The effect is that nobody can tap it, and search engines and AI assistants can't read it at all. If your number isn't machine-readable text, you're invisible in exactly the situations where somebody is ready to call.</p></div></details>
+      <details class="acc rv"><summary>Copy written to sound like a bigger company</summary><div class="acc-b"><p>"Delivering integrated solutions with a commitment to excellence." Nobody searched for that. Being small is often the reason people choose you &mdash; they get the owner rather than a call centre. Writing like a corporation throws away your actual advantage.</p></div></details>
+      <details class="acc rv"><summary>No prices anywhere, not even a range</summary><div class="acc-b"><p>The most common reason someone leaves a small business site is not knowing whether they can afford you. You don't need a full price list. A starting figure, a typical range, or a worked example removes the biggest source of hesitation on the page.</p></div></details>
+      <details class="acc rv"><summary>Built once and never touched again</summary><div class="acc-b"><p>Hours change, services change, the phone number changes. A site that contradicts reality costs you trust the moment somebody notices. This is why we include updates rather than billing hourly for them &mdash; the alternative is you not bothering, which helps nobody.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="nb-sec nb-navy">
+  <div class="wrap">
+    <p class="nb-lab lt rv">Who this actually suits</p>
+    <h2 class="rv" style="max-width:26ch">Built for businesses where the owner answers the phone</h2>
+    <p class="lede rv" style="color:#93A2BE">Most of our clients look roughly like this. If you recognise yourself here, the fit is good. If you don't, we'll say so.</p>
+
+    <div class="grid g3" style="margin-top:30px">
+      <div class="card rv" style="padding:26px"><span class="pill p-cyan">Trades</span><h3>Contractors and home services</h3><p>Remodelers, plumbers, electricians, roofers, landscapers, HVAC. High job values mean a website pays for itself on very few extra customers. Local search is where these jobs come from.</p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-cyan">Professional</span><h3>Small practices and firms</h3><p>Attorneys, accountants, consultants, clinics, agents. Credibility matters more than volume here &mdash; people check you before they call, and the site is what they check.</p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-cyan">Local</span><h3>Shops, studios and restaurants</h3><p>Lower ticket, higher volume, and Google Business Profile does a lot of the heavy lifting. <a href="/restaurant-website-design/" style="color:#8FB4FF">Restaurants</a> in particular need hours, menu and location correct above all else.</p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-lilac">Also fits</span><h3>Brand new businesses</h3><p>Nothing to migrate and no bad habits to undo. Getting the structure right from day one is far cheaper than fixing it in year three.</p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-lilac">Also fits</span><h3>Side businesses going full time</h3><p>The point where a Facebook page stops being enough. Usually the first real website, and it doesn't need to be complicated.</p></div>
+      <div class="card rv" style="padding:26px"><span class="pill p-peach">Poor fit</span><h3>Who we're wrong for</h3><p>Companies with a marketing department, several stakeholders and a brand committee. That coordination is a genuine skill and an agency does it better than we would. Hire them.</p></div>
+    </div>
+    <p class="rv" style="margin-top:26px;color:#93A2BE">Selling products online instead? <a href="/ecommerce-website-design/" style="color:var(--hi)">Ecommerce websites</a> work differently. Need something a template can't do? <a href="/denver-web-development/" style="color:var(--hi)">Web development</a>.</p>
+  </div>
+</section>
+
+<section class="nb-sec nb-pap">
+  <div class="wrap">
+    <p class="nb-lab rv">Straight answers</p>
+    <h2 class="rv">Small business web design questions</h2>
+    <div style="margin-top:26px;max-width:880px">
+      <details class="acc rv"><summary>How much should a small business website cost?</summary><div class="acc-b"><p>Independent 2026 research puts most professional small business builds between $3,000 and $15,000, with freelancers typically $3,000 to $8,000 and agencies $8,000 to $15,000. Our custom-coded sites start at $99 a month with no setup fee, and builder plans start at $5.99 a month. Rates rise with size and complexity.</p></div></details>
+      <details class="acc rv"><summary>Is my business too small to need a website?</summary><div class="acc-b"><p>Depends entirely on whether people search for what you sell. A remodeler, a dentist or a plumber has real search demand. A business selling to twelve companies in the state does not, and would be better served by a credible one-page site than by chasing rankings. Work out what one extra customer is worth to you first.</p></div></details>
+      <details class="acc rv"><summary>Do you have a minimum project size?</summary><div class="acc-b"><p>No. A three-page site for a sole trader is normal work here. That's the main structural difference between us and an agency &mdash; low overhead means small projects still make sense.</p></div></details>
+      <details class="acc rv"><summary>How many pages does a small business site need?</summary><div class="acc-b"><p>Usually one per service you sell, plus a home page, an about page and a contact page. So a three-service business is looking at around six pages. More than that is often padding; fewer usually means services are sharing a page and competing with each other.</p></div></details>
+      <details class="acc rv"><summary>Can I update it myself?</summary><div class="acc-b"><p>On our monthly plans updates are included &mdash; send us the change and it usually happens the same day, which is faster than most people manage themselves. If you'd rather have the keys, say so at the start and we'll build on something that supports it.</p></div></details>
+      <details class="acc rv"><summary>What if I don't have photos or written content?</summary><div class="acc-b"><p>Most small business owners don't, and waiting for it is what stalls website projects. We write the content from a fifteen minute phone call and you correct it. For photos, your phone is genuinely fine &mdash; real pictures of real work beat stock every time.</p></div></details>
+      <details class="acc rv"><summary>Will it work on phones?</summary><div class="acc-b"><p>Every site is designed at phone width first, because that's where nearly all local searches happen. You can check any website yourself with Google's free PageSpeed Insights tool, including whoever else you're considering hiring.</p></div></details>
+      <details class="acc rv"><summary>How fast can it be live?</summary><div class="acc-b"><p>Some single-page sites go live within 24 hours. A typical small business site with a handful of service pages takes about a week. The thing that moves the timeline is how quickly you can answer questions, not how fast the code gets written.</p></div></details>
+      <details class="acc rv"><summary>What happens after it launches?</summary><div class="acc-b"><p>Hosting, updates, security and edits are included on the monthly plans, and the site gets submitted to Google Search Console so it starts being crawled. New service, new number, new photos &mdash; send it over. One number to call.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="start">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:start">
+      <div>
+        <p class="eyebrow on-dark">Free, no obligation</p>
+        <h2>Tell us about the business</h2>
+        <p class="lede">What you do, where you work, and roughly what a job is worth to you. We'll tell you honestly whether a website would move the needle, and what it would take. If the answer is that you need a Google Business Profile and not a website, that's what you'll hear.</p>
+        <p style="font-size:1.05rem"><b style="color:#fff">Rather just talk?</b><br><a href="tel:18004818638" style="color:var(--cyan);font-family:var(--display);font-size:1.75rem;font-weight:700;letter-spacing:-.03em">1-800-481-8638</a></p>
+        <p style="font-size:.9rem">Denver, Colorado &middot; Answered within one business day</p>
+      </div>
+      <form class="fbox" id="leadform" novalidate>
+        <div class="frow">
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <label for="f-biz">Business name</label>
+        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <label for="f-trade">What do you do?</label>
+        <input id="f-trade" name="trade" type="text" placeholder="Plumber, attorney, bakery...">
+        <label for="f-site">Current website (if you have one)</label>
+        <input id="f-site" name="current_website" type="text" placeholder="yourbusiness.com">
+        <label for="f-need">What do you need?</label>
+        <select id="f-need" name="project_type">
+          <option>My first website</option><option>Replace what I have</option><option>Show up in local search</option>
+          <option>Just want an honest opinion</option><option>Online store</option><option>Not sure yet</option>
+        </select>
+        <label for="f-msg">Anything else we should know?</label>
+        <textarea id="f-msg" name="message"></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-d" type="submit" id="fsubmit">Send my request</button>
+        <p class="fnote">We'll never share your details. No newsletter, no spam, no automated call sequence.</p>
+        <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid g4">
+      <div>
+        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
+        <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
+        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+      </div>
+      <div>
+        <h4>Web Design</h4>
+        <ul>
+          <li><a href="/denver-web-design-company/">Denver web design company</a></li>
+          <li><a href="/website-designer-denver-co/">Denver web designer</a></li>
+          <li><a href="/web-design-near-me/">Web design near me</a></li>
+          <li><a href="/small-business-web-design/">Small business web design</a></li>
+          <li><a href="/custom-websites/">Custom websites</a></li>
+          <li><a href="/affordable-web-design/">Affordable web design</a></li>
+          <li><a href="/website-redesign-denver/">Website redesign</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build &amp; Grow</h4>
+        <ul>
+          <li><a href="/denver-web-development/">Web development</a></li>
+          <li><a href="/app-development-denver/">App development</a></li>
+          <li><a href="/ecommerce-website-design/">Ecommerce websites</a></li>
+          <li><a href="/shopify-website-design/">Shopify design</a></li>
+          <li><a href="/wordpress-website-design/">WordPress design</a></li>
+          <li><a href="/denver-seo-web-design/">SEO web design</a></li>
+          <li><a href="/ai-ready-websites-denver/">AI-ready websites</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides &amp; Company</h4>
+        <ul>
+          <li><a href="/denver-web-design-pricing/">Pricing</a></li>
+          <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
+          <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
+          <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
+          <li><a href="/real-estate-website-design/">Real estate websites</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
+      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* hero chips */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function(el){
+    if(rm){el.classList.add('show');return;}
+    setTimeout(function(){el.classList.add('show');},+el.dataset.d||0);
+  });
+})();
+
+/* nav */
+var bg=document.getElementById('burger'),nv=document.getElementById('nav');
+if(bg&&nv){
+bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');}});
+}
+
+/* reveal + bars + fuse */
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.bar-f').forEach(function(el){bo.observe(el);});
+  var fs=document.getElementById('fuse');
+  if(fs){
+    var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('lit');fo.unobserve(e.target);}});},{threshold:.45});
+    fo.observe(fs);
+  }
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  document.querySelectorAll('.bar-f').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  var fsr=document.getElementById('fuse'); if(fsr){fsr.classList.add('lit');}
+}
+
+/* scratch-off */
+(function(){
+  var c=document.getElementById('scratch');if(!c)return;
+  var ctx=c.getContext('2d'),drawing=false,cleared=false,hint=document.getElementById('shint');
+  function fill(){
+    var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+    var g=ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#C8D0DE');g.addColorStop(.5,'#9BA6BA');g.addColorStop(1,'#C8D0DE');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='700 13px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillText('SCRATCH HERE',r.width/2,r.height/2+5);
+  }
+  fill();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!cleared)fill();},220);});
+  function pt(e){var r=c.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top};}
+  function scr(e){
+    if(!drawing)return;e.preventDefault();var p=pt(e);
+    ctx.globalCompositeOperation='destination-out';
+    ctx.beginPath();ctx.arc(p.x,p.y,26,0,Math.PI*2);ctx.fill();
+    if(hint){hint.textContent='Keep going';}
+    check();
+  }
+  var last=0;
+  function check(){
+    var now=Date.now();if(now-last<260)return;last=now;
+    var d=ctx.getImageData(0,0,c.width,c.height).data,clear=0;
+    for(var i=3;i<d.length;i+=40){if(d[i]<40)clear++;}
+    if(clear/(d.length/40)>.42&&!cleared){cleared=true;c.classList.add('done');if(hint)hint.textContent='That is the whole pitch.';}
+  }
+  ['mousedown','touchstart'].forEach(function(ev){c.addEventListener(ev,function(e){drawing=true;scr(e);},{passive:false});});
+  ['mousemove','touchmove'].forEach(function(ev){c.addEventListener(ev,scr,{passive:false});});
+  ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
+})();
+
+/* form: honeypot + time trap + JS-assembled action */
+(function(){
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
+  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
+  if(document.readyState!=='loading'){loaded=Date.now();}
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData(f);
+    fd.delete('_honey');
+    fd.append('_subject','New lead — denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
+        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
+      })
+      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
+  });
+})();
+</script>
+<script>
+(function(){
+  var job=document.getElementById('vJob'); if(!job)return;
+  var cl=document.getElementById('vClose'), ld=document.getElementById('vLeads');
+  var clL=document.getElementById('vCloseL'), ldL=document.getElementById('vLeadsL');
+  var oJ=document.getElementById('oJobs'), oM=document.getElementById('oMonth'),
+      oY=document.getElementById('oYear'), oN=document.getElementById('oNote');
+  function money(n){return '$'+Math.round(n).toLocaleString('en-US');}
+  function calc(){
+    var v=Math.max(0,+job.value||0), rate=+cl.value/10, leads=+ld.value;
+    clL.textContent=cl.value; ldL.textContent=ld.value;
+    var jobs=leads*rate, month=jobs*v, year=month*12, cost=99*12;
+    oJ.textContent=(Math.round(jobs*10)/10);
+    oM.textContent=money(month);
+    oY.textContent=money(year);
+    if(year<=0){oN.textContent='';return;}
+    if(year<cost){
+      oN.textContent='That is less than the '+money(cost)+' the website costs over the year. On these numbers a site is not the right place for your money \u2014 call and we will talk about what is.';
+    } else {
+      var need=v>0?(cost/v):0;
+      oN.innerHTML='The website costs '+money(cost)+' over the same year. On your numbers it pays for itself once you win '+
+        (need<1?'a single extra job':(Math.ceil(need)+' extra jobs'))+'.';
+    }
+  }
+  ['input','change'].forEach(function(e){job.addEventListener(e,calc);cl.addEventListener(e,calc);ld.addEventListener(e,calc);});
+  calc();
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/small-business-web-design/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Small Business Web Design", "item": "https://denver-webdesign.com/small-business-web-design/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/small-business-web-design/#service", "name": "Small business web design", "serviceType": "Web design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "audience": {"@type": "BusinessAudience", "name": "Small businesses and sole traders"}, "description": "Websites for small businesses with no minimum project size, including service pages, local search structure and mobile-first design, from $99 per month.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Custom-coded small business website from $99 per month, no setup fee"}}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/small-business-web-design/#howto", "name": "How to work out whether a website is worth it for your small business", "description": "A short calculation any small business owner can run before spending money on a website.", "totalTime": "PT5M", "step": [{"@type": "HowToStep", "position": 1, "name": "Work out your average job value", "text": "Take what a typical job, sale or customer is worth to you in revenue."}, {"@type": "HowToStep", "position": 2, "name": "Estimate your close rate", "text": "Out of ten enquiries, count how many usually turn into paid work."}, {"@type": "HowToStep", "position": 3, "name": "Estimate realistic extra enquiries", "text": "Decide how many additional enquiries a month would be plausible for your trade and area."}, {"@type": "HowToStep", "position": 4, "name": "Compare against the annual cost", "text": "Multiply the extra jobs by your average job value and by twelve, then compare that to what the website costs over a year."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/small-business-web-design/#webpage", "url": "https://denver-webdesign.com/small-business-web-design/", "name": "Small Business Web Design | No Minimum Project Size", "description": "Web design for small businesses that agencies won't take. Work out what one extra customer is worth to you. Custom sites from $99/month, no setup fee.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/small-business-web-design/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-08-28", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/small-business-web-design/#faq", "mainEntity": [{"@type": "Question", "name": "How much should a small business website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Independent 2026 research puts most professional small business builds between $3,000 and $15,000, with freelancers typically $3,000 to $8,000 and agencies $8,000 to $15,000. Our custom-coded sites start at $99 a month with no setup fee, and builder plans start at $5.99 a month. Rates rise with size and complexity."}}, {"@type": "Question", "name": "Is my business too small to need a website?", "acceptedAnswer": {"@type": "Answer", "text": "Depends entirely on whether people search for what you sell. A remodeler, a dentist or a plumber has real search demand. A business selling to twelve companies in the state does not, and would be better served by a credible one-page site than by chasing rankings. Work out what one extra customer is worth to you first."}}, {"@type": "Question", "name": "Do you have a minimum project size?", "acceptedAnswer": {"@type": "Answer", "text": "No. A three-page site for a sole trader is normal work here. That's the main structural difference between us and an agency - low overhead means small projects still make sense."}}, {"@type": "Question", "name": "How many pages does a small business site need?", "acceptedAnswer": {"@type": "Answer", "text": "Usually one per service you sell, plus a home page, an about page and a contact page. So a three-service business is looking at around six pages. More than that is often padding; fewer usually means services are sharing a page and competing with each other."}}, {"@type": "Question", "name": "Can I update it myself?", "acceptedAnswer": {"@type": "Answer", "text": "On our monthly plans updates are included - send us the change and it usually happens the same day, which is faster than most people manage themselves. If you'd rather have the keys, say so at the start and we'll build on something that supports it."}}, {"@type": "Question", "name": "What if I don't have photos or written content?", "acceptedAnswer": {"@type": "Answer", "text": "Most small business owners don't, and waiting for it is what stalls website projects. We write the content from a fifteen minute phone call and you correct it. For photos, your phone is genuinely fine - real pictures of real work beat stock every time."}}, {"@type": "Question", "name": "Will it work on phones?", "acceptedAnswer": {"@type": "Answer", "text": "Every site is designed at phone width first, because that's where nearly all local searches happen. You can check any website yourself with Google's free PageSpeed Insights tool, including whoever else you're considering hiring."}}, {"@type": "Question", "name": "How fast can it be live?", "acceptedAnswer": {"@type": "Answer", "text": "Some single-page sites go live within 24 hours. A typical small business site with a handful of service pages takes about a week. The thing that moves the timeline is how quickly you can answer questions, not how fast the code gets written."}}, {"@type": "Question", "name": "What happens after it launches?", "acceptedAnswer": {"@type": "Answer", "text": "Hosting, updates, security and edits are included on the monthly plans, and the site gets submitted to Google Search Console so it starts being crawled. New service, new number, new photos - send it over. One number to call."}}]}]}
+</script>
+</body>
+</html>
