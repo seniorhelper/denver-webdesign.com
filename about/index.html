@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About | Denver Web Design &mdash; Eye To Ad Media Since 2012</title>
+<meta name="description" content="Zach Wennstedt, founder of Eye To Ad Media in Denver since 2012. Who builds the sites, how we work, and who should hire somebody else.">
+<link rel="canonical" href="https://denver-webdesign.com/about/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#FBF8F4">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denver-webdesign.com/about/">
+<meta property="og:site_name" content="Denver Web Design">
+<meta property="og:title" content="About | Denver Web Design &mdash; Eye To Ad Media Since 2012">
+<meta property="og:description" content="Zach Wennstedt, founder of Eye To Ad Media in Denver since 2012. Who builds the sites, how we work, and who should hire somebody else.">
+<meta property="og:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About | Denver Web Design &mdash; Eye To Ad Media Since 2012">
+<meta name="twitter:description" content="Zach Wennstedt, founder of Eye To Ad Media in Denver since 2012. Who builds the sites, how we work, and who should hire somebody else.">
+<meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
+  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
+  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
+  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
+  --display:'Outfit',system-ui,sans-serif;
+  --text:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
+h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+a{color:#0B63D8;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:82px 0}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
+.eyebrow.on-dark{color:var(--cyan)}
+.lede{font-size:1.13rem;max-width:62ch}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.brand img{height:57px;width:auto}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
+.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
+.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
+.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
+@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
+@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
+
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
+.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
+.hero h1{color:#fff}
+.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
+.hero-r{position:relative;min-height:530px;overflow:hidden}
+.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
+.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
+
+.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
+.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
+.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
+.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
+.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
+.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
+.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
+.float{animation:fl 6s ease-in-out infinite}
+.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
+@media(max-width:900px){
+  .hero-r{min-height:0;height:auto;padding:0}
+  .hero-r picture,.hero-r img{position:relative;height:230px}
+  .hero-r::after{display:none}
+  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
+  .pop{position:static;max-width:none;opacity:1;transform:none}
+  .float{animation:none}
+}
+.hero-tag{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
+.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
+.btn-s{border-color:var(--cyan);color:var(--cyan)}
+.btn-d{background:var(--ink);color:#fff;width:100%}
+.microtrust{font-size:.87rem;color:#8497BA}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-l{padding:52px 22px 44px}
+  .hero-r{min-height:260px;order:2}
+  .hero-r::after{display:none}
+}
+
+/* trustbar */
+.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
+.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
+.tbar li{display:flex;align-items:center;gap:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;font-size:.97rem}
+.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.p-mint{background:var(--mint);color:#065F46}
+.p-lilac{background:var(--lilac);color:#4C1D95}
+.p-peach{background:var(--peach);color:#9A3412}
+.p-cyan{background:#CCF7FE;color:#0E5A6B}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* scratch demo */
+.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.demo h2,.demo h3{color:#fff}
+.demo p{color:#AFBDD8}
+.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
+.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
+.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
+.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
+#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
+.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
+
+/* accordion */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
+.acc .acc-b p:last-child{margin-bottom:0}
+
+/* fuse */
+.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.fuse-sec h2{color:#fff}
+.fuse-sec p{color:#B9A9CE}
+.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
+#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
+.lit #fusepath{stroke-dashoffset:0}
+.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
+.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
+.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
+.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
+.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
+.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
+.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
+
+/* signal flow */
+.flow{background:#fff}
+.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
+.flow-svg{width:100%;height:auto}
+.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-30}}
+
+/* stat bars */
+.bars{margin:26px 0 0}
+.bar-row{margin-bottom:17px}
+.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar-lab b{font-family:var(--mono);color:var(--ink)}
+.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
+.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
+
+/* form */
+.formsec{background:var(--ink-2);color:#fff}
+.formsec h2{color:#fff}
+.formsec p{color:#B0BFDA}
+.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
+.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
+.fbox textarea{min-height:96px;resize:vertical}
+.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
+.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
+.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
+.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
+.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* footer */
+.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
+.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.ftr ul{list-style:none;padding:0;margin:0}
+.ftr li{margin-bottom:9px}
+.ftr a{color:var(--body)}
+.ftr img{height:51px;margin-bottom:16px}
+.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== PAGE THEME: warm human ===== */
+.hm{--warm3:#FBF8F4;--warm4:#F1EBE3;--umber:#2A2320;--terra:#B4522E;--olive:#5E6B4A;--sky3:#3F6E8C;--hair6:#E3DAD0;--mute6:#7A716A}
+.hm h1,.hm h2,.hm h3{font-family:'DM Sans',system-ui,sans-serif;font-weight:700;letter-spacing:-.038em;color:var(--umber);line-height:1.06}
+.hm h1{font-size:clamp(2.3rem,5vw,3.8rem)}
+.hm h2{font-size:clamp(1.85rem,3.6vw,2.7rem)}
+.hm h3{font-size:1.16rem;letter-spacing:-.025em}
+.hm p{color:#4B443E;line-height:1.75;font-size:1.03rem}
+.hm .lede{font-size:1.15rem;color:#2F2924;line-height:1.62;max-width:60ch}
+.hm-sec{padding:76px 0;position:relative}
+.hm-warm{background:var(--warm3)}
+.hm-warm2{background:var(--warm4);border-top:1px solid var(--hair6);border-bottom:1px solid var(--hair6)}
+.hm-dark{background:var(--umber);color:#CBC2BA}
+.hm-dark h2,.hm-dark h3{color:#fff}
+.hm-dark p{color:#A79C93}
+.hm-lab{font-family:var(--mono);font-size:.65rem;letter-spacing:.21em;text-transform:uppercase;margin:0 0 15px;color:var(--terra)}
+.hm-lab.lt{color:#E5A483}
+.terra{color:var(--terra)}
+.hm-rule{border:0;border-top:1px solid var(--hair6);margin:0}
+
+.portrait{position:relative}
+.portrait img{width:100%;max-width:400px;display:block;border-radius:2px}
+.portrait::after{content:"";position:absolute;left:16px;top:16px;right:-16px;bottom:-16px;border:2px solid var(--terra);z-index:-1}
+.pcap{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--mute6);margin-top:26px;text-transform:uppercase}
+
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hair6);border-bottom:1px solid var(--hair6);margin-top:38px}
+@media(max-width:760px){.facts{grid-template-columns:repeat(2,1fr)}}
+.fact{padding:24px 20px 24px 0;border-right:1px solid var(--hair6)}
+.fact:last-child{border-right:0}
+@media(max-width:760px){.fact:nth-child(2n){border-right:0}}
+.fact b{display:block;font-family:'DM Sans',sans-serif;font-weight:700;font-size:2rem;color:var(--umber);letter-spacing:-.04em;line-height:1}
+.fact span{display:block;font-size:.88rem;color:var(--mute6);margin-top:8px}
+
+/* value rows */
+.vrow{display:grid;grid-template-columns:38px 1fr;gap:18px;padding:24px 0;border-top:1px solid var(--hair6)}
+.hm-dark .vrow{border-color:rgba(255,255,255,.14)}
+.vrow .vn{font-family:var(--mono);font-size:.82rem;color:var(--terra);padding-top:4px}
+.vrow h3{margin:0 0 7px}
+.vrow p{margin:0;font-size:.97rem}
+
+/* contact split */
+.csplit{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:40px;align-items:start}
+@media(max-width:880px){.csplit{grid-template-columns:1fr;gap:28px}}
+.cbig{display:block;font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(1.9rem,4.6vw,2.8rem);color:var(--umber);letter-spacing:-.04em;text-decoration:none;line-height:1.05}
+.cbig:hover{color:var(--terra);text-decoration:none}
+.cmeta{border-top:1px solid var(--hair6);padding:20px 0;display:grid;grid-template-columns:120px 1fr;gap:14px;font-size:.96rem}
+@media(max-width:520px){.cmeta{grid-template-columns:1fr;gap:4px}}
+.cmeta dt{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute6);padding-top:3px}
+.cmeta dd{margin:0;color:#4B443E}
+
+.hm .card{background:#fff;border:1px solid var(--hair6);border-radius:3px}
+.hm-dark .card{background:#332B27;border-color:rgba(255,255,255,.13)}
+.hm-dark .card h3{color:#fff}.hm-dark .card p{color:#A79C93}
+.hm .acc{border:1px solid var(--hair6);border-radius:3px;background:#fff}
+.hm .acc summary{color:var(--umber);font-family:'DM Sans',sans-serif;font-weight:700}
+.hm .acc summary::after{border-color:var(--terra)}
+.hm .pill{border-radius:2px}
+.hm .btn{border-radius:3px;font-family:'DM Sans',sans-serif;font-weight:700}
+.btn-terra{background:var(--terra);color:#fff}
+.btn-terra:hover{background:#9B4526;color:#fff}
+.btn-umber{border:2px solid var(--umber);color:var(--umber)}
+.btn-umber:hover{background:var(--umber);color:#fff}
+.btn-lightout{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-lightout:hover{background:#fff;color:var(--umber)}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="telm" href="tel:18004818638">1-800-481-8638</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/denver-web-design-company/">Web Design</a>
+      <a href="/denver-web-development/">Development</a>
+      <a href="/app-development-denver/">Apps</a>
+      <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/denver-web-design-pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hm">
+
+<section class="hm-sec hm-warm" style="padding-top:60px">
+  <div class="wrap">
+    <div class="grid g2" style="gap:48px;align-items:center">
+      <div>
+        <p class="hm-lab">About</p>
+        <h1>I own several hundred websites. Yours would be the one I <span class="terra">answer the phone about.</span></h1>
+        <p class="lede" style="margin-top:22px">I'm Zach Wennstedt. I started Eye To Ad Media in Denver in 2012, and denver-webdesign.com is our web design side. There's no account manager here and no team to be routed through. You talk to the person writing the code.</p>
+        <div class="cta-row" style="margin:28px 0 0">
+          <a class="btn btn-terra" href="tel:18004818638">Call 1-800-481-8638</a>
+          <a class="btn btn-umber" href="/contact/">Send me your details</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="/images/denver-website-designer-about-zach.avif" alt="Zach Wennstedt, founder of Eye To Ad Media in Denver" width="818" height="1023" fetchpriority="high">
+        <p class="pcap">Zach Wennstedt &middot; Denver, Colorado</p>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><b>2012</b><span>Eye To Ad Media founded in Denver</span></div>
+      <div class="fact"><b>60</b><span>reviews for Eye To Ad Media</span></div>
+      <div class="fact"><b>500+</b><span>websites owned and ranked</span></div>
+      <div class="fact"><b>$99</b><span>where custom builds start, per month</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="hm-sec">
+  <div class="wrap">
+    <div style="max-width:46rem">
+      <p class="hm-lab rv">The short version</p>
+      <h2 class="rv">How I ended up doing this</h2>
+      <p class="rv" style="margin-top:22px">I grew up in Boulder and I've spent my working life in the Denver metro. Eye To Ad Media started in 2012 doing search work for local businesses, and it grew into building the websites too &mdash; largely because we kept being handed sites that couldn't be made to rank no matter what we did to them.</p>
+      <p class="rv">That's still the core of it. A site built without search in mind has to be partly rebuilt before any of the marketing works, and the business owner ends up paying twice for the same thing. Doing both at once is cheaper and produces a better result, which is not a complicated insight but it's an unusual way to sell.</p>
+      <p class="rv">Alongside the agency I own and rank a portfolio of several hundred websites. My own domains, my own money, my own mistakes. It's not a credential I can frame, but it does mean I learned what makes a page get found by doing it a few hundred times rather than by reading somebody's course about it.</p>
+      <p class="rv">I also run a bath remodeling company. That one matters more than it sounds. I've been the local business owner watching a quiet phone and wondering whether the marketing money was doing anything at all. When a contractor describes that, I'm not sympathising from a distance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hm-sec hm-warm2">
+  <div class="wrap">
+    <p class="hm-lab rv">How we work</p>
+    <h2 class="rv" style="max-width:24ch">Five things that shape everything here</h2>
+    <div style="max-width:52rem;margin-top:26px">
+      <div class="vrow rv"><div class="vn">01</div><div><h3>Prices go on the page</h3><p>Every competitor we researched ends their pricing page with "book a call for a quote." Ours has numbers on it. If $99 a month doesn't work for you, you found that out in ten seconds instead of after two meetings.</p></div></div>
+      <div class="vrow rv"><div class="vn">02</div><div><h3>We say no fairly often</h3><p>If you need a Google Business Profile rather than a website, or a builder plan rather than a custom build, or an accountant rather than a web designer &mdash; that's what you'll hear. Talking somebody out of a purchase they don't need is a worse month for us and the reason people come back later with work that's worth doing.</p></div></div>
+      <div class="vrow rv"><div class="vn">03</div><div><h3>Nothing on this site is invented</h3><p>No stock photos of a team that doesn't exist, no fabricated case study numbers, no five-star testimonials from nobody. Where we cite market figures they come from published research and we say so. It's a low bar and a surprising number of sites don't clear it.</p></div></div>
+      <div class="vrow rv"><div class="vn">04</div><div><h3>Static by default, everything else when it fits</h3><p>Most business sites are faster, safer and cheaper as static HTML. But we build WordPress when you need to publish yourself, Shopify when you're genuinely selling, and apps when a browser truly can't do the job. The platform follows the problem.</p></div></div>
+      <div class="vrow rv"><div class="vn">05</div><div><h3>Monthly, because it keeps us on the hook</h3><p>A one-off invoice ends our involvement the day it clears. A monthly relationship means the site still has to be working in year two, and that changes how carefully it gets built in week one.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="hm-sec hm-dark">
+  <div class="wrap">
+    <p class="hm-lab lt rv">Being straight about it</p>
+    <h2 class="rv" style="max-width:26ch">What we're not, and who should hire somebody else</h2>
+    <p class="lede rv" style="color:#A79C93">Every agency page claims to be right for everyone. Here's where we're genuinely the wrong choice.</p>
+
+    <div class="grid g3" style="margin-top:30px">
+      <div class="card rv" style="padding:26px"><h3>You have a marketing department</h3><p>Multiple stakeholders, a brand committee, coordinated campaigns across channels. That coordination is a real skill and a full agency does it properly. We would slow you down.</p></div>
+      <div class="card rv" style="padding:26px"><h3>You need a large team available</h3><p>Twelve people across four time zones on a deadline. We're small, which is why we're affordable and quick on small work, and why we're not the answer for big work.</p></div>
+      <div class="card rv" style="padding:26px"><h3>You want a guarantee</h3><p>Nobody controls Google's index. We can guarantee the work &mdash; fast, structured, indexed, written properly. We can't guarantee a ranking, and anyone who does is selling you something.</p></div>
+    </div>
+    <p class="rv" style="margin-top:26px;color:#A79C93">If you're a Denver business that needs the phone to ring and doesn't want to fund a marketing department to get there, that's exactly who this is built for.</p>
+  </div>
+</section>
+
+<section class="hm-sec hm-warm">
+  <div class="wrap">
+    <p class="hm-lab rv">The company</p>
+    <h2 class="rv">Who you're actually contracting with</h2>
+    <div class="grid g2" style="gap:40px;margin-top:26px;align-items:start">
+      <div class="rv">
+        <p>denver-webdesign.com is the web design division of <a href="https://eyetoad.com/">Eye To Ad Media</a>, a Denver agency operating since 2012 and trading under Search Converts LLC. Same people, same phone number, same office.</p>
+        <p>Eye To Ad Media handles the ongoing search side &mdash; content programmes, Google Business Profile management, link work and <a href="https://eyetoad.com/industries/">industry-specific SEO</a>. This site handles the building.</p>
+        <p style="margin-bottom:0">We also run <a href="https://www.buyweburl.com">domain registration and hosting</a> for clients who want everything in one place, and operate web design sites serving <a href="https://www.websitedesignercoloradosprings.com">Colorado Springs</a> and <a href="https://www.webdesignmonument.com">Monument</a>.</p>
+      </div>
+      <div class="rv">
+        <div class="card" style="padding:26px">
+          <p class="hm-lab" style="margin-bottom:14px">Details</p>
+          <dl class="cmeta" style="border-top:0;padding-top:0">
+            <dt>Trading as</dt><dd>Eye To Ad Media</dd>
+          </dl>
+          <dl class="cmeta"><dt>Entity</dt><dd>Search Converts LLC</dd></dl>
+          <dl class="cmeta"><dt>Founded</dt><dd>2012</dd></dl>
+          <dl class="cmeta"><dt>Address</dt><dd>1001 Bannock St #660<br>Denver, CO 80204</dd></dl>
+          <dl class="cmeta"><dt>Phone</dt><dd><a href="tel:18004818638"><b>1-800-481-8638</b></a></dd></dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hm-sec hm-warm2">
+  <div class="wrap">
+    <p class="hm-lab rv">Straight answers</p>
+    <h2 class="rv">Questions people ask before hiring us</h2>
+    <div style="margin-top:26px;max-width:860px">
+      <details class="acc rv"><summary>Who will actually be working on my website?</summary><div class="acc-b"><p>Me. The design, the code and the search structure are the same person, which is the main structural difference between this and an agency. It means fewer misunderstandings and faster changes, and it also means we're not the right choice for very large projects.</p></div></details>
+      <details class="acc rv"><summary>How long have you been doing this?</summary><div class="acc-b"><p>Eye To Ad Media was founded in Denver in 2012 and has 60 reviews. I've been building and ranking websites the whole time, including a personal portfolio of several hundred domains that I own and operate myself.</p></div></details>
+      <details class="acc rv"><summary>Can I see examples of your work?</summary><div class="acc-b"><p>You're looking at one. Every page of this site is hand-coded, and you can view the source or run it through Google's PageSpeed Insights yourself. We'd rather be judged on something you can inspect than on a gallery of screenshots.</p></div></details>
+      <details class="acc rv"><summary>Do you work outside Denver?</summary><div class="acc-b"><p>Yes. The Denver metro is home and where most clients are, and we work across Colorado and out of state. Local knowledge matters most when your customers search with local intent &mdash; if you sell nationally, geography buys you very little.</p></div></details>
+      <details class="acc rv"><summary>What does it cost?</summary><div class="acc-b"><p>Custom-coded sites start at $99 a month with no setup fee. Drag-and-drop builder plans start at $5.99 a month. Ecommerce and apps are quoted per project. <a href="/denver-web-design-pricing/">Full pricing is published</a> rather than hidden behind a form.</p></div></details>
+      <details class="acc rv"><summary>Why should I trust a small operation over an agency?</summary><div class="acc-b"><p>Sometimes you shouldn't &mdash; see the section above about who should hire somebody else. Where a small shop wins is overhead and access: you're not funding an office and a sales team, and the person who understands your business is the person writing the code.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="hm-sec hm-dark">
+  <div class="wrap" style="text-align:center">
+    <h2 style="max-width:20ch;margin:0 auto 18px">Fifteen minutes on the phone is usually enough</h2>
+    <p class="lede" style="margin:0 auto 26px;color:#A79C93">No discovery deck, no questionnaire, no pitch. Tell me what the business does and what you want the site to accomplish, and you'll get a straight answer about what's worth doing.</p>
+    <a class="btn btn-terra" href="tel:18004818638">Call 1-800-481-8638</a>
+    <a class="btn btn-lightout" href="/contact/" style="margin-left:8px">Send details instead</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid g4">
+      <div>
+        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
+        <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
+        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+      </div>
+      <div>
+        <h4>Web Design</h4>
+        <ul>
+          <li><a href="/denver-web-design-company/">Denver web design company</a></li>
+          <li><a href="/website-designer-denver-co/">Denver web designer</a></li>
+          <li><a href="/web-design-near-me/">Web design near me</a></li>
+          <li><a href="/small-business-web-design/">Small business web design</a></li>
+          <li><a href="/custom-websites/">Custom websites</a></li>
+          <li><a href="/affordable-web-design/">Affordable web design</a></li>
+          <li><a href="/website-redesign-denver/">Website redesign</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build &amp; Grow</h4>
+        <ul>
+          <li><a href="/denver-web-development/">Web development</a></li>
+          <li><a href="/app-development-denver/">App development</a></li>
+          <li><a href="/ecommerce-website-design/">Ecommerce websites</a></li>
+          <li><a href="/shopify-website-design/">Shopify design</a></li>
+          <li><a href="/wordpress-website-design/">WordPress design</a></li>
+          <li><a href="/denver-seo-web-design/">SEO web design</a></li>
+          <li><a href="/ai-ready-websites-denver/">AI-ready websites</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides &amp; Company</h4>
+        <ul>
+          <li><a href="/denver-web-design-pricing/">Pricing</a></li>
+          <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
+          <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
+          <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
+          <li><a href="/real-estate-website-design/">Real estate websites</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
+      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* hero chips */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function(el){
+    if(rm){el.classList.add('show');return;}
+    setTimeout(function(){el.classList.add('show');},+el.dataset.d||0);
+  });
+})();
+
+/* nav */
+var bg=document.getElementById('burger'),nv=document.getElementById('nav');
+if(bg&&nv){
+bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');}});
+}
+
+/* reveal + bars + fuse */
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.bar-f').forEach(function(el){bo.observe(el);});
+  var fs=document.getElementById('fuse');
+  if(fs){
+    var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('lit');fo.unobserve(e.target);}});},{threshold:.45});
+    fo.observe(fs);
+  }
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  document.querySelectorAll('.bar-f').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  var fsr=document.getElementById('fuse'); if(fsr){fsr.classList.add('lit');}
+}
+
+/* scratch-off */
+(function(){
+  var c=document.getElementById('scratch');if(!c)return;
+  var ctx=c.getContext('2d'),drawing=false,cleared=false,hint=document.getElementById('shint');
+  function fill(){
+    var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+    var g=ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#C8D0DE');g.addColorStop(.5,'#9BA6BA');g.addColorStop(1,'#C8D0DE');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='700 13px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillText('SCRATCH HERE',r.width/2,r.height/2+5);
+  }
+  fill();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!cleared)fill();},220);});
+  function pt(e){var r=c.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top};}
+  function scr(e){
+    if(!drawing)return;e.preventDefault();var p=pt(e);
+    ctx.globalCompositeOperation='destination-out';
+    ctx.beginPath();ctx.arc(p.x,p.y,26,0,Math.PI*2);ctx.fill();
+    if(hint){hint.textContent='Keep going';}
+    check();
+  }
+  var last=0;
+  function check(){
+    var now=Date.now();if(now-last<260)return;last=now;
+    var d=ctx.getImageData(0,0,c.width,c.height).data,clear=0;
+    for(var i=3;i<d.length;i+=40){if(d[i]<40)clear++;}
+    if(clear/(d.length/40)>.42&&!cleared){cleared=true;c.classList.add('done');if(hint)hint.textContent='That is the whole pitch.';}
+  }
+  ['mousedown','touchstart'].forEach(function(ev){c.addEventListener(ev,function(e){drawing=true;scr(e);},{passive:false});});
+  ['mousemove','touchmove'].forEach(function(ev){c.addEventListener(ev,scr,{passive:false});});
+  ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
+})();
+
+/* form: honeypot + time trap + JS-assembled action */
+(function(){
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
+  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
+  if(document.readyState!=='loading'){loaded=Date.now();}
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData(f);
+    fd.delete('_honey');
+    fd.append('_subject','New lead — denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
+        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
+      })
+      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "ProfessionalService", "@id": "https://denver-webdesign.com/#org", "name": "Denver Web Design", "alternateName": "denver-webdesign.com", "url": "https://denver-webdesign.com/", "telephone": "+1-800-481-8638", "foundingDate": "2012", "description": "Denver web design and development. Custom-coded websites from $99 per month, built for search, AI visibility and conversions.", "parentOrganization": {"@type": "Organization", "name": "Eye To Ad Media", "url": "https://eyetoad.com/"}, "sameAs": ["https://eyetoad.com/", "https://www.searchconverts.com"], "address": {"@type": "PostalAddress", "streetAddress": "1001 Bannock St #660", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80204", "addressCountry": "US"}, "areaServed": [{"@type": "City", "name": "Denver"}, {"@type": "City", "name": "Aurora"}, {"@type": "City", "name": "Lakewood"}, {"@type": "City", "name": "Arvada"}, {"@type": "City", "name": "Westminster"}, {"@type": "City", "name": "Centennial"}, {"@type": "City", "name": "Boulder"}, {"@type": "City", "name": "Colorado Springs"}, {"@type": "City", "name": "Monument"}], "priceRange": "$$", "image": "https://denver-webdesign.com/images/denver-web-designer.png", "logo": "https://denver-webdesign.com/images/denver-web-design-logo.png", "founder": {"@id": "https://denver-webdesign.com/#zach"}}, {"@type": "Person", "@id": "https://denver-webdesign.com/#zach", "name": "Zach Wennstedt", "jobTitle": "Founder and web designer", "image": "https://denver-webdesign.com/images/denver-website-designer-about-zach.avif", "worksFor": {"@id": "https://denver-webdesign.com/#org"}, "knowsAbout": ["Web design", "Search engine optimization", "Static site development", "Local SEO", "Ecommerce"], "homeLocation": {"@type": "Place", "name": "Denver, Colorado"}}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/about/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://denver-webdesign.com/about/"}]}, {"@type": "AboutPage", "@id": "https://denver-webdesign.com/about/#webpage", "url": "https://denver-webdesign.com/about/", "name": "About | Denver Web Design", "description": "Who builds the sites: Zach Wennstedt, Eye To Ad Media in Denver since 2012.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/about/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "mainEntity": {"@id": "https://denver-webdesign.com/#zach"}, "inLanguage": "en-US", "datePublished": "2026-08-29", "dateModified": "2026-08-29", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/about/#faq", "mainEntity": [{"@type": "Question", "name": "Who will actually be working on my website?", "acceptedAnswer": {"@type": "Answer", "text": "Me. The design, the code and the search structure are the same person, which is the main structural difference between this and an agency. It means fewer misunderstandings and faster changes, and it also means we're not the right choice for very large projects."}}, {"@type": "Question", "name": "How long have you been doing this?", "acceptedAnswer": {"@type": "Answer", "text": "Eye To Ad Media was founded in Denver in 2012 and has 60 reviews. I've been building and ranking websites the whole time, including a personal portfolio of several hundred domains that I own and operate myself."}}, {"@type": "Question", "name": "Can I see examples of your work?", "acceptedAnswer": {"@type": "Answer", "text": "You're looking at one. Every page of this site is hand-coded, and you can view the source or run it through Google's PageSpeed Insights yourself. We'd rather be judged on something you can inspect than on a gallery of screenshots."}}, {"@type": "Question", "name": "Do you work outside Denver?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Denver metro is home and where most clients are, and we work across Colorado and out of state. Local knowledge matters most when your customers search with local intent - if you sell nationally, geography buys you very little."}}, {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Custom-coded sites start at $99 a month with no setup fee. Drag-and-drop builder plans start at $5.99 a month. Ecommerce and apps are quoted per project. Full pricing is published rather than hidden behind a form."}}, {"@type": "Question", "name": "Why should I trust a small operation over an agency?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes you shouldn't. Where a small shop wins is overhead and access: you're not funding an office and a sales team, and the person who understands your business is the person writing the code."}}]}]}
+</script>
+</body>
+</html>
