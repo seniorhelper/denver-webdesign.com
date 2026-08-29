@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Restaurant Website Design | Your Menu Shouldn't Be a PDF</title>
+<meta name="description" content="Live menus instead of PDFs, today's hours, and order buttons a thumb can reach. What a hungry person on a phone actually needs. From $99/month.">
+<link rel="canonical" href="https://denver-webdesign.com/restaurant-website-design/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#FBF6EE">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denver-webdesign.com/restaurant-website-design/">
+<meta property="og:site_name" content="Denver Web Design">
+<meta property="og:title" content="Restaurant Website Design | Your Menu Shouldn't Be a PDF">
+<meta property="og:description" content="Live menus instead of PDFs, today's hours, and order buttons a thumb can reach. What a hungry person on a phone actually needs. From $99/month.">
+<meta property="og:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Restaurant Website Design | Your Menu Shouldn't Be a PDF">
+<meta name="twitter:description" content="Live menus instead of PDFs, today's hours, and order buttons a thumb can reach. What a hungry person on a phone actually needs. From $99/month.">
+<meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Karla:wght@400;600;700&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
+  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
+  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
+  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
+  --display:'Outfit',system-ui,sans-serif;
+  --text:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
+h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+a{color:#0B63D8;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:82px 0}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
+.eyebrow.on-dark{color:var(--cyan)}
+.lede{font-size:1.13rem;max-width:62ch}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.brand img{height:57px;width:auto}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
+.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
+.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
+.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
+@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
+@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
+
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
+.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
+.hero h1{color:#fff}
+.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
+.hero-r{position:relative;min-height:530px;overflow:hidden}
+.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
+.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
+
+.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
+.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
+.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
+.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
+.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
+.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
+.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
+.float{animation:fl 6s ease-in-out infinite}
+.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
+@media(max-width:900px){
+  .hero-r{min-height:0;height:auto;padding:0}
+  .hero-r picture,.hero-r img{position:relative;height:230px}
+  .hero-r::after{display:none}
+  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
+  .pop{position:static;max-width:none;opacity:1;transform:none}
+  .float{animation:none}
+}
+.hero-tag{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
+.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
+.btn-s{border-color:var(--cyan);color:var(--cyan)}
+.btn-d{background:var(--ink);color:#fff;width:100%}
+.microtrust{font-size:.87rem;color:#8497BA}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-l{padding:52px 22px 44px}
+  .hero-r{min-height:260px;order:2}
+  .hero-r::after{display:none}
+}
+
+/* trustbar */
+.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
+.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
+.tbar li{display:flex;align-items:center;gap:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;font-size:.97rem}
+.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.p-mint{background:var(--mint);color:#065F46}
+.p-lilac{background:var(--lilac);color:#4C1D95}
+.p-peach{background:var(--peach);color:#9A3412}
+.p-cyan{background:#CCF7FE;color:#0E5A6B}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* scratch demo */
+.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.demo h2,.demo h3{color:#fff}
+.demo p{color:#AFBDD8}
+.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
+.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
+.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
+.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
+#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
+.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
+
+/* accordion */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
+.acc .acc-b p:last-child{margin-bottom:0}
+
+/* fuse */
+.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.fuse-sec h2{color:#fff}
+.fuse-sec p{color:#B9A9CE}
+.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
+#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
+.lit #fusepath{stroke-dashoffset:0}
+.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
+.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
+.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
+.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
+.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
+.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
+.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
+
+/* signal flow */
+.flow{background:#fff}
+.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
+.flow-svg{width:100%;height:auto}
+.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-30}}
+
+/* stat bars */
+.bars{margin:26px 0 0}
+.bar-row{margin-bottom:17px}
+.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar-lab b{font-family:var(--mono);color:var(--ink)}
+.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
+.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
+
+/* form */
+.formsec{background:var(--ink-2);color:#fff}
+.formsec h2{color:#fff}
+.formsec p{color:#B0BFDA}
+.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
+.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
+.fbox textarea{min-height:96px;resize:vertical}
+.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
+.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
+.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
+.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
+.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* footer */
+.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
+.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.ftr ul{list-style:none;padding:0;margin:0}
+.ftr li{margin-bottom:9px}
+.ftr a{color:var(--body)}
+.ftr img{height:51px;margin-bottom:16px}
+.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== PAGE THEME: menu card ===== */
+.rs{--char:#16110F;--char2:#221A17;--crm:#FBF6EE;--crm2:#F2E9DA;--pap:#C1452B;--saf:#E0A32E;--sage2:#6F7F5B;--hair9:#DED2BE;--mute9:#7C7266}
+.rs h1,.rs h2{font-family:'Bodoni Moda',Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.04;color:var(--char)}
+.rs h1{font-size:clamp(2.4rem,5.2vw,4rem)}
+.rs h2{font-size:clamp(1.95rem,3.9vw,2.9rem)}
+.rs h3{font-family:'Karla',system-ui,sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.015em;color:var(--char)}
+.rs p{font-family:'Karla',system-ui,sans-serif;color:#443B34;line-height:1.72;font-size:1.02rem}
+.rs .lede{font-size:1.14rem;color:#2B241F;max-width:60ch}
+.rs-sec{padding:78px 0;position:relative}
+.rs-crm{background:var(--crm)}
+.rs-crm2{background:var(--crm2);border-top:1px solid var(--hair9);border-bottom:1px solid var(--hair9)}
+.rs-char{background:var(--char);color:#CDC2B5}
+.rs-char h2,.rs-char h3{color:var(--crm)}
+.rs-char p{color:#A2968A}
+.rs-lab{font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px;color:var(--pap)}
+.rs-lab.lt{color:var(--saf)}
+.pap{color:var(--pap)}
+.rs-orn{display:flex;align-items:center;gap:12px;margin:28px 0;color:var(--saf)}
+.rs-orn::before,.rs-orn::after{content:"";height:1px;background:var(--hair9);flex:1}
+.rs-orn span{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute9)}
+
+/* phone demo */
+.mdemo{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:34px;align-items:center;margin-top:32px}
+@media(max-width:880px){.mdemo{grid-template-columns:1fr}}
+.mphone{width:100%;max-width:280px;margin:0 auto;display:block;filter:drop-shadow(0 26px 56px rgba(0,0,0,.4))}
+.mtoggle{display:inline-flex;border:2px solid var(--char);margin-bottom:22px}
+.mtoggle button{background:none;border:0;border-right:2px solid var(--char);padding:11px 20px;font-family:'Karla',sans-serif;font-weight:700;font-size:.9rem;color:var(--char);cursor:pointer}
+.mtoggle button:last-child{border-right:0}
+.mtoggle button[aria-pressed="true"]{background:var(--char);color:var(--crm)}
+.rs-char .mtoggle{border-color:var(--crm)}
+.rs-char .mtoggle button{color:var(--crm);border-color:var(--crm)}
+.rs-char .mtoggle button[aria-pressed="true"]{background:var(--crm);color:var(--char)}
+.mview{display:none}
+.mview.on{display:block}
+.mstate{border-left:3px solid var(--pap);padding-left:20px;margin-top:22px}
+.mstate.good{border-color:var(--sage2)}
+.mstate h3{margin:0 0 8px;font-size:1.22rem}
+.mstate p{margin:0 0 10px}
+.mstate ul{margin:12px 0 0;padding-left:20px;font-family:'Karla',sans-serif}
+.mstate li{margin-bottom:7px;font-size:.96rem}
+.pinch{animation:pinch 3.2s ease-in-out infinite;transform-origin:center}
+@keyframes pinch{0%,100%{transform:scale(1)}45%{transform:scale(1.55)}55%{transform:scale(1.55)}}
+
+/* menu-style list */
+.mlist{margin-top:28px}
+.mrow{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px dotted var(--hair9)}
+.rs-char .mrow{border-color:rgba(255,255,255,.18)}
+.mrow:last-child{border-bottom:0}
+.mrow h3{margin:0 0 6px}
+.mrow p{margin:0;font-size:.95rem}
+.mrow .tagr{font-family:var(--mono);font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;padding:5px 11px;white-space:nowrap;border:1px solid}
+.t-must{border-color:var(--pap);color:var(--pap)}
+.t-nice{border-color:var(--sage2);color:var(--sage2)}
+.t-skip{border-color:var(--mute9);color:var(--mute9)}
+
+/* order of eyes */
+.zone{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--hair9)}
+.rs-char .zone{border-color:rgba(255,255,255,.18)}
+.zone b{font-family:'Bodoni Moda',serif;font-size:1.7rem;color:var(--saf);line-height:1}
+.zone h3{margin:0 0 6px}
+.zone p{margin:0;font-size:.96rem}
+
+.rs .card{background:#fff;border:1px solid var(--hair9);border-radius:2px}
+.rs-char .card{background:var(--char2);border-color:rgba(255,255,255,.14)}
+.rs-char .card h3{color:var(--crm)}.rs-char .card p{color:#A2968A}
+.rs .acc{border:1px solid var(--hair9);border-radius:2px;background:#fff}
+.rs .acc summary{color:var(--char);font-family:'Karla',sans-serif;font-weight:700}
+.rs .acc summary::after{border-color:var(--pap)}
+.rs .pill{border-radius:2px}
+.rs .btn{border-radius:2px;font-family:'Karla',sans-serif;font-weight:700}
+.btn-pap{background:var(--pap);color:#fff}
+.btn-pap:hover{background:#A5381F;color:#fff}
+.btn-char{border:2px solid var(--char);color:var(--char)}
+.btn-char:hover{background:var(--char);color:var(--crm)}
+.btn-saf{border:2px solid var(--saf);color:var(--saf)}
+.btn-saf:hover{background:var(--saf);color:var(--char)}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="telm" href="tel:18004818638">1-800-481-8638</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/denver-web-design-company/">Web Design</a>
+      <a href="/denver-web-development/">Development</a>
+      <a href="/app-development-denver/">Apps</a>
+      <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/denver-web-design-pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+    </nav>
+  </div>
+</header>
+
+<main class="rs">
+
+<section class="rs-sec rs-crm" style="padding-top:58px">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:center">
+      <div>
+        <p class="rs-lab">Restaurant website design</p>
+        <h1>Your menu is a PDF.<br>That's <span class="pap">the whole problem.</span></h1>
+        <p class="lede" style="margin-top:20px">Somebody hungry, three blocks away, on a phone, deciding in under two minutes. They tap your menu link and get a document that opens in a separate viewer, loads slowly and needs pinching to read. Most of them don't finish. They go to the place whose menu just appeared.</p>
+        <div class="cta-row" style="margin:28px 0 14px">
+          <a class="btn btn-pap" href="tel:18004818638">Call 1-800-481-8638</a>
+          <a class="btn btn-char" href="#demo">See the difference</a>
+        </div>
+        <p style="font-size:.87rem;color:var(--mute9)">From $99/month &middot; Live menus, not PDFs &middot; Denver since 2012</p>
+      </div>
+      <div class="card" style="padding:30px">
+        <p class="rs-lab" style="margin-bottom:16px">What the research says</p>
+        <div class="mrow"><div><h3>PDF menus</h3><p>Correlate with the highest bounce rate of any single element on a restaurant site &mdash; and search engines can't read them properly either.</p></div></div>
+        <div class="mrow"><div><h3>72&ndash;78% mobile</h3><p>The overwhelming majority of restaurant traffic is a phone, often outdoors on poor signal.</p></div></div>
+        <div class="mrow"><div><h3>89% research first</h3><p>Nearly nine in ten guests look you up online before visiting or ordering. The site is the first impression for almost every new customer.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tbar"><div class="wrap"><ul>
+  <li><span class="dot"></span>Live HTML menus, always</li>
+  <li><span class="dot"></span>Today's hours, not a weekly table</li>
+  <li><span class="dot"></span>Order or book above the fold</li>
+  <li><span class="dot"></span>Denver since 2012</li>
+</ul></div></div>
+
+<section class="rs-sec rs-char" id="demo">
+  <div class="wrap">
+    <p class="rs-lab lt">The same menu, two ways</p>
+    <h2 style="max-width:24ch">This is what your customer is <span style="color:var(--saf)">actually looking at</span></h2>
+    <p class="lede" style="color:#A2968A;margin-top:18px">Switch between them. One of these is what a hungry person on a phone sees when your menu is a PDF.</p>
+
+    <div class="mdemo">
+      <div>
+        <svg class="mphone" viewBox="0 0 280 560" role="img" aria-label="Phone showing either a PDF menu that is too small to read or a live scrollable menu with prices.">
+          <rect x="2" y="2" width="276" height="556" rx="38" fill="#2A211D"/>
+          <rect x="10" y="10" width="260" height="540" rx="32" fill="#0C0908"/>
+          <clipPath id="pcl"><rect x="16" y="16" width="248" height="528" rx="28"/></clipPath>
+          <g clip-path="url(#pcl)">
+            <g class="mview on" id="v-pdf">
+              <rect x="16" y="16" width="248" height="528" fill="#8A8A86"/>
+              <rect x="16" y="16" width="248" height="42" fill="#4A4A46"/>
+              <text x="34" y="42" font-family="JetBrains Mono,monospace" font-size="10" fill="#CFCFC9">menu-final-v3.pdf</text>
+              <g class="pinch">
+                <rect x="44" y="90" width="192" height="272" fill="#fff"/>
+                <g fill="#3A3A36">
+                  <rect x="92" y="104" width="96" height="5"/>
+                  <rect x="56" y="126" width="72" height="3"/><rect x="196" y="126" width="20" height="3"/>
+                  <rect x="56" y="136" width="88" height="3"/><rect x="196" y="136" width="20" height="3"/>
+                  <rect x="56" y="146" width="64" height="3"/><rect x="196" y="146" width="20" height="3"/>
+                  <rect x="56" y="156" width="80" height="3"/><rect x="196" y="156" width="20" height="3"/>
+                  <rect x="92" y="176" width="96" height="5"/>
+                  <rect x="56" y="196" width="76" height="3"/><rect x="196" y="196" width="20" height="3"/>
+                  <rect x="56" y="206" width="90" height="3"/><rect x="196" y="206" width="20" height="3"/>
+                  <rect x="56" y="216" width="60" height="3"/><rect x="196" y="216" width="20" height="3"/>
+                  <rect x="92" y="238" width="96" height="5"/>
+                  <rect x="56" y="258" width="84" height="3"/><rect x="196" y="258" width="20" height="3"/>
+                  <rect x="56" y="268" width="70" height="3"/><rect x="196" y="268" width="20" height="3"/>
+                  <rect x="56" y="278" width="92" height="3"/><rect x="196" y="278" width="20" height="3"/>
+                  <rect x="56" y="300" width="76" height="3"/><rect x="196" y="300" width="20" height="3"/>
+                  <rect x="56" y="310" width="66" height="3"/><rect x="196" y="310" width="20" height="3"/>
+                </g>
+              </g>
+              <circle cx="200" cy="450" r="26" fill="rgba(255,255,255,.18)"/>
+              <circle cx="200" cy="450" r="14" fill="none" stroke="#fff" stroke-width="2.5"/>
+              <path d="M210 460 l12 12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="16" y="500" width="248" height="44" fill="#4A4A46"/>
+              <text x="140" y="527" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#B4B4AE">page 1 of 3</text>
+            </g>
+            <g class="mview" id="v-live">
+              <rect x="16" y="16" width="248" height="528" fill="#FBF6EE"/>
+              <rect x="16" y="16" width="248" height="58" fill="#16110F"/>
+              <text x="34" y="42" font-family="Bodoni Moda,serif" font-size="15" fill="#FBF6EE" font-weight="700">Tavola</text>
+              <rect x="34" y="52" width="70" height="4" rx="2" fill="#E0A32E"/>
+              <rect x="186" y="30" width="60" height="24" rx="3" fill="#C1452B"/>
+              <text x="216" y="46" text-anchor="middle" font-family="Karla,sans-serif" font-size="9" fill="#fff" font-weight="700">ORDER</text>
+              <rect x="16" y="74" width="248" height="30" fill="#F2E9DA"/>
+              <circle cx="36" cy="89" r="4" fill="#6F7F5B"/>
+              <text x="48" y="93" font-family="Karla,sans-serif" font-size="10" fill="#443B34">Open now &middot; until 10pm</text>
+              <text x="200" y="93" font-family="Karla,sans-serif" font-size="10" fill="#C1452B" font-weight="700">4.6 &#9733;</text>
+              <g font-family="Karla,sans-serif">
+                <text x="34" y="132" font-size="12" fill="#16110F" font-weight="700">Starters</text>
+                <line x1="34" y1="142" x2="246" y2="142" stroke="#DED2BE"/>
+                <text x="34" y="162" font-size="11" fill="#16110F">Bruschetta</text><text x="246" y="162" text-anchor="end" font-size="11" fill="#C1452B" font-weight="700">$9</text>
+                <text x="34" y="176" font-size="9" fill="#7C7266">tomato, basil, garlic</text>
+                <text x="34" y="200" font-size="11" fill="#16110F">Arancini</text><text x="246" y="200" text-anchor="end" font-size="11" fill="#C1452B" font-weight="700">$11</text>
+                <text x="34" y="214" font-size="9" fill="#7C7266">saffron risotto, marinara</text>
+                <text x="34" y="248" font-size="12" fill="#16110F" font-weight="700">Mains</text>
+                <line x1="34" y1="258" x2="246" y2="258" stroke="#DED2BE"/>
+                <text x="34" y="278" font-size="11" fill="#16110F">Cacio e Pepe</text><text x="246" y="278" text-anchor="end" font-size="11" fill="#C1452B" font-weight="700">$19</text>
+                <text x="34" y="292" font-size="9" fill="#7C7266">pecorino, black pepper</text>
+                <text x="34" y="316" font-size="11" fill="#16110F">Braised Short Rib</text><text x="246" y="316" text-anchor="end" font-size="11" fill="#C1452B" font-weight="700">$28</text>
+                <text x="34" y="330" font-size="9" fill="#7C7266">polenta, gremolata</text>
+                <text x="34" y="354" font-size="11" fill="#16110F">Margherita</text><text x="246" y="354" text-anchor="end" font-size="11" fill="#C1452B" font-weight="700">$16</text>
+                <text x="34" y="368" font-size="9" fill="#7C7266">San Marzano, fior di latte</text>
+              </g>
+              <rect x="16" y="470" width="248" height="74" fill="#16110F"/>
+              <rect x="34" y="488" width="98" height="38" rx="3" fill="#C1452B"/>
+              <text x="83" y="512" text-anchor="middle" font-family="Karla,sans-serif" font-size="10" fill="#fff" font-weight="700">ORDER NOW</text>
+              <rect x="146" y="488" width="98" height="38" rx="3" fill="none" stroke="#E0A32E" stroke-width="2"/>
+              <text x="195" y="512" text-anchor="middle" font-family="Karla,sans-serif" font-size="10" fill="#E0A32E" font-weight="700">CALL US</text>
+            </g>
+          </g>
+          <rect x="110" y="24" width="60" height="6" rx="3" fill="#0C0908"/>
+        </svg>
+      </div>
+
+      <div>
+        <div class="mtoggle" role="group" aria-label="Menu format">
+          <button type="button" data-v="pdf" aria-pressed="true">PDF menu</button>
+          <button type="button" data-v="live" aria-pressed="false">Live menu</button>
+        </div>
+
+        <div class="mstate" id="s-pdf">
+          <h3>What a PDF menu costs you</h3>
+          <p>It opens in a separate viewer. It loads at document speed rather than page speed. It's sized for paper, so every dish needs pinching and dragging to read.</p>
+          <ul>
+            <li>Highest bounce rate of any single element on a restaurant site</li>
+            <li>Search engines can't read the dish names, so you don't rank for them</li>
+            <li>AI assistants can't quote your menu when somebody asks what's good nearby</li>
+            <li>Updating a price means re-exporting and re-uploading a whole file</li>
+            <li>No way to link straight to "Mains" from a Google result</li>
+          </ul>
+        </div>
+
+        <div class="mstate good" id="s-live" style="display:none">
+          <h3>What a live menu does instead</h3>
+          <p>Real text on a real page. It appears instantly, scrolls with a thumb, and every dish name is something Google and ChatGPT can actually read.</p>
+          <ul>
+            <li>Loads with the page &mdash; no download, no viewer, no wait</li>
+            <li>Dish names become searchable, so "cacio e pepe Denver" can find you</li>
+            <li>Today's hours and your rating sit above the menu where they're wanted</li>
+            <li>Order and call buttons stay visible while people scroll</li>
+            <li>Change a price in ten seconds without touching a design file</li>
+          </ul>
+          <p style="margin-top:16px;font-size:.96rem">Not ready to rebuild the whole site yet? A <a href="https://www.linkrestaurants.com" style="color:var(--saf)">live digital menu customers can tap open</a> solves most of this on its own, and it works alongside whatever site you already have.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rs-sec rs-crm">
+  <div class="wrap">
+    <p class="rs-lab">The order it happens in</p>
+    <h2 style="max-width:26ch">What a hungry person does in ninety seconds</h2>
+    <div class="rs-orn"><span>Thumb order</span></div>
+    <p class="lede">They're deciding between you and two other places. Everything below has to be answered before they lose patience, and in roughly this sequence.</p>
+
+    <div style="margin-top:26px">
+      <div class="zone rv"><b>1</b><div><h3>Are you open?</h3><p>Not a seven-day table &mdash; today. "Open until 10pm" answers the question instantly; a grid makes them work out what day it is and find the right row. Holiday exceptions matter more than anything else on the site during a holiday.</p></div></div>
+      <div class="zone rv"><b>2</b><div><h3>What's the food, and what does it cost?</h3><p>The menu, as text, immediately. Prices included. A menu without prices creates the exact hesitation you're trying to remove, and people assume expensive when you hide it.</p></div></div>
+      <div class="zone rv"><b>3</b><div><h3>Is it any good?</h3><p>Your rating and review count, visible early. Real photos of your actual food, not stock. Ten honest photos of real dishes beat three beautiful fake ones, and people can tell the difference immediately.</p></div></div>
+      <div class="zone rv"><b>4</b><div><h3>How do I get it?</h3><p>Order, book, call or directions &mdash; whichever applies to you, visible without scrolling on a phone. A phone number that isn't a tappable link is a phone number nobody calls.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="rs-sec rs-crm2">
+  <div class="wrap">
+    <p class="rs-lab">Priorities</p>
+    <h2>What earns its place on a restaurant site</h2>
+    <div class="rs-orn"><span>and what doesn't</span></div>
+
+    <div class="mlist">
+      <div class="mrow rv"><div><h3>Live HTML menu with prices</h3><p>The single highest-impact change most restaurant sites can make. Searchable, fast, quotable by AI assistants.</p></div><span class="tagr t-must">Essential</span></div>
+      <div class="mrow rv"><div><h3>Today's hours, and holiday exceptions</h3><p>Nothing generates a bad review faster than someone driving to a closed restaurant because the site said otherwise.</p></div><span class="tagr t-must">Essential</span></div>
+      <div class="mrow rv"><div><h3>Tappable phone number and address</h3><p>The number dials, the address opens the map app. On mobile these are the two most-used elements on the entire site.</p></div><span class="tagr t-must">Essential</span></div>
+      <div class="mrow rv"><div><h3>Order or reserve, above the fold</h3><p>Visible on a phone before any scrolling. Buried below a hero video is where restaurant conversions go to die.</p></div><span class="tagr t-must">Essential</span></div>
+      <div class="mrow rv"><div><h3>Real photos of your real food</h3><p>Stock food photography is recognisable and it damages trust. Shoot the room just after opening, before the tables fill.</p></div><span class="tagr t-must">Essential</span></div>
+      <div class="mrow rv"><div><h3>Restaurant schema and matching profile</h3><p>Structured data for menu, hours and location, matching your Google Business Profile exactly. This is what feeds the map pack.</p></div><span class="tagr t-must">Essential</span></div>
+      <div class="mrow rv"><div><h3>Online ordering on your own site</h3><p>Worth it when you have enough direct regulars to save on third-party commission. Not urgent on day one.</p></div><span class="tagr t-nice">Worth adding</span></div>
+      <div class="mrow rv"><div><h3>Events, private dining, catering pages</h3><p>Genuinely valuable if you do them, and each one is its own search. Skip if you don't.</p></div><span class="tagr t-nice">Worth adding</span></div>
+      <div class="mrow rv"><div><h3>Autoplay video and music</h3><p>Slows the page, annoys first-time visitors, and burns mobile data for someone standing outside. A single striking photo does more.</p></div><span class="tagr t-skip">Skip it</span></div>
+      <div class="mrow rv"><div><h3>Pop-ups before anyone has read anything</h3><p>An email capture that appears before the menu is a good way to lose a hungry person who was about to order.</p></div><span class="tagr t-skip">Skip it</span></div>
+      <div class="mrow rv"><div><h3>A long story about the chef on the homepage</h3><p>Worth having on its own page. Not worth putting between a hungry person and the menu.</p></div><span class="tagr t-skip">Skip it</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="rs-sec rs-char">
+  <div class="wrap">
+    <p class="rs-lab lt">Being found</p>
+    <h2 style="max-width:26ch">Most of your new customers arrive through the map, not the website</h2>
+    <p class="lede" style="color:#A2968A;margin-top:18px">For restaurants especially, the Google map results sit above everything and answer most of what a diner wants before they click anything. The website's job is to feed that and then close the decision.</p>
+
+    <div class="grid g3" style="margin-top:30px">
+      <div class="card rv" style="padding:26px"><h3>Your profile does the finding</h3><p>Hours, photos, rating, menu link, directions. Complete it properly and update it whenever anything changes. It costs nothing and for most restaurants it out-earns the website.</p><p style="margin:12px 0 0"><a href="/blog/google-business-profile-vs-website/" style="color:var(--saf)">How to do it well &rarr;</a></p></div>
+      <div class="card rv" style="padding:26px"><h3>The site does the convincing</h3><p>Once they click, the menu and the photos decide it. This is where a live menu, real food photography and fast loading actually earn their money.</p></div>
+      <div class="card rv" style="padding:26px"><h3>They have to say the same thing</h3><p>Name, address, phone and hours identical on both. Contradictions between your profile and your site quietly undermine both, and they're common.</p></div>
+    </div>
+    <p class="rv" style="margin-top:26px;color:#A2968A">Ongoing profile management and local search work runs through <a href="https://eyetoad.com/" style="color:var(--saf)">Eye To Ad Media</a>. The build is what happens here.</p>
+  </div>
+</section>
+
+<section class="rs-sec rs-crm">
+  <div class="wrap">
+    <p class="rs-lab">Straight answers</p>
+    <h2>Restaurant website questions</h2>
+    <div class="rs-orn"><span>FAQ</span></div>
+    <div style="max-width:880px">
+      <details class="acc rv"><summary>Why shouldn't my menu be a PDF?</summary><div class="acc-b"><p>Three reasons. It opens in a separate viewer and loads slowly, which is why PDF menus correlate with the highest bounce rate of any single element on a restaurant site. Search engines can't read the dish names properly, so you don't rank for them. And AI assistants can't quote your menu when somebody asks what's good nearby. A live HTML menu fixes all three.</p></div></details>
+      <details class="acc rv"><summary>How much does a restaurant website cost?</summary><div class="acc-b"><p>Our custom-coded sites start at $99 a month with no setup fee, including hosting, updates and search structure. Full agency builds in Denver commonly run $9,000 to $22,000. A restaurant site doesn't need to be complicated &mdash; it needs to be fast, mobile-first and honest about hours and prices.</p></div></details>
+      <details class="acc rv"><summary>Should I put prices on the menu?</summary><div class="acc-b"><p>Yes. Hiding prices creates exactly the hesitation you're trying to remove, and people assume expensive when they can't see. It also gives search engines and AI assistants something concrete to work with when someone searches for a price range in your area.</p></div></details>
+      <details class="acc rv"><summary>Do I need online ordering on my own site?</summary><div class="acc-b"><p>It's worth it once you have enough direct regulars that third-party commission is a real cost. Early on, a clear phone number and a link to whatever platform you already use is fine. Don't build ordering before you have people who'd use it.</p></div></details>
+      <details class="acc rv"><summary>How important is mobile?</summary><div class="acc-b"><p>It's the whole thing. Roughly three quarters of restaurant traffic is a phone, frequently outdoors on patchy signal. Designing for desktop first is designing for the wrong audience. Sub-two-second loading on mobile is the baseline, not the goal.</p></div></details>
+      <details class="acc rv"><summary>Can I update the menu myself?</summary><div class="acc-b"><p>On our monthly plans you send us the change and it's usually live the same day, which is faster than most owners manage themselves between shifts. If you change specials daily and want direct control, say so and we'll build it so you can.</p></div></details>
+      <details class="acc rv"><summary>Do I need professional food photography?</summary><div class="acc-b"><p>It helps a lot and it's the highest-return visual investment a restaurant can make. But real photos taken on a decent phone beat stock every time. Ten honest shots of your actual dishes outperform three beautiful generic ones, because people recognise stock instantly.</p></div></details>
+      <details class="acc rv"><summary>How long does a restaurant website take to build?</summary><div class="acc-b"><p>About a week for most, sometimes faster. The variable is almost always the menu &mdash; getting every dish, description and price in a usable format. If you have that ready, the build moves quickly.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="start">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:start">
+      <div>
+        <p class="eyebrow on-dark">Free, no obligation</p>
+        <h2>Send us your restaurant's site</h2>
+        <p class="lede">We'll open it the way a hungry customer would &mdash; on a phone &mdash; and tell you what's getting in their way. Usually it's the menu, the hours or the load time, and usually it's fixable without a rebuild.</p>
+        <p style="font-size:1.05rem"><b style="color:#fff">Rather just talk?</b><br><a href="tel:18004818638" style="color:var(--cyan);font-family:var(--display);font-size:1.75rem;font-weight:700;letter-spacing:-.03em">1-800-481-8638</a></p>
+        <p style="font-size:.9rem">Denver, Colorado &middot; Answered within one business day</p>
+      </div>
+      <form class="fbox" id="leadform" novalidate>
+        <div class="frow">
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <label for="f-biz">Restaurant name</label>
+        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <label for="f-site">Current website (if you have one)</label>
+        <input id="f-site" name="current_website" type="text" placeholder="yourrestaurant.com">
+        <label for="f-need">What's the main problem?</label>
+        <select id="f-need" name="project_type">
+          <option>My menu is a PDF</option><option>Site is slow on phones</option><option>Nobody can find us</option>
+          <option>Need a new site entirely</option><option>Want online ordering</option><option>Not sure yet</option>
+        </select>
+        <label for="f-msg">Anything else we should know?</label>
+        <textarea id="f-msg" name="message"></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-d" type="submit" id="fsubmit">Send my request</button>
+        <p class="fnote">We'll never share your details. No newsletter, no spam, no automated call sequence.</p>
+        <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid g4">
+      <div>
+        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
+        <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
+        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+      </div>
+      <div>
+        <h4>Web Design</h4>
+        <ul>
+          <li><a href="/denver-web-design-company/">Denver web design company</a></li>
+          <li><a href="/website-designer-denver-co/">Denver web designer</a></li>
+          <li><a href="/web-design-near-me/">Web design near me</a></li>
+          <li><a href="/small-business-web-design/">Small business web design</a></li>
+          <li><a href="/custom-websites/">Custom websites</a></li>
+          <li><a href="/affordable-web-design/">Affordable web design</a></li>
+          <li><a href="/website-redesign-denver/">Website redesign</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build &amp; Grow</h4>
+        <ul>
+          <li><a href="/denver-web-development/">Web development</a></li>
+          <li><a href="/app-development-denver/">App development</a></li>
+          <li><a href="/ecommerce-website-design/">Ecommerce websites</a></li>
+          <li><a href="/shopify-website-design/">Shopify design</a></li>
+          <li><a href="/wordpress-website-design/">WordPress design</a></li>
+          <li><a href="/denver-seo-web-design/">SEO web design</a></li>
+          <li><a href="/ai-ready-websites-denver/">AI-ready websites</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides &amp; Company</h4>
+        <ul>
+          <li><a href="/denver-web-design-pricing/">Pricing</a></li>
+          <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
+          <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
+          <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
+          <li><a href="/real-estate-website-design/">Real estate websites</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
+      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* hero chips */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function(el){
+    if(rm){el.classList.add('show');return;}
+    setTimeout(function(){el.classList.add('show');},+el.dataset.d||0);
+  });
+})();
+
+/* nav */
+var bg=document.getElementById('burger'),nv=document.getElementById('nav');
+if(bg&&nv){
+bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');}});
+}
+
+/* reveal + bars + fuse */
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.bar-f').forEach(function(el){bo.observe(el);});
+  var fs=document.getElementById('fuse');
+  if(fs){
+    var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('lit');fo.unobserve(e.target);}});},{threshold:.45});
+    fo.observe(fs);
+  }
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  document.querySelectorAll('.bar-f').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  var fsr=document.getElementById('fuse'); if(fsr){fsr.classList.add('lit');}
+}
+
+/* scratch-off */
+(function(){
+  var c=document.getElementById('scratch');if(!c)return;
+  var ctx=c.getContext('2d'),drawing=false,cleared=false,hint=document.getElementById('shint');
+  function fill(){
+    var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+    var g=ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#C8D0DE');g.addColorStop(.5,'#9BA6BA');g.addColorStop(1,'#C8D0DE');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='700 13px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillText('SCRATCH HERE',r.width/2,r.height/2+5);
+  }
+  fill();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!cleared)fill();},220);});
+  function pt(e){var r=c.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top};}
+  function scr(e){
+    if(!drawing)return;e.preventDefault();var p=pt(e);
+    ctx.globalCompositeOperation='destination-out';
+    ctx.beginPath();ctx.arc(p.x,p.y,26,0,Math.PI*2);ctx.fill();
+    if(hint){hint.textContent='Keep going';}
+    check();
+  }
+  var last=0;
+  function check(){
+    var now=Date.now();if(now-last<260)return;last=now;
+    var d=ctx.getImageData(0,0,c.width,c.height).data,clear=0;
+    for(var i=3;i<d.length;i+=40){if(d[i]<40)clear++;}
+    if(clear/(d.length/40)>.42&&!cleared){cleared=true;c.classList.add('done');if(hint)hint.textContent='That is the whole pitch.';}
+  }
+  ['mousedown','touchstart'].forEach(function(ev){c.addEventListener(ev,function(e){drawing=true;scr(e);},{passive:false});});
+  ['mousemove','touchmove'].forEach(function(ev){c.addEventListener(ev,scr,{passive:false});});
+  ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
+})();
+
+/* form: honeypot + time trap + JS-assembled action */
+(function(){
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
+  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
+  if(document.readyState!=='loading'){loaded=Date.now();}
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData(f);
+    fd.delete('_honey');
+    fd.append('_subject','New lead — denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
+        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
+      })
+      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
+  });
+})();
+</script>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.mtoggle button'); if(!btns.length)return;
+  function show(v){
+    document.querySelectorAll('.mview').forEach(function(e){e.classList.toggle('on',e.id==='v-'+v);});
+    var p=document.getElementById('s-pdf'), l=document.getElementById('s-live');
+    if(p&&l){p.style.display=v==='pdf'?'':'none';l.style.display=v==='live'?'':'none';}
+    btns.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-v')===v?'true':'false');});
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){show(b.getAttribute('data-v'));});});
+  var live=true;
+  document.querySelector('.mtoggle').addEventListener('click',function(){live=false;});
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var on=false;
+    setInterval(function(){ if(!live)return; on=!on; show(on?'live':'pdf'); },4200);
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/restaurant-website-design/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Restaurant Website Design", "item": "https://denver-webdesign.com/restaurant-website-design/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/restaurant-website-design/#service", "name": "Restaurant website design", "serviceType": "Restaurant website design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "audience": {"@type": "BusinessAudience", "name": "Restaurants, cafes and bars"}, "description": "Mobile-first restaurant websites with live HTML menus instead of PDFs, today's hours, tappable contact details and order or booking buttons above the fold.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Custom-coded restaurant website from $99 per month"}}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/restaurant-website-design/#howto", "name": "What a restaurant website needs, in the order customers look for it", "description": "The four questions a hungry customer answers on a phone in under two minutes, and where each one belongs.", "totalTime": "PT2M", "step": [{"@type": "HowToStep", "position": 1, "name": "Are you open", "text": "Show today's hours rather than a seven-day table, plus holiday exceptions, so nobody has to work out what day it is."}, {"@type": "HowToStep", "position": 2, "name": "What is the food and what does it cost", "text": "Publish the menu as live text with prices included, not as a downloadable PDF."}, {"@type": "HowToStep", "position": 3, "name": "Is it any good", "text": "Show your rating and review count early, alongside real photographs of your actual dishes rather than stock images."}, {"@type": "HowToStep", "position": 4, "name": "How do I get it", "text": "Put order, book, call or directions above the fold on mobile, with the phone number as a tappable link."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/restaurant-website-design/#webpage", "url": "https://denver-webdesign.com/restaurant-website-design/", "name": "Restaurant Website Design | Your Menu Shouldn't Be a PDF", "description": "Live menus instead of PDFs, today's hours, and order buttons a thumb can reach. What a hungry person on a phone actually needs. From $99/month.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/restaurant-website-design/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-29", "dateModified": "2026-08-29", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/restaurant-website-design/#faq", "mainEntity": [{"@type": "Question", "name": "Why shouldn't my menu be a PDF?", "acceptedAnswer": {"@type": "Answer", "text": "Three reasons. It opens in a separate viewer and loads slowly, which is why PDF menus correlate with the highest bounce rate of any single element on a restaurant site. Search engines can't read the dish names properly, so you don't rank for them. And AI assistants can't quote your menu when somebody asks what's good nearby. A live HTML menu fixes all three."}}, {"@type": "Question", "name": "How much does a restaurant website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Our custom-coded sites start at $99 a month with no setup fee, including hosting, updates and search structure. Full agency builds in Denver commonly run $9,000 to $22,000. A restaurant site doesn't need to be complicated - it needs to be fast, mobile-first and honest about hours and prices."}}, {"@type": "Question", "name": "Should I put prices on the menu?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Hiding prices creates exactly the hesitation you're trying to remove, and people assume expensive when they can't see. It also gives search engines and AI assistants something concrete to work with when someone searches for a price range in your area."}}, {"@type": "Question", "name": "Do I need online ordering on my own site?", "acceptedAnswer": {"@type": "Answer", "text": "It's worth it once you have enough direct regulars that third-party commission is a real cost. Early on, a clear phone number and a link to whatever platform you already use is fine. Don't build ordering before you have people who'd use it."}}, {"@type": "Question", "name": "How important is mobile?", "acceptedAnswer": {"@type": "Answer", "text": "It's the whole thing. Roughly three quarters of restaurant traffic is a phone, frequently outdoors on patchy signal. Designing for desktop first is designing for the wrong audience. Sub-two-second loading on mobile is the baseline, not the goal."}}, {"@type": "Question", "name": "Can I update the menu myself?", "acceptedAnswer": {"@type": "Answer", "text": "On our monthly plans you send us the change and it's usually live the same day, which is faster than most owners manage themselves between shifts. If you change specials daily and want direct control, say so and we'll build it so you can."}}, {"@type": "Question", "name": "Do I need professional food photography?", "acceptedAnswer": {"@type": "Answer", "text": "It helps a lot and it's the highest-return visual investment a restaurant can make. But real photos taken on a decent phone beat stock every time. Ten honest shots of your actual dishes outperform three beautiful generic ones, because people recognise stock instantly."}}, {"@type": "Question", "name": "How long does a restaurant website take to build?", "acceptedAnswer": {"@type": "Answer", "text": "About a week for most, sometimes faster. The variable is almost always the menu - getting every dish, description and price in a usable format. If you have that ready, the build moves quickly."}}]}]}
+</script>
+</body>
+</html>
