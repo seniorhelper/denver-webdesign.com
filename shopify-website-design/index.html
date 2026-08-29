@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shopify Website Design | Fast Stores, Honest Advice</title>
+<meta name="description" content="Shopify website design and development. See what every app costs your store in page weight, when a theme beats a custom build, and how to migrate without losing traffic.">
+<link rel="canonical" href="https://denver-webdesign.com/shopify-website-design/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#F2F2EF">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denver-webdesign.com/shopify-website-design/">
+<meta property="og:site_name" content="Denver Web Design">
+<meta property="og:title" content="Shopify Website Design | Fast Stores, Honest Advice">
+<meta property="og:description" content="Shopify website design and development. See what every app costs your store in page weight, when a theme beats a custom build, and how to migrate without losing traffic.">
+<meta property="og:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shopify Website Design | Fast Stores, Honest Advice">
+<meta name="twitter:description" content="Shopify website design and development. See what every app costs your store in page weight, when a theme beats a custom build, and how to migrate without losing traffic.">
+<meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
+  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
+  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
+  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
+  --display:'Outfit',system-ui,sans-serif;
+  --text:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
+h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+a{color:#0B63D8;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:82px 0}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
+.eyebrow.on-dark{color:var(--cyan)}
+.lede{font-size:1.13rem;max-width:62ch}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.brand img{height:57px;width:auto}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
+.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
+.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
+.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
+@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
+@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
+
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
+.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
+.hero h1{color:#fff}
+.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
+.hero-r{position:relative;min-height:530px;overflow:hidden}
+.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
+.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
+
+.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
+.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
+.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
+.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
+.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
+.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
+.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
+.float{animation:fl 6s ease-in-out infinite}
+.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
+@media(max-width:900px){
+  .hero-r{min-height:0;height:auto;padding:0}
+  .hero-r picture,.hero-r img{position:relative;height:230px}
+  .hero-r::after{display:none}
+  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
+  .pop{position:static;max-width:none;opacity:1;transform:none}
+  .float{animation:none}
+}
+.hero-tag{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
+.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
+.btn-s{border-color:var(--cyan);color:var(--cyan)}
+.btn-d{background:var(--ink);color:#fff;width:100%}
+.microtrust{font-size:.87rem;color:#8497BA}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-l{padding:52px 22px 44px}
+  .hero-r{min-height:260px;order:2}
+  .hero-r::after{display:none}
+}
+
+/* trustbar */
+.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
+.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
+.tbar li{display:flex;align-items:center;gap:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;font-size:.97rem}
+.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.p-mint{background:var(--mint);color:#065F46}
+.p-lilac{background:var(--lilac);color:#4C1D95}
+.p-peach{background:var(--peach);color:#9A3412}
+.p-cyan{background:#CCF7FE;color:#0E5A6B}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* scratch demo */
+.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.demo h2,.demo h3{color:#fff}
+.demo p{color:#AFBDD8}
+.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
+.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
+.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
+.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
+#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
+.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
+
+/* accordion */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
+.acc .acc-b p:last-child{margin-bottom:0}
+
+/* fuse */
+.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.fuse-sec h2{color:#fff}
+.fuse-sec p{color:#B9A9CE}
+.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
+#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
+.lit #fusepath{stroke-dashoffset:0}
+.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
+.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
+.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
+.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
+.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
+.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
+.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
+
+/* signal flow */
+.flow{background:#fff}
+.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
+.flow-svg{width:100%;height:auto}
+.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-30}}
+
+/* stat bars */
+.bars{margin:26px 0 0}
+.bar-row{margin-bottom:17px}
+.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar-lab b{font-family:var(--mono);color:var(--ink)}
+.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
+.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
+
+/* form */
+.formsec{background:var(--ink-2);color:#fff}
+.formsec h2{color:#fff}
+.formsec p{color:#B0BFDA}
+.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
+.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
+.fbox textarea{min-height:96px;resize:vertical}
+.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
+.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
+.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
+.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
+.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* footer */
+.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
+.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.ftr ul{list-style:none;padding:0;margin:0}
+.ftr li{margin-bottom:9px}
+.ftr a{color:var(--body)}
+.ftr img{height:51px;margin-bottom:16px}
+.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== PAGE THEME: swiss grid ===== */
+.sw{--paper3:#F2F2EF;--white2:#FFFFFF;--black2:#0B0B0B;--red2:#E1261C;--grey1:#6B6B68;--grey2:#D6D6D1;--grn3:#0B7D3E}
+.sw h1,.sw h2,.sw h3{font-family:'Manrope',system-ui,sans-serif;color:var(--black2);letter-spacing:-.045em;font-weight:800;line-height:.98}
+.sw h1{font-size:clamp(2.4rem,5.6vw,4.3rem)}
+.sw h2{font-size:clamp(1.9rem,4vw,3rem)}
+.sw h3{font-size:1.1rem;font-weight:700;letter-spacing:-.025em;line-height:1.25}
+.sw p{color:#393936;font-size:1rem;line-height:1.66}
+.sw .lede{font-size:1.12rem;color:#212120;max-width:62ch}
+.sw-sec{padding:78px 0;position:relative}
+.sw-paper{background:var(--paper3)}
+.sw-white{background:var(--white2)}
+.sw-black{background:var(--black2);color:#C8C8C4}
+.sw-black h2,.sw-black h3{color:#fff}
+.sw-black p{color:#8E8E8A}
+.sw-num{font-family:'Manrope',sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.02em;color:var(--red2);display:block;margin-bottom:12px}
+.sw-rule{border:0;border-top:2px solid var(--black2);margin:0 0 22px}
+.sw-black .sw-rule{border-color:rgba(255,255,255,.28)}
+.sw-hair{border:0;border-top:1px solid var(--grey2);margin:0}
+.redbar{display:inline-block;width:56px;height:8px;background:var(--red2);margin-bottom:22px}
+.swred{color:var(--red2)}
+
+/* grid list */
+.glist{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--black2);margin-top:34px}
+@media(max-width:880px){.glist{grid-template-columns:1fr}}
+.gi{padding:26px 24px 26px 0;border-bottom:1px solid var(--grey2);border-right:1px solid var(--grey2)}
+.gi:nth-child(3n){border-right:0;padding-right:0}
+@media(max-width:880px){.gi{border-right:0;padding-right:0}}
+.gi h3{margin:0 0 8px}
+.gi p{margin:0;font-size:.94rem}
+.sw-black .gi{border-color:rgba(255,255,255,.16)}
+
+/* two-col compare */
+.tcol{display:grid;grid-template-columns:1fr 1fr;border:2px solid var(--black2);margin-top:32px}
+@media(max-width:760px){.tcol{grid-template-columns:1fr}}
+.tc{padding:30px}
+.tc:first-child{border-right:2px solid var(--black2)}
+@media(max-width:760px){.tc:first-child{border-right:0;border-bottom:2px solid var(--black2)}}
+.tc-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
+.tc-h span{font-family:var(--mono);font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;color:var(--red2)}
+.tc ul{list-style:none;padding:0;margin:0}
+.tc li{padding:11px 0;border-top:1px solid var(--grey2);font-size:.94rem;color:#393936;display:grid;grid-template-columns:22px 1fr;gap:10px}
+.tc li:first-child{border-top:0}
+.tc li i{font-style:normal;font-family:var(--mono);font-size:.8rem;color:var(--grn3)}
+.tc li i.n{color:var(--red2)}
+
+/* app bloat */
+.bloat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;border:2px solid var(--black2);margin-top:30px}
+@media(max-width:820px){.bloat{grid-template-columns:1fr}}
+.bl-l{padding:28px;border-right:2px solid var(--black2)}
+@media(max-width:820px){.bl-l{border-right:0;border-bottom:2px solid var(--black2)}}
+.bl-r{padding:28px;background:var(--black2);color:#C8C8C4}
+.bl-t{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid var(--grey2);cursor:pointer;font-size:.95rem;color:#393936}
+.bl-t:first-of-type{border-top:0}
+.bl-t input{width:18px;height:18px;accent-color:var(--red2);margin:0;flex:none}
+.bl-t .kb{font-family:var(--mono);font-size:.78rem;color:var(--grey1);white-space:nowrap}
+.bl-lbl{display:flex;align-items:center;gap:11px}
+.gauge{margin-bottom:20px}
+.gauge-t{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#8E8E8A;margin-bottom:9px}
+.gauge-v{font-family:'Manrope',sans-serif;font-weight:800;font-size:2.6rem;color:#fff;line-height:1;letter-spacing:-.04em}
+.gauge-v small{font-size:1rem;font-weight:600;color:#8E8E8A;letter-spacing:0}
+.gbar{height:14px;background:rgba(255,255,255,.13);overflow:hidden;margin-top:12px}
+.gbar i{display:block;height:100%;width:0;transition:width .5s cubic-bezier(.2,.8,.3,1),background .4s}
+.verd{border-top:1px solid rgba(255,255,255,.2);margin-top:20px;padding-top:18px;font-size:.94rem;color:#B4B4B0;line-height:1.6}
+.verd b{color:#fff}
+
+/* steps numbered */
+.snum{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--grey2)}
+.sw-black .snum{border-color:rgba(255,255,255,.16)}
+@media(max-width:600px){.snum{grid-template-columns:1fr;gap:6px}}
+.snum b{font-family:'Manrope',sans-serif;font-weight:800;font-size:1.6rem;color:var(--red2);letter-spacing:-.04em}
+.snum h3{margin:0 0 6px}
+.snum p{margin:0;font-size:.95rem}
+
+.sw .acc{border:2px solid var(--black2);border-radius:0;background:#fff}
+.sw .acc+.acc{margin-top:-2px}
+.sw .acc summary{color:var(--black2);font-family:'Manrope',sans-serif;font-weight:700;letter-spacing:-.02em}
+.sw .acc summary::after{border-color:var(--red2)}
+.sw .pill{border-radius:0;font-family:var(--mono)}
+.btn-red{background:var(--red2);color:#fff;border-radius:0}
+.btn-red:hover{background:#C31F16;color:#fff}
+.btn-blk{border:2px solid var(--black2);color:var(--black2);border-radius:0}
+.btn-blk:hover{background:var(--black2);color:#fff}
+.btn-wht{border:2px solid #fff;color:#fff;border-radius:0}
+.btn-wht:hover{background:#fff;color:var(--black2)}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="telm" href="tel:18004818638">1-800-481-8638</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/denver-web-design-company/">Web Design</a>
+      <a href="/denver-web-development/">Development</a>
+      <a href="/app-development-denver/">Apps</a>
+      <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/denver-web-design-pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+    </nav>
+  </div>
+</header>
+
+<main class="sw">
+
+<section class="sw-sec sw-paper" style="padding-top:60px">
+  <div class="wrap">
+    <span class="redbar"></span>
+    <div class="grid g2" style="gap:48px;align-items:end">
+      <div>
+        <p class="sw-num">Shopify website design</p>
+        <h1>A fast Shopify store is<br>mostly about what<br>you <span class="swred">leave out</span></h1>
+      </div>
+      <div>
+        <hr class="sw-rule">
+        <p class="lede">Shopify handles the genuinely hard parts &mdash; payments, tax, inventory, security &mdash; so a store rarely fails on those. It fails because it accumulated fourteen apps, a heavy theme and a hero video, and now product pages take five seconds on a phone.</p>
+        <div class="cta-row" style="margin:24px 0 0">
+          <a class="btn btn-red" href="tel:18004818638">Call 1-800-481-8638</a>
+          <a class="btn btn-blk" href="#bloat">See what apps cost you</a>
+        </div>
+        <p style="font-size:.87rem;color:var(--grey1);margin-top:14px">Design, build, migration &middot; 2&ndash;4 weeks typical &middot; Denver since 2012</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tbar"><div class="wrap"><ul>
+  <li><span class="dot"></span>Theme customisation and custom builds</li>
+  <li><span class="dot"></span>Migrations that keep your rankings</li>
+  <li><span class="dot"></span>Speed treated as a feature</li>
+  <li><span class="dot"></span>Denver since 2012</li>
+</ul></div></div>
+
+<section class="sw-sec sw-white">
+  <div class="wrap">
+    <p class="sw-num">01 &mdash; The honest case</p>
+    <h2 class="rv" style="max-width:20ch">What Shopify is genuinely good at</h2>
+    <hr class="sw-rule" style="margin-top:22px">
+    <p class="lede rv">We build on several platforms and recommend Shopify most often for stores, for reasons that have nothing to do with how it looks.</p>
+
+    <div class="glist">
+      <div class="gi rv"><h3>Payment security isn't your problem</h3><p>Card data handling and compliance sit with Shopify. On a custom build that responsibility is yours, and it is not a small one.</p></div>
+      <div class="gi rv"><h3>Tax and shipping actually calculate</h3><p>Rates by weight, destination and threshold, plus multi-state sales tax. Building this properly yourself is weeks of work you'd rather not pay for.</p></div>
+      <div class="gi rv"><h3>It doesn't break at 2am</h3><p>Hosting, uptime and scaling during a rush are handled. Nobody calls you because a plugin update took the store down on a Saturday.</p></div>
+      <div class="gi rv"><h3>Abandoned carts recover themselves</h3><p>Built in rather than bolted on. For most stores this single feature returns more revenue than a redesign would.</p></div>
+      <div class="gi rv"><h3>Inventory stays honest</h3><p>Stock counts across variants, locations and channels. Overselling something you don't have is a costly, avoidable kind of bad review.</p></div>
+      <div class="gi rv"><h3>You can leave</h3><p>Products and customers export. That matters more than people think when choosing where to build a business.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sw-sec sw-paper">
+  <div class="wrap">
+    <p class="sw-num">02 &mdash; The real decision</p>
+    <h2 class="rv" style="max-width:24ch">Customised theme or custom build?</h2>
+    <hr class="sw-rule" style="margin-top:22px">
+    <p class="lede rv">This is the only Shopify decision that meaningfully changes your budget. Almost everything else is detail.</p>
+
+    <div class="tcol">
+      <div class="tc rv">
+        <div class="tc-h"><h3 style="font-size:1.5rem">Customised theme</h3><span>Most stores</span></div>
+        <ul>
+          <li><i>+</i> Live in about two to four weeks</li>
+          <li><i>+</i> Costs a fraction of a custom front end</li>
+          <li><i>+</i> Updates and security handled by the theme author</li>
+          <li><i>+</i> Proven layouts that already convert</li>
+          <li><i class="n">&minus;</i> Other stores use the same base</li>
+          <li><i class="n">&minus;</i> Some layouts you simply can't have</li>
+        </ul>
+        <p style="margin:18px 0 0;font-size:.94rem"><b>Right for you if</b> you're selling reasonably standard products and want to be trading this month rather than next quarter.</p>
+      </div>
+      <div class="tc rv">
+        <div class="tc-h"><h3 style="font-size:1.5rem">Custom build</h3><span>Unusual needs</span></div>
+        <ul>
+          <li><i>+</i> Exactly the experience you designed</li>
+          <li><i>+</i> No theme weight you aren't using</li>
+          <li><i>+</i> Handles configurations no theme supports</li>
+          <li><i class="n">&minus;</i> Significantly more expensive</li>
+          <li><i class="n">&minus;</i> Longer to build and to change later</li>
+          <li><i class="n">&minus;</i> Maintenance becomes your line item</li>
+        </ul>
+        <p style="margin:18px 0 0;font-size:.94rem"><b>Right for you if</b> you have product configurators, wholesale tiers or bundles that themes genuinely cannot express &mdash; not just because custom sounds better.</p>
+      </div>
+    </div>
+    <p class="rv" style="margin-top:22px">For scale, published 2026 research puts full custom ecommerce builds on enterprise or headless architecture at $45,000 to $250,000. Most stores asking for "custom" want a well-customised theme and are relieved when someone says so. <a href="/ecommerce-website-design/">More on ecommerce platforms</a>.</p>
+  </div>
+</section>
+
+<section class="sw-sec sw-white" id="bloat">
+  <div class="wrap">
+    <p class="sw-num">03 &mdash; Interactive</p>
+    <h2 class="rv" style="max-width:26ch">What every app you install actually costs</h2>
+    <hr class="sw-rule" style="margin-top:22px">
+    <p class="lede rv">Shopify apps are easy to install and almost nobody removes them. Each one usually loads its own scripts on every page, and the weight compounds. Tick the ones your store has, or the ones you're considering.</p>
+
+    <div class="bloat">
+      <div class="bl-l rv">
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="45" checked> Product reviews</span><span class="kb">~45 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="60"> Upsell &amp; cross-sell</span><span class="kb">~60 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="35"> Email popup</span><span class="kb">~35 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="90"> Live chat widget</span><span class="kb">~90 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="55"> Loyalty &amp; rewards</span><span class="kb">~55 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="40"> Wishlist</span><span class="kb">~40 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="70" checked> Analytics &amp; pixels</span><span class="kb">~70 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="50"> Currency &amp; country switcher</span><span class="kb">~50 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="80"> Page builder</span><span class="kb">~80 KB</span></label>
+        <label class="bl-t"><span class="bl-lbl"><input type="checkbox" class="ap2" data-kb="30"> Countdown &amp; urgency timers</span><span class="kb">~30 KB</span></label>
+        <p style="font-size:.82rem;color:var(--grey1);margin:18px 0 0;line-height:1.6">Weights are illustrative typical ranges for the extra JavaScript a category of app tends to add, not measurements of any specific product. Measure your own store &mdash; PageSpeed Insights is free and tells you exactly what is loading.</p>
+      </div>
+      <div class="bl-r" aria-live="polite">
+        <div class="gauge">
+          <div class="gauge-t"><span>Added page weight</span></div>
+          <p class="gauge-v" id="bKb">0<small> KB</small></p>
+          <div class="gbar"><i id="bBar" style="background:#0B7D3E"></i></div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-t"><span>Apps installed</span></div>
+          <p class="gauge-v" id="bCount" style="font-size:1.9rem">0</p>
+        </div>
+        <p class="verd" id="bVerd"></p>
+      </div>
+    </div>
+
+    <div class="glist" style="margin-top:38px">
+      <div class="gi rv"><h3>Audit before you optimise</h3><p>Most stores can remove two or three apps immediately because nobody remembers installing them or the feature was never used.</p></div>
+      <div class="gi rv"><h3>One app, one job</h3><p>Some apps duplicate what your theme already does. Paying monthly for a second version of an existing feature is common and easy to fix.</p></div>
+      <div class="gi rv"><h3>Uninstalling doesn't always clean up</h3><p>App code frequently stays behind in the theme after removal. It has to be taken out by hand, and almost nobody does it.</p></div>
+    </div>
+  </div>
+</section>
+<section class="sw-sec sw-black">
+  <div class="wrap">
+    <p class="sw-num">04 &mdash; What we do</p>
+    <h2 class="rv" style="max-width:24ch">A Shopify build, start to finish</h2>
+    <hr class="sw-rule" style="margin-top:22px">
+    <p class="lede rv" style="color:#8E8E8A">Two to four weeks for most stores. The build is rarely the bottleneck &mdash; product data is.</p>
+
+    <div style="margin-top:26px">
+      <div class="snum rv"><b>01</b><div><h3>Product data first</h3><p>Photos, descriptions, variants, weights, prices. We start here because it's the thing that actually delays launches, and because writing unique descriptions instead of pasting the manufacturer's is most of why product pages do or don't get found.</p></div></div>
+      <div class="snum rv"><b>02</b><div><h3>Theme selection and stripping</h3><p>Pick a base that already does most of what you need, then remove everything you don't. Unused sections, demo content and features you'll never enable all ship weight to every visitor.</p></div></div>
+      <div class="snum rv"><b>03</b><div><h3>Design the two pages that matter</h3><p>Product page and collection page. Those are where nearly all your traffic lands and where nearly all decisions get made. The homepage matters far less than most people expect.</p></div></div>
+      <div class="snum rv"><b>04</b><div><h3>Checkout friction removal</h3><p>Guest checkout on. Shipping cost visible before the final step. Returns policy findable. These aren't design choices, they're the difference between a cart and an order.</p></div></div>
+      <div class="snum rv"><b>05</b><div><h3>Search and structured data</h3><p>Product schema so price and availability show in search results and AI assistants can quote what you sell. Collection pages written for how people actually search rather than how your catalogue is organised.</p></div></div>
+      <div class="snum rv"><b>06</b><div><h3>Speed pass before launch</h3><p>Image formats and sizing, app audit, deferred scripts. Then measured, not assumed. If it isn't fast on a phone on mobile data, it isn't finished.</p></div></div>
+    </div>
+    <p class="rv" style="margin-top:26px;color:#8E8E8A">More on the structural side: <a href="/denver-seo-web-design/" style="color:#fff">SEO web design</a> &middot; <a href="/ai-ready-websites-denver/" style="color:#fff">AI-ready websites</a></p>
+  </div>
+</section>
+
+<section class="sw-sec sw-paper">
+  <div class="wrap">
+    <p class="sw-num">05 &mdash; Moving in</p>
+    <h2 class="rv" style="max-width:26ch">Migrating to Shopify without losing your traffic</h2>
+    <hr class="sw-rule" style="margin-top:22px">
+    <p class="lede rv">The single most expensive mistake in a platform migration is changing every product URL and redirecting none of them. The store looks better and the orders stop, and it takes months to work out why.</p>
+
+    <div class="glist">
+      <div class="gi rv"><h3>Inventory every URL first</h3><p>Every product, collection and page Google has indexed, plus which of them actually receive traffic. You cannot protect a list you never made.</p></div>
+      <div class="gi rv"><h3>Map old to new before building</h3><p>Shopify's URL structure differs from WooCommerce, BigCommerce and most custom stores. Every old address needs a destination decided in advance.</p></div>
+      <div class="gi rv"><h3>Keep descriptions that rank</h3><p>If a product page brings in traffic, its content is doing something. Rewriting it during a migration throws that away for no reason.</p></div>
+      <div class="gi rv"><h3>Move customers and history</h3><p>Customer accounts, order history and reviews. Reviews in particular are hard-won and frequently lost in migrations because nobody exported them.</p></div>
+      <div class="gi rv"><h3>Redirect at launch, not later</h3><p>Redirects go live with the store. A week of 404s on every product page is enough to do real damage that takes months to recover.</p></div>
+      <div class="gi rv"><h3>Watch Search Console after</h3><p>Crawl errors show up within days. Assuming a migration went fine because the store loads is how problems get found in month three.</p></div>
+    </div>
+    <p class="rv" style="margin-top:24px">Same discipline as any <a href="/website-redesign-denver/">website redesign</a> &mdash; the platform changes, the principle doesn't.</p>
+  </div>
+</section>
+
+<section class="sw-sec sw-white">
+  <div class="wrap">
+    <p class="sw-num">06 &mdash; The other side</p>
+    <h2 class="rv" style="max-width:24ch">When Shopify is the <span class="swred">wrong</span> answer</h2>
+    <hr class="sw-rule" style="margin-top:22px">
+    <div class="glist">
+      <div class="gi rv"><h3>You sell services, not products</h3><p>A monthly platform fee for a checkout nobody uses. A normal website with a contact form or payment link does the job. <a href="/small-business-web-design/">Small business web design</a>.</p></div>
+      <div class="gi rv"><h3>You publish far more than you sell</h3><p>If the store is a small corner of a content-heavy site you post to weekly, WooCommerce on <a href="/wordpress-website-design/">WordPress</a> often fits better.</p></div>
+      <div class="gi rv"><h3>Under about ten orders a month</h3><p>Payment links or invoices cover that without a subscription. Revisit when volume makes the fee obviously worth it.</p></div>
+      <div class="gi rv"><h3>Your pricing is quoted, not fixed</h3><p>Custom quotes per customer don't fit a cart. What you need is a good website and a fast way to send a quote.</p></div>
+      <div class="gi rv"><h3>You're testing whether anyone wants it</h3><p>A marketplace listing tells you that in a fortnight for almost nothing. Build the store once you know the answer.</p></div>
+      <div class="gi rv"><h3>The margin can't carry the fees</h3><p>Subscription plus card processing plus apps is a real percentage of revenue. On thin margins and low order values, run the numbers before committing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sw-sec sw-paper">
+  <div class="wrap">
+    <p class="sw-num">07 &mdash; Straight answers</p>
+    <h2 class="rv">Shopify questions</h2>
+    <hr class="sw-rule" style="margin-top:22px">
+    <div style="margin-top:26px;max-width:880px">
+      <details class="acc rv"><summary>How much does a Shopify website cost to build?</summary><div class="acc-b"><p>A customised theme build is normal website territory and we quote per project, typically two to four weeks. A fully custom front end costs considerably more &mdash; published research puts full custom ecommerce at $45,000 to $250,000 at the enterprise end. Most stores want the first thing.</p></div></details>
+      <details class="acc rv"><summary>Do I need a custom theme or will a paid one do?</summary><div class="acc-b"><p>A well-customised paid theme suits the large majority of stores and gets you trading far sooner. Custom becomes worth it when you need product configurations, wholesale pricing tiers or bundles that themes genuinely cannot express. Wanting to look different is not usually enough reason on its own.</p></div></details>
+      <details class="acc rv"><summary>Why is my Shopify store slow?</summary><div class="acc-b"><p>Almost always three things: too many apps each loading their own scripts, oversized product images, and a heavy theme with sliders and video. Run PageSpeed Insights on a product page, not the homepage &mdash; that's where your customers actually land and where the weight usually is.</p></div></details>
+      <details class="acc rv"><summary>How many apps is too many?</summary><div class="acc-b"><p>There's no fixed number, but every app typically adds scripts to every page. The useful test is whether each one earns its weight and its monthly fee. Most stores we look at have at least two nobody uses and one duplicating a feature the theme already has.</p></div></details>
+      <details class="acc rv"><summary>Can you migrate my store from WooCommerce or another platform?</summary><div class="acc-b"><p>Yes. The critical part is mapping every existing product URL to its new address and publishing redirects at launch, so the traffic that was already buying still arrives. Reviews and customer history need exporting deliberately too, because they're commonly lost.</p></div></details>
+      <details class="acc rv"><summary>Will my products show up in Google?</summary><div class="acc-b"><p>They can, with product schema so price and availability appear in results, unique descriptions rather than the manufacturer's copy, and collection pages written for how people search. Duplicate supplier text across a thousand stores is the most common reason product pages don't rank.</p></div></details>
+      <details class="acc rv"><summary>Do you build Shopify apps?</summary><div class="acc-b"><p>We build custom functionality for stores, which sometimes means a private app and sometimes means theme-level code that avoids needing one. The second is usually cheaper and lighter. <a href="/denver-web-development/">More on custom development</a>.</p></div></details>
+      <details class="acc rv"><summary>How long until my store is live?</summary><div class="acc-b"><p>Two to four weeks for most stores. Almost all of the variance is product data &mdash; photos, descriptions, variants and weights for everything you sell. A fifty-product store with no photos ready takes considerably longer than the build itself would suggest.</p></div></details>
+      <details class="acc rv"><summary>Do you work with stores outside Denver?</summary><div class="acc-b"><p>Yes. Ecommerce has no geography. Most clients are in the Denver metro and we also work along the Front Range, including <a href="https://www.monumentcowebdesigner.com">Monument</a>, as well as out of state.</p></div></details>
+      <details class="acc rv"><summary>What are the ongoing costs?</summary><div class="acc-b"><p>Platform subscription, card processing on every order at typically 2.9% plus 30 cents, and any app subscriptions. <a href="/ecommerce-website-design/">There's a calculator for that</a> &mdash; put your own numbers in and see what it comes to per order and per year.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="start">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:start">
+      <div>
+        <p class="eyebrow on-dark">Free, no obligation</p>
+        <h2>Send us your store</h2>
+        <p class="lede">If you have one, we'll look at what's loading, what's slowing it down and which apps you could drop today. If you don't have one yet, tell us what you sell and we'll say whether Shopify is even the right home for it.</p>
+        <p style="font-size:1.05rem"><b style="color:#fff">Rather just talk?</b><br><a href="tel:18004818638" style="color:var(--cyan);font-family:var(--display);font-size:1.75rem;font-weight:700;letter-spacing:-.03em">1-800-481-8638</a></p>
+        <p style="font-size:.9rem">Denver, Colorado &middot; Answered within one business day</p>
+      </div>
+      <form class="fbox" id="leadform" novalidate>
+        <div class="frow">
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <label for="f-biz">Business name</label>
+        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <label for="f-site">Store URL (if you have one)</label>
+        <input id="f-site" name="current_website" type="text" placeholder="yourstore.com">
+        <label for="f-need">What do you need?</label>
+        <select id="f-need" name="project_type">
+          <option>New Shopify store</option><option>Redesign my Shopify store</option><option>Migrate to Shopify</option>
+          <option>Speed up my store</option><option>Custom functionality</option><option>Not sure Shopify is right</option>
+        </select>
+        <label for="f-msg">Anything else we should know?</label>
+        <textarea id="f-msg" name="message"></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-d" type="submit" id="fsubmit">Send my request</button>
+        <p class="fnote">We'll never share your details. No newsletter, no spam, no automated call sequence.</p>
+        <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid g4">
+      <div>
+        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
+        <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
+        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+      </div>
+      <div>
+        <h4>Web Design</h4>
+        <ul>
+          <li><a href="/denver-web-design-company/">Denver web design company</a></li>
+          <li><a href="/website-designer-denver-co/">Denver web designer</a></li>
+          <li><a href="/web-design-near-me/">Web design near me</a></li>
+          <li><a href="/small-business-web-design/">Small business web design</a></li>
+          <li><a href="/custom-websites/">Custom websites</a></li>
+          <li><a href="/affordable-web-design/">Affordable web design</a></li>
+          <li><a href="/website-redesign-denver/">Website redesign</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build &amp; Grow</h4>
+        <ul>
+          <li><a href="/denver-web-development/">Web development</a></li>
+          <li><a href="/app-development-denver/">App development</a></li>
+          <li><a href="/ecommerce-website-design/">Ecommerce websites</a></li>
+          <li><a href="/shopify-website-design/">Shopify design</a></li>
+          <li><a href="/wordpress-website-design/">WordPress design</a></li>
+          <li><a href="/denver-seo-web-design/">SEO web design</a></li>
+          <li><a href="/ai-ready-websites-denver/">AI-ready websites</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides &amp; Company</h4>
+        <ul>
+          <li><a href="/denver-web-design-pricing/">Pricing</a></li>
+          <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
+          <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
+          <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
+          <li><a href="/real-estate-website-design/">Real estate websites</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
+      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* hero chips */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function(el){
+    if(rm){el.classList.add('show');return;}
+    setTimeout(function(){el.classList.add('show');},+el.dataset.d||0);
+  });
+})();
+
+/* nav */
+var bg=document.getElementById('burger'),nv=document.getElementById('nav');
+if(bg&&nv){
+bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');}});
+}
+
+/* reveal + bars + fuse */
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.bar-f').forEach(function(el){bo.observe(el);});
+  var fs=document.getElementById('fuse');
+  if(fs){
+    var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('lit');fo.unobserve(e.target);}});},{threshold:.45});
+    fo.observe(fs);
+  }
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  document.querySelectorAll('.bar-f').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  var fsr=document.getElementById('fuse'); if(fsr){fsr.classList.add('lit');}
+}
+
+/* scratch-off */
+(function(){
+  var c=document.getElementById('scratch');if(!c)return;
+  var ctx=c.getContext('2d'),drawing=false,cleared=false,hint=document.getElementById('shint');
+  function fill(){
+    var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+    var g=ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#C8D0DE');g.addColorStop(.5,'#9BA6BA');g.addColorStop(1,'#C8D0DE');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='700 13px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillText('SCRATCH HERE',r.width/2,r.height/2+5);
+  }
+  fill();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!cleared)fill();},220);});
+  function pt(e){var r=c.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top};}
+  function scr(e){
+    if(!drawing)return;e.preventDefault();var p=pt(e);
+    ctx.globalCompositeOperation='destination-out';
+    ctx.beginPath();ctx.arc(p.x,p.y,26,0,Math.PI*2);ctx.fill();
+    if(hint){hint.textContent='Keep going';}
+    check();
+  }
+  var last=0;
+  function check(){
+    var now=Date.now();if(now-last<260)return;last=now;
+    var d=ctx.getImageData(0,0,c.width,c.height).data,clear=0;
+    for(var i=3;i<d.length;i+=40){if(d[i]<40)clear++;}
+    if(clear/(d.length/40)>.42&&!cleared){cleared=true;c.classList.add('done');if(hint)hint.textContent='That is the whole pitch.';}
+  }
+  ['mousedown','touchstart'].forEach(function(ev){c.addEventListener(ev,function(e){drawing=true;scr(e);},{passive:false});});
+  ['mousemove','touchmove'].forEach(function(ev){c.addEventListener(ev,scr,{passive:false});});
+  ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
+})();
+
+/* form: honeypot + time trap + JS-assembled action */
+(function(){
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
+  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
+  if(document.readyState!=='loading'){loaded=Date.now();}
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData(f);
+    fd.delete('_honey');
+    fd.append('_subject','New lead — denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
+        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
+      })
+      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
+  });
+})();
+</script>
+<script>
+(function(){
+  var boxes=document.querySelectorAll('.ap2'); if(!boxes.length)return;
+  var kb=document.getElementById('bKb'), bar=document.getElementById('bBar'),
+      cnt=document.getElementById('bCount'), verd=document.getElementById('bVerd');
+  function calc(){
+    var total=0,n=0;
+    boxes.forEach(function(b){ if(b.checked){total+=+b.getAttribute('data-kb')||0;n++;} });
+    kb.innerHTML=total+'<small> KB</small>';
+    cnt.textContent=n;
+    var pct=Math.min(100,total/555*100);
+    bar.style.width=Math.max(2,pct)+'%';
+    var col = total<=120 ? '#0B7D3E' : (total<=280 ? '#E8930C' : '#E1261C');
+    bar.style.background=col;
+    var msg;
+    if(n===0){msg='No apps. Nothing extra loading, nothing extra to pay for monthly. Rare, and worth protecting.';}
+    else if(total<=120){msg='<b>Lean.</b> This is roughly where a fast store sits. Keep auditing before adding anything, because the next three apps are the ones that hurt.';}
+    else if(total<=280){msg='<b>Getting heavy.</b> On a phone with average signal this is where product pages start feeling sluggish. Worth asking which of these you would actually miss.';}
+    else{msg='<b>This is why the store is slow.</b> Every visitor downloads all of it before they see a product. The fix is usually removing three apps, not redesigning anything.';}
+    var fee = n*20;
+    if(n>0){msg+='<br><br>At a typical $20 a month per app that is also around <b>$'+fee+'/month</b>, roughly <b>$'+(fee*12)+' a year</b>, before you count what it costs in lost speed.';}
+    verd.innerHTML=msg;
+  }
+  boxes.forEach(function(b){b.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/shopify-website-design/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Shopify Website Design", "item": "https://denver-webdesign.com/shopify-website-design/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/shopify-website-design/#service", "name": "Shopify website design and development", "serviceType": "Shopify website design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "City", "name": "Monument"}, {"@type": "Country", "name": "United States"}], "description": "Shopify theme customisation, custom builds, platform migration and speed work, with product pages structured for search and AI visibility.", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Shopify services", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Shopify theme design and customisation"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Shopify front end"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Migration to Shopify"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Shopify speed optimisation"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Product page and schema optimisation"}}]}}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/shopify-website-design/#howto", "name": "How to migrate to Shopify without losing search traffic", "description": "The order of operations that protects existing product rankings during a platform migration.", "totalTime": "P21D", "step": [{"@type": "HowToStep", "position": 1, "name": "Inventory every URL", "text": "List every product, collection and page Google has indexed, and which of them receive traffic."}, {"@type": "HowToStep", "position": 2, "name": "Map old addresses to new", "text": "Decide the destination for every existing URL before building, because Shopify's structure differs from most other platforms."}, {"@type": "HowToStep", "position": 3, "name": "Keep content that ranks", "text": "Retain product descriptions and pages already bringing in traffic rather than rewriting them during the move."}, {"@type": "HowToStep", "position": 4, "name": "Export customers, orders and reviews", "text": "Move customer accounts, order history and product reviews deliberately, as reviews are commonly lost in migrations."}, {"@type": "HowToStep", "position": 5, "name": "Publish redirects at launch", "text": "Redirects go live with the store, not afterwards, so no product page returns a 404."}, {"@type": "HowToStep", "position": 6, "name": "Monitor Search Console", "text": "Watch for crawl errors in the days after launch rather than assuming the migration succeeded."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/shopify-website-design/#webpage", "url": "https://denver-webdesign.com/shopify-website-design/", "name": "Shopify Website Design | Fast Stores, Honest Advice", "description": "Shopify website design and development. See what every app costs your store in page weight, when a theme beats a custom build, and how to migrate without losing traffic.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/shopify-website-design/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-08-28", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/shopify-website-design/#faq", "mainEntity": [{"@type": "Question", "name": "How much does a Shopify website cost to build?", "acceptedAnswer": {"@type": "Answer", "text": "A customised theme build is normal website territory and we quote per project, typically two to four weeks. A fully custom front end costs considerably more - published research puts full custom ecommerce at $45,000 to $250,000 at the enterprise end. Most stores want the first thing."}}, {"@type": "Question", "name": "Do I need a custom theme or will a paid one do?", "acceptedAnswer": {"@type": "Answer", "text": "A well-customised paid theme suits the large majority of stores and gets you trading far sooner. Custom becomes worth it when you need product configurations, wholesale pricing tiers or bundles that themes genuinely cannot express. Wanting to look different is not usually enough reason on its own."}}, {"@type": "Question", "name": "Why is my Shopify store slow?", "acceptedAnswer": {"@type": "Answer", "text": "Almost always three things: too many apps each loading their own scripts, oversized product images, and a heavy theme with sliders and video. Run PageSpeed Insights on a product page, not the homepage - that's where your customers actually land and where the weight usually is."}}, {"@type": "Question", "name": "How many apps is too many?", "acceptedAnswer": {"@type": "Answer", "text": "There's no fixed number, but every app typically adds scripts to every page. The useful test is whether each one earns its weight and its monthly fee. Most stores we look at have at least two nobody uses and one duplicating a feature the theme already has."}}, {"@type": "Question", "name": "Can you migrate my store from WooCommerce or another platform?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The critical part is mapping every existing product URL to its new address and publishing redirects at launch, so the traffic that was already buying still arrives. Reviews and customer history need exporting deliberately too, because they're commonly lost."}}, {"@type": "Question", "name": "Will my products show up in Google?", "acceptedAnswer": {"@type": "Answer", "text": "They can, with product schema so price and availability appear in results, unique descriptions rather than the manufacturer's copy, and collection pages written for how people search. Duplicate supplier text across a thousand stores is the most common reason product pages don't rank."}}, {"@type": "Question", "name": "Do you build Shopify apps?", "acceptedAnswer": {"@type": "Answer", "text": "We build custom functionality for stores, which sometimes means a private app and sometimes means theme-level code that avoids needing one. The second is usually cheaper and lighter."}}, {"@type": "Question", "name": "How long until my store is live?", "acceptedAnswer": {"@type": "Answer", "text": "Two to four weeks for most stores. Almost all of the variance is product data - photos, descriptions, variants and weights for everything you sell. A fifty-product store with no photos ready takes considerably longer than the build itself would suggest."}}, {"@type": "Question", "name": "Do you work with stores outside Denver?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Ecommerce has no geography. Most clients are in the Denver metro and we also work along the Front Range, including Monument, as well as out of state."}}, {"@type": "Question", "name": "What are the ongoing costs?", "acceptedAnswer": {"@type": "Answer", "text": "Platform subscription, card processing on every order at typically 2.9% plus 30 cents, and any app subscriptions. Put your own numbers into the calculator on our ecommerce page and see what it comes to per order and per year."}}]}]}
+</script>
+</body>
+</html>
