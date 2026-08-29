@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI-Ready Websites Denver | Be Found by ChatGPT and AI Search</title>
+<meta name="description" content="Most Denver small business sites are invisible to AI assistants, usually by accident. See exactly what a machine reads on your site, and the 12 questions to ask any web designer.">
+<link rel="canonical" href="https://denver-webdesign.com/ai-ready-websites-denver/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#070C14">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denver-webdesign.com/ai-ready-websites-denver/">
+<meta property="og:site_name" content="Denver Web Design">
+<meta property="og:title" content="AI-Ready Websites Denver | Be Found by ChatGPT and AI Search">
+<meta property="og:description" content="Most Denver small business sites are invisible to AI assistants, usually by accident. See exactly what a machine reads on your site, and the 12 questions to ask any web designer.">
+<meta property="og:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI-Ready Websites Denver | Be Found by ChatGPT and AI Search">
+<meta name="twitter:description" content="Most Denver small business sites are invisible to AI assistants, usually by accident. See exactly what a machine reads on your site, and the 12 questions to ask any web designer.">
+<meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
+<link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
+  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
+  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
+  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
+  --display:'Outfit',system-ui,sans-serif;
+  --text:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1180px; --r:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
+h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
+p{margin:0 0 1.1em}
+a{color:#0B63D8;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+section{padding:82px 0}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
+.eyebrow.on-dark{color:var(--cyan)}
+.lede{font-size:1.13rem;max-width:62ch}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.brand img{height:57px;width:auto}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
+.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
+.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
+.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
+@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
+@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
+
+.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .burger{display:block}
+  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
+  .nav.open{opacity:1;transform:none;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
+.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
+.hero h1{color:#fff}
+.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
+.hero-r{position:relative;min-height:530px;overflow:hidden}
+.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
+.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
+
+.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
+.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
+.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
+.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
+.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
+.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
+.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
+.float{animation:fl 6s ease-in-out infinite}
+.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
+@media(max-width:900px){
+  .hero-r{min-height:0;height:auto;padding:0}
+  .hero-r picture,.hero-r img{position:relative;height:230px}
+  .hero-r::after{display:none}
+  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
+  .pop{position:static;max-width:none;opacity:1;transform:none}
+  .float{animation:none}
+}
+.hero-tag{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
+.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
+.btn-s{border-color:var(--cyan);color:var(--cyan)}
+.btn-d{background:var(--ink);color:#fff;width:100%}
+.microtrust{font-size:.87rem;color:#8497BA}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-l{padding:52px 22px 44px}
+  .hero-r{min-height:260px;order:2}
+  .hero-r::after{display:none}
+}
+
+/* trustbar */
+.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
+.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
+.tbar li{display:flex;align-items:center;gap:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* generic cards */
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin-bottom:.4em}
+.card p{margin:0;font-size:.97rem}
+.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.p-mint{background:var(--mint);color:#065F46}
+.p-lilac{background:var(--lilac);color:#4C1D95}
+.p-peach{background:var(--peach);color:#9A3412}
+.p-cyan{background:#CCF7FE;color:#0E5A6B}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* scratch demo */
+.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.demo h2,.demo h3{color:#fff}
+.demo p{color:#AFBDD8}
+.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
+.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
+.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
+.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
+#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
+.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
+
+/* accordion */
+.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
+.acc .acc-b p:last-child{margin-bottom:0}
+
+/* fuse */
+.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.fuse-sec h2{color:#fff}
+.fuse-sec p{color:#B9A9CE}
+.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
+#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
+.lit #fusepath{stroke-dashoffset:0}
+.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
+.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
+.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
+.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
+.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
+.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
+.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
+.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
+
+/* signal flow */
+.flow{background:#fff}
+.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
+.flow-svg{width:100%;height:auto}
+.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-30}}
+
+/* stat bars */
+.bars{margin:26px 0 0}
+.bar-row{margin-bottom:17px}
+.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
+.bar-lab b{font-family:var(--mono);color:var(--ink)}
+.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
+.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
+
+/* form */
+.formsec{background:var(--ink-2);color:#fff}
+.formsec h2{color:#fff}
+.formsec p{color:#B0BFDA}
+.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.frow{grid-template-columns:1fr}}
+.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
+.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
+.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
+.fbox textarea{min-height:96px;resize:vertical}
+.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
+.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
+.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
+.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
+.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* footer */
+.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
+.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.ftr ul{list-style:none;padding:0;margin:0}
+.ftr li{margin-bottom:9px}
+.ftr a{color:var(--body)}
+.ftr img{height:51px;margin-bottom:16px}
+.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== PAGE THEME: split human / machine ===== */
+.sp{--warm:#FFF6EC;--warm2:#FFEAD6;--cold:#070C14;--cold2:#0D1626;--seam:#FF4D2E;--wire:#3EF2A8;--dim:#7C8DA6}
+.sp-hero{position:relative;overflow:hidden;border-bottom:3px solid var(--seam)}
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:520px;position:relative}
+.split::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--seam);transform:translateX(-50%);z-index:5}
+@media(max-width:900px){.split{grid-template-columns:1fr;min-height:0}.split::after{left:0;right:0;top:50%;bottom:auto;width:auto;height:3px;transform:none}}
+.side{padding:56px 40px}
+@media(max-width:900px){.side{padding:40px 22px}}
+.side-h{background:linear-gradient(160deg,var(--warm),var(--warm2))}
+.side-m{background:var(--cold);position:relative;overflow:hidden}
+.side-m::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(62,242,168,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(62,242,168,.06) 1px,transparent 1px);background-size:32px 32px}
+.side-m>*{position:relative;z-index:2}
+.sp-lab{font-family:var(--mono);font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;margin:0 0 20px}
+.sp-lab.h{color:#C2643A}
+.sp-lab.m{color:var(--wire)}
+.side-h h1{font-size:clamp(1.9rem,3.2vw,2.6rem);color:#2B1608;line-height:1.06;letter-spacing:-.03em}
+.side-h p{color:#6B4A32}
+.side-m h2{font-family:var(--mono);font-size:.86rem;color:var(--wire);font-weight:400;letter-spacing:.02em;text-transform:none;margin-bottom:16px}
+.mrow{font-family:var(--mono);font-size:.74rem;line-height:1.9;color:var(--dim);border-left:2px solid rgba(62,242,168,.2);padding-left:13px;margin-bottom:14px}
+.mrow b{color:#E4EDF7;font-weight:400}
+.mrow .k{color:var(--wire)}
+.mrow .x{color:#FF6B5B}
+.mnull{color:#FF6B5B;font-family:var(--mono);font-size:.74rem;padding:14px;border:1px dashed rgba(255,107,91,.4);text-align:center;margin-top:8px}
+
+/* toggle viewer */
+.vw{border:2px solid #1A2537;border-radius:0;overflow:hidden;margin-top:30px;background:var(--cold)}
+.vw-bar{display:flex;align-items:center;gap:0;background:#0D1626;border-bottom:2px solid #1A2537}
+.vw-bar button{flex:1;background:none;border:0;border-right:2px solid #1A2537;padding:14px 10px;font-family:var(--mono);font-size:.76rem;color:var(--dim);cursor:pointer;transition:.16s;letter-spacing:.04em}
+.vw-bar button:last-child{border-right:0}
+.vw-bar button[aria-pressed="true"]{background:var(--wire);color:#04180F;font-weight:700}
+.vw-body{padding:0;min-height:400px;position:relative}
+.pane{display:none;padding:26px}
+.pane.on{display:block;animation:fadein .3s}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.mock{background:#fff;border-radius:8px;padding:24px;color:#1A1A1A;font-family:var(--text)}
+.mock .mnav{display:flex;gap:14px;font-size:.76rem;color:#666;border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:18px}
+.mock h3{font-size:1.35rem;margin:0 0 10px;color:#111;font-family:var(--display)}
+.mock p{font-size:.9rem;color:#555;margin:0 0 12px}
+.mock .mbtn{display:inline-block;background:#FF4D2E;color:#fff;padding:10px 20px;border-radius:6px;font-size:.85rem;font-weight:600}
+.code{font-family:var(--mono);font-size:.75rem;line-height:1.85;color:#9FB3CC;white-space:pre-wrap;word-break:break-word;margin:0}
+.code .t{color:#5BA8FF}.code .a{color:#3EF2A8}.code .v{color:#FFD166}.code .c{color:#4E6076}
+.qt{background:rgba(62,242,168,.07);border-left:3px solid var(--wire);padding:16px 18px;font-family:var(--text);font-size:.92rem;color:#CFE0F2;line-height:1.6;margin-bottom:12px}
+.qt b{color:var(--wire);font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;display:block;margin-bottom:8px}
+.vw-note{padding:16px 26px;border-top:2px solid #1A2537;font-family:var(--mono);font-size:.72rem;color:var(--dim)}
+
+.sp-sec{padding:76px 0}
+.sp-dark{background:var(--cold);color:#CFDCEC}
+.sp-dark h2,.sp-dark h3{color:#fff}
+.sp-dark p{color:#8FA3BC}
+.sp-warm{background:var(--warm);border-top:3px solid var(--seam);border-bottom:3px solid var(--seam)}
+.sp-warm h2,.sp-warm h3{color:#2B1608}
+.sp-warm p{color:#6B4A32}
+.sp h2{letter-spacing:-.03em}
+.wiregrad{background:linear-gradient(94deg,var(--wire),#5BA8FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.seamgrad{background:linear-gradient(94deg,var(--seam),#FF9E3D);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* download block */
+.dl{background:#fff;border:3px solid #2B1608;padding:34px;box-shadow:9px 9px 0 var(--seam)}
+.dl h3{font-size:1.55rem;margin-bottom:10px}
+.dl-list{list-style:none;padding:0;margin:18px 0 0;columns:2;column-gap:26px}
+@media(max-width:640px){.dl-list{columns:1}}
+.dl-list li{font-size:.9rem;color:#6B4A32;padding:6px 0 6px 22px;position:relative;break-inside:avoid}
+.dl-list li::before{content:"";position:absolute;left:0;top:12px;width:9px;height:5px;border-left:2px solid var(--seam);border-bottom:2px solid var(--seam);transform:rotate(-45deg)}
+.dl-form{margin-top:24px;padding-top:22px;border-top:2px dashed #E0CDB8}
+.dl-row{display:flex;gap:10px;flex-wrap:wrap}
+.dl-row input{flex:1;min-width:200px;padding:13px 14px;border:2px solid #2B1608;font:inherit;font-size:.95rem;background:#fff;color:#2B1608}
+.optin{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:.85rem;color:#6B4A32;line-height:1.5;cursor:pointer}
+.optin input{width:18px;height:18px;flex:none;margin:2px 0 0;accent-color:var(--seam)}
+.dl-or{text-align:center;font-family:var(--mono);font-size:.72rem;color:#A08874;margin:16px 0 0}
+.sp .card{background:#fff;border-color:#E0CDB8}
+.sp-dark .card{background:#0D1626;border-color:#1A2537}
+.sp-dark .card h3{color:#fff}
+.sp-dark .card p{color:#8FA3BC}
+.sp .acc{border-color:#E0CDB8;background:#fff}
+.sp .acc summary{color:#2B1608}
+.sp .acc summary::after{border-color:var(--seam)}
+</style>
+
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="telm" href="tel:18004818638">1-800-481-8638</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="/denver-web-design-company/">Web Design</a>
+      <a href="/denver-web-development/">Development</a>
+      <a href="/denver-app-development/">Apps</a>
+      <a href="/denver-seo-web-design/">SEO</a>
+      <a href="/denver-web-design-pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+    </nav>
+  </div>
+</header>
+
+<main class="sp">
+
+<section class="sp-hero">
+  <div class="split">
+    <div class="side side-h">
+      <p class="sp-lab h">What your customer sees</p>
+      <h1>A website is read twice. Once by a person, once by a machine.</h1>
+      <p class="lede" style="margin-top:18px">Your customer sees photos, headlines and a phone number. Google, ChatGPT and Siri see something else entirely &mdash; and on most Denver small business websites, what they see is almost nothing.</p>
+      <div class="cta-row" style="margin:26px 0 12px">
+        <a class="btn btn-p" style="background:var(--seam)" href="tel:18004818638">Call 1-800-481-8638</a>
+        <a class="btn btn-s" style="border-color:#2B1608;color:#2B1608" href="#viewer">See the machine view</a>
+      </div>
+      <p style="font-size:.87rem;color:#8A6449">Denver since 2012 &middot; Every build ships AI-ready &middot; No extra charge</p>
+    </div>
+
+    <div class="side side-m">
+      <p class="sp-lab m">What the machine reads</p>
+      <h2>GET / &mdash; parsing yourbusiness.com</h2>
+      <div class="mrow"><span class="k">entity</span> <b>&mdash;</b> <span class="x">not declared</span></div>
+      <div class="mrow"><span class="k">service_area</span> <b>&mdash;</b> <span class="x">not declared</span></div>
+      <div class="mrow"><span class="k">phone</span> <b>&mdash;</b> <span class="x">image only, unreadable</span></div>
+      <div class="mrow"><span class="k">pricing</span> <b>&mdash;</b> <span class="x">not declared</span></div>
+      <div class="mrow"><span class="k">answers</span> <b>&mdash;</b> <span class="x">0 found</span></div>
+      <div class="mrow"><span class="k">crawler_access</span> <b>&mdash;</b> <span class="x">GPTBot blocked by robots.txt</span></div>
+      <div class="mnull">Nothing to recommend. Nothing to quote.</div>
+    </div>
+  </div>
+</section>
+
+<div class="tbar"><div class="wrap"><ul>
+  <li><span class="dot"></span>AI crawlers allowed by name</li>
+  <li><span class="dot"></span>Structured data on every page</li>
+  <li><span class="dot"></span>llms.txt published</li>
+  <li><span class="dot"></span>Written to be quoted</li>
+</ul></div></div>
+
+<section class="sp-sec">
+  <div class="wrap">
+    <p class="sp-lab h rv" style="color:#B4501F">The shift nobody warned small businesses about</p>
+    <h2 class="rv" style="max-width:24ch">Your next customer may never see a search results page</h2>
+    <p class="lede rv">For twenty years the game was simple: rank in ten blue links, get the click. That is no longer the only path, and for a growing share of people it isn't the path at all.</p>
+    <p class="lede rv">Somebody needing a Denver contractor now asks ChatGPT and gets three names with reasons. Somebody comparing options reads an AI Overview at the top of Google and never scrolls past it. Somebody driving asks their phone out loud and hears exactly one answer.</p>
+    <p class="lede rv">In every one of those, a machine read some websites, decided which businesses were worth mentioning, and summarised them. If it couldn't read yours, you weren't in the running. You didn't lose the comparison &mdash; you were never in it.</p>
+
+    <div class="grid g3 rv" style="margin-top:34px">
+      <div class="card"><span class="pill p-peach">The quiet failure</span><h3>You can't see it happening</h3><p>A lost ranking shows up in analytics. Being left out of an AI answer shows up as nothing at all. No impression, no bounce, no data. The business just stays quieter than it should be.</p></div>
+      <div class="card"><span class="pill p-peach">The common cause</span><h3>Blocked by accident</h3><p>A security plugin, a host default, or a theme's robots file adds a rule nobody read. Plenty of small business sites are invisible to AI assistants for a reason the owner never chose.</p></div>
+      <div class="card"><span class="pill p-peach">The other cause</span><h3>Nothing worth quoting</h3><p>The crawler gets in fine and finds atmosphere. "Committed to excellence since 1998." No prices, no service area, no answers. There's nothing to lift, so nothing gets lifted.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sp-sec sp-dark" id="viewer">
+  <div class="wrap">
+    <p class="sp-lab m rv">See it for yourself</p>
+    <h2 class="rv" style="max-width:26ch">The same page, <span class="wiregrad">three different readers</span></h2>
+    <p class="lede rv" style="color:#8FA3BC">Below is one page from a fictional Denver remodeler. Switch between how a person sees it, what the underlying code declares, and what an AI assistant can actually pull out and repeat. Then compare it with a site that wasn't built this way.</p>
+
+    <div class="vw rv">
+      <div class="vw-bar" role="group" aria-label="Choose a view">
+        <button type="button" data-p="human" aria-pressed="true">Human view</button>
+        <button type="button" data-p="code" aria-pressed="false">Machine view</button>
+        <button type="button" data-p="ai" aria-pressed="false">What AI can quote</button>
+        <button type="button" data-p="bad" aria-pressed="false">A typical site</button>
+      </div>
+      <div class="vw-body">
+        <div class="pane on" id="p-human">
+          <div class="mock">
+            <div class="mnav"><span>Services</span><span>Gallery</span><span>Pricing</span><span>Contact</span></div>
+            <h3>Bathroom Remodeling in Denver</h3>
+            <p>Licensed and insured. Serving Denver, Aurora and Lakewood since 2012. Most bathrooms finished in under two weeks.</p>
+            <p style="font-weight:600;color:#111">Projects from $4,500 &middot; Free estimates</p>
+            <span class="mbtn">Call for a free estimate</span>
+            <p style="margin-top:18px;font-size:.85rem;color:#888">Open today until 6:00 PM</p>
+          </div>
+        </div>
+
+        <div class="pane" id="p-code">
+          <p class="code"><span class="c">// structured data the page declares about itself</span>
+<span class="t">"@type"</span>: <span class="v">"LocalBusiness"</span>
+<span class="t">"name"</span>: <span class="v">"Example Remodeling"</span>
+<span class="t">"telephone"</span>: <span class="v">"+1-800-481-8638"</span>
+<span class="t">"foundingDate"</span>: <span class="v">"2012"</span>
+<span class="t">"areaServed"</span>: [<span class="v">"Denver"</span>, <span class="v">"Aurora"</span>, <span class="v">"Lakewood"</span>]
+<span class="t">"openingHours"</span>: <span class="v">"Mo-Sa 08:00-18:00"</span>
+<span class="t">"priceRange"</span>: <span class="v">"$$"</span>
+<span class="t">"offers"</span>: {
+  <span class="t">"lowPrice"</span>: <span class="v">"4500"</span>, <span class="t">"priceCurrency"</span>: <span class="v">"USD"</span>
+}
+<span class="t">"mainEntity"</span>: [
+  { <span class="t">"@type"</span>: <span class="v">"Question"</span>,
+    <span class="t">"name"</span>: <span class="v">"How long does a bathroom remodel take?"</span> },
+  { <span class="t">"@type"</span>: <span class="v">"Question"</span>,
+    <span class="t">"name"</span>: <span class="v">"How much does it cost in Denver?"</span> }
+]
+
+<span class="c">// crawler permissions</span>
+<span class="a">GPTBot</span>          <span class="a">allow</span>
+<span class="a">ClaudeBot</span>       <span class="a">allow</span>
+<span class="a">PerplexityBot</span>   <span class="a">allow</span>
+<span class="a">Google-Extended</span> <span class="a">allow</span>
+<span class="a">llms.txt</span>        <span class="a">published</span></p>
+        </div>
+
+        <div class="pane" id="p-ai">
+          <div class="qt"><b>If someone asks: who does bathroom remodeling in Denver?</b>Example Remodeling has worked in the Denver area since 2012, covering Denver, Aurora and Lakewood. Projects start around $4,500 and most bathrooms are finished in under two weeks. They're licensed and insured and offer free estimates.</div>
+          <div class="qt"><b>If someone asks: how much is a bathroom remodel in Denver?</b>One Denver remodeler publishes a starting price of $4,500, with the final figure depending on size and fixtures.</div>
+          <div class="qt"><b>If someone asks their phone: find a bathroom remodeler near me, open now</b>Example Remodeling, open until 6 PM, serving Denver. Would you like me to call them?</div>
+          <p style="font-family:var(--mono);font-size:.72rem;color:#7C8DA6;margin:14px 0 0">Every fact above came from the structured data in the machine view. Nothing was inferred, and nothing was invented.</p>
+        </div>
+
+        <div class="pane" id="p-bad">
+          <p class="code"><span class="c">// the same parse on a typical small business site</span>
+<span class="t">"@type"</span>: <span class="x">none declared</span>
+<span class="t">"telephone"</span>: <span class="x">found inside an image &mdash; unreadable</span>
+<span class="t">"areaServed"</span>: <span class="x">none declared</span>
+<span class="t">"openingHours"</span>: <span class="x">none declared</span>
+<span class="t">"offers"</span>: <span class="x">none declared</span>
+<span class="t">"mainEntity"</span>: <span class="x">0 questions found</span>
+
+<span class="c">// crawler permissions</span>
+<span class="a">GPTBot</span>          <span class="x">disallow</span>
+<span class="a">ClaudeBot</span>       <span class="x">disallow</span>
+<span class="a">llms.txt</span>        <span class="x">404 not found</span>
+
+<span class="c">// longest quotable passage on the page</span>
+<span class="v">"Welcome to our website. We are committed to
+ excellence and customer satisfaction, serving
+ the community for many years."</span></p>
+          <div class="mnull" style="margin-top:18px">No location. No price. No hours. No answer to any question a customer asked.</div>
+        </div>
+      </div>
+      <p class="vw-note">Illustration using a fictional business. The structure shown is what we build on every site &mdash; you can view-source on this page and check.</p>
+    </div>
+  </div>
+</section>
+<section class="sp-sec sp-warm" id="checklist">
+  <div class="wrap">
+    <p class="sp-lab h rv" style="color:#B4501F">Free, no wall in front of it</p>
+    <h2 class="rv" style="max-width:24ch">12 questions to ask before hiring <span class="seamgrad">any</span> Denver web designer</h2>
+    <p class="lede rv">Every one of these is a question we'd want asked of us. Read them here or download the PDF &mdash; no email, no form, no wall. Ask a competitor the same twelve. That's the point.</p>
+
+    <div class="dl rv" style="margin-top:30px">
+      <h3>The full list, right here</h3>
+      <p style="margin:0">No email needed to read it or to download it. The whole checklist, not a teaser.</p>
+      <ol class="dl-list">
+        <li>What is the total cost over three years, including hosting and maintenance?</li>
+        <li>What happens if I want to leave &mdash; do I keep the site and the domain?</li>
+        <li>Who actually writes the code, and are they in the country?</li>
+        <li>What does a small text change cost, and how fast does it happen?</li>
+        <li>Is SEO included, and which specific parts?</li>
+        <li>What is your own website's PageSpeed score on mobile?</li>
+        <li>Can I see a real page before I pay anything?</li>
+        <li>Who owns the content and photos when we're done?</li>
+        <li>Will the site be readable by AI assistants, and how would I check?</li>
+        <li>What happens to my current rankings when the new site launches?</li>
+        <li>Who do I call when it breaks on a Saturday?</li>
+        <li>Can you show me a site you built that ranks for a competitive term today?</li>
+      </ol>
+
+      <div class="dl-form">
+        <div class="dl-row" style="align-items:center">
+          <a class="btn btn-p" style="background:#2B1608;flex:1;text-align:center;min-width:230px" href="/downloads/12-questions-denver-web-designer.pdf" download>Download the PDF &mdash; no email needed</a>
+          <p style="margin:0;font-size:.86rem;color:#8A6449;flex:1;min-width:200px">Two pages, printable, with a tick box next to each question. Forward it to anyone who's about to hire someone.</p>
+        </div>
+
+        <div style="margin-top:26px;padding-top:22px;border-top:2px dashed #E0CDB8">
+          <p style="margin:0 0 4px;font-weight:600;color:#2B1608">Want the Business Growth Notes?</p>
+          <p style="margin:0 0 14px;font-size:.88rem;color:#6B4A32">Occasional practical emails about getting found, getting calls and growing a local business. No more than monthly. Unsubscribe any time. Entirely separate from the download above &mdash; that one's free regardless.</p>
+          <form id="dlform" novalidate>
+            <div class="dl-row">
+              <input id="d-email" name="email" type="email" placeholder="your@email.com" autocomplete="email" aria-label="Email address for the Business Growth Notes">
+              <button class="btn btn-p" style="background:var(--seam)" type="submit" id="dlbtn">Sign me up</button>
+            </div>
+            <div class="hp" aria-hidden="true"><label for="_honey2">Leave this field empty</label><input type="text" id="_honey2" name="_honey" tabindex="-1" autocomplete="off"></div>
+            <p class="fstat" id="dlstat" role="status" aria-live="polite"></p>
+            <p style="font-size:.8rem;color:#8A6449;margin:14px 0 0">We don't sell your details and we don't hand them to anyone else.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sp-sec sp-dark">
+  <div class="wrap">
+    <p class="sp-lab m rv">What we actually do about it</p>
+    <h2 class="rv" style="max-width:24ch">Six things that make a site <span class="wiregrad">readable by machines</span></h2>
+    <p class="lede rv" style="color:#8FA3BC">None of this is exotic and none of it costs extra here. It's on every build, including the $99 a month ones. It's just that almost nobody does it.</p>
+
+    <div class="grid g3" style="margin-top:32px">
+      <div class="card rv"><span class="pill p-cyan">01</span><h3>Crawlers allowed by name</h3><p>GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended, Applebot-Extended and others, permitted explicitly. Checked on every build rather than inherited from a plugin.</p></div>
+      <div class="card rv"><span class="pill p-cyan">02</span><h3>Structured data that states facts</h3><p>Business type, phone, service area, hours, price range, services offered. Declared in a form machines read directly instead of guessed at from prose.</p></div>
+      <div class="card rv"><span class="pill p-cyan">03</span><h3>llms.txt published</h3><p>A plain-language file summarising the business, its pricing, its timelines and its key pages &mdash; written specifically for AI systems rather than for people.</p></div>
+      <div class="card rv"><span class="pill p-cyan">04</span><h3>Questions as headings</h3><p>The heading asks what a customer asks. The answer sits immediately underneath in plain words. That shape is what assistants lift and voice search reads aloud.</p></div>
+      <div class="card rv"><span class="pill p-cyan">05</span><h3>Facts, not atmosphere</h3><p>Real prices, real timelines, real service areas, in text. "Committed to excellence" is unquotable. "Projects from $4,500, most finished in under two weeks" gets repeated.</p></div>
+      <div class="card rv"><span class="pill p-cyan">06</span><h3>Entity connections</h3><p>Schema linking the business to its parent company, its people and its other properties, so a machine can place who you are rather than treating you as an unknown string.</p></div>
+    </div>
+    <p class="rv" style="margin-top:26px;font-size:.93rem">Related: <a href="/denver-seo-web-design/" style="color:var(--wire)">SEO web design</a> &middot; <a href="/denver-web-development/" style="color:var(--wire)">web development</a> &middot; <a href="/website-platforms-compared/" style="color:var(--wire)">platforms compared</a> &middot; ongoing campaigns through <a href="https://eyetoad.com/" style="color:var(--wire)">Denver SEO</a></p>
+  </div>
+</section>
+
+<section class="sp-sec">
+  <div class="wrap">
+    <p class="sp-lab h rv" style="color:#B4501F">Check your own site tonight</p>
+    <h2 class="rv" style="max-width:22ch">Three free ways to find out where you stand</h2>
+    <p class="lede rv">You don't need us for any of these, and you don't need to be technical. Fifteen minutes total.</p>
+
+    <div class="grid g3 rv" style="margin-top:30px">
+      <div class="card"><span class="pill p-lilac">Test one</span><h3>Ask an assistant about you</h3><p>Open ChatGPT or Perplexity and ask for a recommendation in your trade and your city, the way a customer would. Then ask it directly what it knows about your business by name. If the answer is thin or wrong, that's what your customers are getting.</p></div>
+      <div class="card"><span class="pill p-lilac">Test two</span><h3>Look at your robots file</h3><p>Type your domain followed by <span class="mono">/robots.txt</span> in a browser. If you see <span class="mono">Disallow: /</span> under GPTBot or any AI crawler, you're blocked. If the file doesn't exist at all, that's worth fixing too.</p></div>
+      <div class="card"><span class="pill p-lilac">Test three</span><h3>Read your own homepage aloud</h3><p>Find one sentence stating a fact a customer needs &mdash; a price, an area, a timeline. If every sentence is about commitment and passion, there is nothing on that page for a machine to repeat.</p></div>
+    </div>
+    <p class="rv" style="margin-top:26px">If those turn up problems, call and read us what you found. That conversation costs nothing and you're welcome to take the answer somewhere else. <a href="tel:18004818638"><b>1-800-481-8638</b></a></p>
+  </div>
+</section>
+
+<section class="sp-sec sp-warm">
+  <div class="wrap">
+    <p class="sp-lab h rv" style="color:#B4501F">Straight answers</p>
+    <h2 class="rv">AI search questions Denver business owners ask</h2>
+    <div style="margin-top:26px;max-width:860px">
+      <details class="acc rv"><summary>How do I get my business to show up in ChatGPT?</summary><div class="acc-b"><p>Three things have to be true. AI crawlers must be allowed to read your site rather than blocked by your robots file. Your pages need structured data declaring who you are, where you work and what you charge. And your content has to state facts plainly enough to be quoted. Most small business sites fail at least one of those, usually the first, usually by accident.</p></div></details>
+      <details class="acc rv"><summary>What is llms.txt and do I need one?</summary><div class="acc-b"><p>It's a plain text file at the root of your site summarising the business for AI systems &mdash; what you do, your pricing, your service area, your key pages. It's a young convention and not every system reads it yet. It costs nothing to publish, it can't hurt, and it means the summary a machine reads is one you wrote rather than one it assembled.</p></div></details>
+      <details class="acc rv"><summary>Is AI search optimization different from SEO?</summary><div class="acc-b"><p>Mostly the same foundation with two additions. Both need fast, structured, well-organised pages. AI adds crawler access for assistants, and content written in a directly quotable form &mdash; question as heading, plain answer underneath. Traditional SEO tolerates long preamble before the point. AI systems generally skip it.</p></div></details>
+      <details class="acc rv"><summary>Should I block AI crawlers to protect my content?</summary><div class="acc-b"><p>Some publishers do, and for them it's a reasonable call &mdash; their content is the product. For a local service business the calculation is the opposite. You want to be recommended. Blocking the assistants means being left out of answers where a competitor gets named instead. Worth thinking about, but for most Denver businesses the answer is clear.</p></div></details>
+      <details class="acc rv"><summary>How would I know if AI can read my site?</summary><div class="acc-b"><p>Check your robots file first, at yourdomain.com/robots.txt. Then just ask an assistant about your business by name and see what comes back. If it's vague, wrong, or it says it can't find anything, you have your answer without needing a tool or an audit.</p></div></details>
+      <details class="acc rv"><summary>Does this replace ranking on Google?</summary><div class="acc-b"><p>No, and be sceptical of anyone selling it that way. Google organic and the local map pack still drive most local business traffic. AI visibility is an additional channel that's growing, and the work overlaps heavily with good SEO anyway. It's an "and", not an "instead of".</p></div></details>
+      <details class="acc rv"><summary>Can you make my existing website AI-ready without a rebuild?</summary><div class="acc-b"><p>Often yes. Crawler permissions, structured data and an llms.txt file can usually be added to a site that's otherwise fine. If the site is slow, thin or built on something unmaintainable, you'd be decorating a bigger problem. We'll tell you honestly which situation you're in.</p></div></details>
+      <details class="acc rv"><summary>How much does this cost?</summary><div class="acc-b"><p>Nothing extra on a site we build &mdash; it's included at every level, starting at $99 a month. For an existing site we didn't build, call and describe what you have. Adding structure to a healthy site is a small job; it's only expensive when the underlying site needs replacing anyway.</p></div></details>
+      <details class="acc rv"><summary>Is any of this guaranteed to get me mentioned?</summary><div class="acc-b"><p>No. Nobody controls what an AI system chooses to recommend, the same way nobody controls Google's rankings. What's controllable is being readable, being accurate and being quotable. Being invisible guarantees the opposite, and that part is entirely fixable.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="start">
+  <div class="wrap">
+    <div class="grid g2" style="gap:44px;align-items:start">
+      <div>
+        <p class="eyebrow on-dark">Free, no obligation</p>
+        <h2>Want us to look at your site?</h2>
+        <p class="lede">Send the address and we'll check what a machine actually sees when it visits &mdash; crawler access, structured data, and whether there's anything quotable on the page. You'll get the findings whether or not you hire us.</p>
+        <p style="font-size:1.05rem"><b style="color:#fff">Rather just talk?</b><br><a href="tel:18004818638" style="color:var(--cyan);font-family:var(--display);font-size:1.75rem;font-weight:700;letter-spacing:-.03em">1-800-481-8638</a></p>
+        <p style="font-size:.9rem">Denver, Colorado &middot; Answered within one business day</p>
+      </div>
+      <form class="fbox" id="leadform" novalidate>
+        <div class="frow">
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <label for="f-biz">Business name</label>
+        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <label for="f-site">Website address</label>
+        <input id="f-site" name="current_website" type="text" placeholder="yourbusiness.com">
+        <label for="f-need">What would you like checked?</label>
+        <select id="f-need" name="project_type">
+          <option>Whether AI can read my site</option><option>Structured data review</option><option>Why nobody can find me</option>
+          <option>New website built AI-ready</option><option>Rebuild without losing rankings</option><option>Not sure yet</option>
+        </select>
+        <label for="f-msg">Anything else we should know?</label>
+        <textarea id="f-msg" name="message"></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-d" type="submit" id="fsubmit">Send my request</button>
+        <p class="fnote">We'll never share your details. No newsletter unless you ask for it.</p>
+        <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="grid g4">
+      <div>
+        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month.</p>
+        <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
+      </div>
+      <div>
+        <h4>Web Design</h4>
+        <ul>
+          <li><a href="/denver-web-design-company/">Denver web design company</a></li>
+          <li><a href="/website-designer-denver-co/">Website designer Denver CO</a></li>
+          <li><a href="/custom-web-design-denver/">Custom web design</a></li>
+          <li><a href="/wordpress-web-design-denver/">WordPress web design</a></li>
+          <li><a href="/freelance-web-designer-denver/">Freelance web designer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Build &amp; Grow</h4>
+        <ul>
+          <li><a href="/denver-web-development/">Web development</a></li>
+          <li><a href="/ecommerce-web-design-denver/">Ecommerce development</a></li>
+          <li><a href="/denver-app-development/">App development</a></li>
+          <li><a href="/denver-seo-web-design/">SEO web design</a></li>
+          <li><a href="/ai-ready-websites-denver/">AI-ready websites</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/denver-web-design-pricing/">Pricing</a></li>
+          <li><a href="/website-platforms-compared/">Platforms compared</a></li>
+          <li><a href="/denver-web-design-agencies-ranked/">Denver agencies compared</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-b">
+      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
+      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* hero chips */
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-d]').forEach(function(el){
+    if(rm){el.classList.add('show');return;}
+    setTimeout(function(){el.classList.add('show');},+el.dataset.d||0);
+  });
+})();
+
+/* nav */
+var bg=document.getElementById('burger'),nv=document.getElementById('nav');
+if(bg&&nv){
+bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o?'true':'false');});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');}});
+}
+
+/* reveal + bars + fuse */
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window&&!RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';bo.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.bar-f').forEach(function(el){bo.observe(el);});
+  var fs=document.getElementById('fuse');
+  if(fs){
+    var fo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('lit');fo.unobserve(e.target);}});},{threshold:.45});
+    fo.observe(fs);
+  }
+}else{
+  document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+  document.querySelectorAll('.bar-f').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  var fsr=document.getElementById('fuse'); if(fsr){fsr.classList.add('lit');}
+}
+
+/* scratch-off */
+(function(){
+  var c=document.getElementById('scratch');if(!c)return;
+  var ctx=c.getContext('2d'),drawing=false,cleared=false,hint=document.getElementById('shint');
+  function fill(){
+    var r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;
+    var g=ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,'#C8D0DE');g.addColorStop(.5,'#9BA6BA');g.addColorStop(1,'#C8D0DE');
+    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='700 13px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillText('SCRATCH HERE',r.width/2,r.height/2+5);
+  }
+  fill();
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if(!cleared)fill();},220);});
+  function pt(e){var r=c.getBoundingClientRect(),t=e.touches?e.touches[0]:e;return{x:t.clientX-r.left,y:t.clientY-r.top};}
+  function scr(e){
+    if(!drawing)return;e.preventDefault();var p=pt(e);
+    ctx.globalCompositeOperation='destination-out';
+    ctx.beginPath();ctx.arc(p.x,p.y,26,0,Math.PI*2);ctx.fill();
+    if(hint){hint.textContent='Keep going';}
+    check();
+  }
+  var last=0;
+  function check(){
+    var now=Date.now();if(now-last<260)return;last=now;
+    var d=ctx.getImageData(0,0,c.width,c.height).data,clear=0;
+    for(var i=3;i<d.length;i+=40){if(d[i]<40)clear++;}
+    if(clear/(d.length/40)>.42&&!cleared){cleared=true;c.classList.add('done');if(hint)hint.textContent='That is the whole pitch.';}
+  }
+  ['mousedown','touchstart'].forEach(function(ev){c.addEventListener(ev,function(e){drawing=true;scr(e);},{passive:false});});
+  ['mousemove','touchmove'].forEach(function(ev){c.addEventListener(ev,scr,{passive:false});});
+  ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
+})();
+
+/* form: honeypot + time trap + JS-assembled action */
+(function(){
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
+  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
+  if(document.readyState!=='loading'){loaded=Date.now();}
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
+    btn.disabled=true;btn.textContent='Sending…';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData(f);
+    fd.delete('_honey');
+    fd.append('_subject','New lead — denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
+        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
+      })
+      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
+  });
+})();
+</script>
+<script>
+/* machine-view switcher */
+(function(){
+  var bar=document.querySelector('.vw-bar'); if(!bar)return;
+  var btns=bar.querySelectorAll('button');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true');
+      document.querySelectorAll('.pane').forEach(function(p){p.classList.remove('on');});
+      var t=document.getElementById('p-'+b.getAttribute('data-p'));
+      if(t){t.classList.add('on');}
+    });
+  });
+})();
+/* optional newsletter signup - the PDF is a direct download and never gated */
+(function(){
+  var f=document.getElementById('dlform'); if(!f)return;
+  var st=document.getElementById('dlstat'), btn=document.getElementById('dlbtn'), loaded=Date.now();
+  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f._honey.value!==''){return;}
+    if(Date.now()-loaded<2500){say('warn','One moment, then try again.');return;}
+    var em=document.getElementById('d-email').value.trim();
+    if(!em||em.indexOf('@')<1||em.indexOf('.')<3){say('err','Please add a valid email address.');return;}
+    btn.disabled=true;btn.textContent='Sending\u2026';
+    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
+    var fd=new FormData();
+    fd.append('email',em);
+    fd.append('request','Business Growth Notes signup');
+    fd.append('_subject','Newsletter signup - denver-webdesign.com');
+    fd.append('_template','table');
+    fd.append('_captcha','false');
+    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){f.reset();say('ok','You are on the list. Unsubscribe any time from any email.');btn.textContent='Done';}
+        else{say('warn','That did not go through. Try again, or call 1-800-481-8638.');btn.disabled=false;btn.textContent='Sign me up';}
+      })
+      .catch(function(){say('warn','That did not go through. Try again, or call 1-800-481-8638.');btn.disabled=false;btn.textContent='Sign me up';});
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/ai-ready-websites-denver/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "AI-Ready Websites Denver", "item": "https://denver-webdesign.com/ai-ready-websites-denver/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/ai-ready-websites-denver/#service", "name": "AI-ready website build, Denver", "serviceType": "AI search visibility", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": {"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, "description": "Websites structured so AI assistants and answer engines can read, understand and recommend the business: crawler access, structured data, llms.txt and quotable content."}, {"@type": "ItemList", "@id": "https://denver-webdesign.com/ai-ready-websites-denver/#checklist", "name": "12 questions to ask before hiring a Denver web designer", "numberOfItems": 12, "itemListOrder": "https://schema.org/ItemListOrderAscending", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "What is the total cost over three years, including hosting and maintenance?"}, {"@type": "ListItem", "position": 2, "name": "What happens if I want to leave - do I keep the site and the domain?"}, {"@type": "ListItem", "position": 3, "name": "Who actually writes the code, and are they in the country?"}, {"@type": "ListItem", "position": 4, "name": "What does a small text change cost, and how fast does it happen?"}, {"@type": "ListItem", "position": 5, "name": "Is SEO included, and which specific parts?"}, {"@type": "ListItem", "position": 6, "name": "What is your own website's PageSpeed score on mobile?"}, {"@type": "ListItem", "position": 7, "name": "Can I see a real page before I pay anything?"}, {"@type": "ListItem", "position": 8, "name": "Who owns the content and photos when we're done?"}, {"@type": "ListItem", "position": 9, "name": "Will the site be readable by AI assistants, and how would I check?"}, {"@type": "ListItem", "position": 10, "name": "What happens to my current rankings when the new site launches?"}, {"@type": "ListItem", "position": 11, "name": "Who do I call when it breaks on a Saturday?"}, {"@type": "ListItem", "position": 12, "name": "Can you show me a site you built that ranks for a competitive term today?"}]}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/ai-ready-websites-denver/#howto", "name": "How to check whether AI assistants can read your website", "description": "Three free checks a business owner can run in about fifteen minutes, with no tools and no technical knowledge.", "totalTime": "PT15M", "step": [{"@type": "HowToStep", "position": 1, "name": "Ask an assistant about your business", "text": "Open ChatGPT or Perplexity, ask for a recommendation in your trade and city the way a customer would, then ask what it knows about your business by name."}, {"@type": "HowToStep", "position": 2, "name": "Check your robots file", "text": "Visit your domain followed by /robots.txt. If GPTBot or other AI crawlers are listed with Disallow, your site is blocked from AI assistants."}, {"@type": "HowToStep", "position": 3, "name": "Read your homepage aloud", "text": "Look for one sentence stating a fact a customer needs, such as a price, a service area or a timeline. If every sentence is about commitment and passion, there is nothing quotable on the page."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/ai-ready-websites-denver/#webpage", "url": "https://denver-webdesign.com/ai-ready-websites-denver/", "name": "AI-Ready Websites Denver | Be Found by ChatGPT and AI Search", "description": "Most Denver small business sites are invisible to AI assistants, usually by accident. See exactly what a machine reads on your site, and the 12 questions to ask any web designer.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/ai-ready-websites-denver/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-08-28", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/ai-ready-websites-denver/#faq", "mainEntity": [{"@type": "Question", "name": "How do I get my business to show up in ChatGPT?", "acceptedAnswer": {"@type": "Answer", "text": "Three things have to be true. AI crawlers must be allowed to read your site rather than blocked by your robots file. Your pages need structured data declaring who you are, where you work and what you charge. And your content has to state facts plainly enough to be quoted. Most small business sites fail at least one of those, usually the first, usually by accident."}}, {"@type": "Question", "name": "What is llms.txt and do I need one?", "acceptedAnswer": {"@type": "Answer", "text": "It's a plain text file at the root of your site summarising the business for AI systems - what you do, your pricing, your service area, your key pages. It's a young convention and not every system reads it yet. It costs nothing to publish, it can't hurt, and it means the summary a machine reads is one you wrote rather than one it assembled."}}, {"@type": "Question", "name": "Is AI search optimization different from SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly the same foundation with two additions. Both need fast, structured, well-organised pages. AI adds crawler access for assistants, and content written in a directly quotable form - question as heading, plain answer underneath. Traditional SEO tolerates long preamble before the point. AI systems generally skip it."}}, {"@type": "Question", "name": "Should I block AI crawlers to protect my content?", "acceptedAnswer": {"@type": "Answer", "text": "Some publishers do, and for them it's a reasonable call - their content is the product. For a local service business the calculation is the opposite. You want to be recommended. Blocking the assistants means being left out of answers where a competitor gets named instead. Worth thinking about, but for most Denver businesses the answer is clear."}}, {"@type": "Question", "name": "How would I know if AI can read my site?", "acceptedAnswer": {"@type": "Answer", "text": "Check your robots file first, at yourdomain.com/robots.txt. Then just ask an assistant about your business by name and see what comes back. If it's vague, wrong, or it says it can't find anything, you have your answer without needing a tool or an audit."}}, {"@type": "Question", "name": "Does this replace ranking on Google?", "acceptedAnswer": {"@type": "Answer", "text": "No, and be sceptical of anyone selling it that way. Google organic and the local map pack still drive most local business traffic. AI visibility is an additional channel that's growing, and the work overlaps heavily with good SEO anyway. It's an and, not an instead of."}}, {"@type": "Question", "name": "Can you make my existing website AI-ready without a rebuild?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes. Crawler permissions, structured data and an llms.txt file can usually be added to a site that's otherwise fine. If the site is slow, thin or built on something unmaintainable, you'd be decorating a bigger problem. We'll tell you honestly which situation you're in."}}, {"@type": "Question", "name": "How much does this cost?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing extra on a site we build - it's included at every level, starting at $99 a month. For an existing site we didn't build, call and describe what you have. Adding structure to a healthy site is a small job; it's only expensive when the underlying site needs replacing anyway."}}, {"@type": "Question", "name": "Is any of this guaranteed to get me mentioned?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nobody controls what an AI system chooses to recommend, the same way nobody controls Google's rankings. What's controllable is being readable, being accurate and being quotable. Being invisible guarantees the opposite, and that part is entirely fixable."}}]}]}
+</script>
+</body>
+</html>
