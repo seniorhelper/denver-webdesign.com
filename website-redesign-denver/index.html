@@ -20,6 +20,7 @@
 <meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
 <link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -346,6 +347,27 @@ section{padding:82px 0}
 .formsec .fbox .fstat.warn{color:#92400E!important}
 .formsec .fbox .fstat.err{color:#9B1C1C!important}
 </style>
+<style id="v2">
+.nav a[aria-current="page"]{color:var(--magenta)}
+@media(max-width:1240px) and (min-width:1001px){.nav{gap:15px}.nav a{font-size:.9rem}.hdr .nav a.tel{font-size:1.28rem}.brand img{height:50px}}
+.ftr-x{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;font-size:.87rem;color:#6B7690}
+.ftr-x p{margin:0 0 8px}.ftr-x b{color:var(--ink);font-weight:600}
+.kick{display:block;font-family:var(--mono);font-size:max(.72rem,.26em);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 .9em;opacity:.85;line-height:1.3}
+span.kick2{display:block;line-height:1.4}
+@media(min-width:901px){.hero-r{min-height:560px}.pops .p1{top:6%;left:7%}.pops .p2{top:29%;right:4%}.pops .p3{top:53%;left:6%}.pops .p4{top:auto;bottom:6%;right:4%}}
+@media(min-width:901px) and (max-width:1180px){.pops .p1{left:5%}.pops .p3{left:4%}}
+.kr{padding:44px 0;background:#fff;border-top:1px solid var(--line)}
+.kr h2{font-size:clamp(1.35rem,2.4vw,1.75rem);margin-bottom:14px}
+.kr-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
+.kr-g a{display:block;border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--ink);background:var(--paper);transition:transform .25s,box-shadow .25s,border-color .25s}
+.kr-g a:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,15,31,.08);border-color:var(--cyan)}
+.kr-g small{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin-bottom:6px}
+.kr-g b{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.3;display:block}
+.kr p{margin:14px 0 0;font-size:.95rem}
+@media(hover:hover) and (pointer:fine){.tilt{will-change:transform;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .6s ease}.tilt.tilting{transition:transform .08s linear;box-shadow:0 22px 44px rgba(10,15,31,.14)}}
+#sprog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--cyan),var(--magenta),var(--amber));z-index:80;pointer-events:none}
+@media(prefers-reduced-motion:reduce){#sprog{display:none}.kr-g a{transition:none}}
+</style>
 </head>
 <body>
 <header class="hdr">
@@ -357,7 +379,8 @@ section{padding:82px 0}
       <a href="/denver-web-design-company/">Web Design</a>
       <a href="/denver-web-development/">Development</a>
       <a href="/app-development-denver/">Apps</a>
-      <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/website-redesign-denver/" aria-current="page">Redesign</a>
+      <a href="/web-design-portfolio/">Work</a>
       <a href="/denver-web-design-pricing/">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
@@ -376,8 +399,7 @@ section{padding:82px 0}
   <div class="wrap">
     <div class="grid g2" style="gap:44px;align-items:center;padding-bottom:74px">
       <div>
-        <p class="px-lab hot">Website redesign &middot; Denver</p>
-        <h1>Your website has value.<br>A bad redesign <span class="hl">throws it away.</span></h1>
+        <h1><span class="px-lab hot kick2">Website redesign in Denver</span>Your website has value.<br>A bad redesign <span class="hl">throws it away.</span></h1>
         <p class="lede" style="color:#A7B7D4;margin-top:18px">Everyone selling redesigns tells you your site is outdated. Almost nobody tells you the real risk: the most common way a redesign goes wrong is losing the search rankings you already spent years earning. Prettier site, quieter phone.</p>
         <div class="cta-row" style="margin:28px 0 14px">
           <a class="btn btn-p" style="background:linear-gradient(96deg,var(--hot),var(--tang))" href="tel:18004818638">Call 1-800-481-8638</a>
@@ -573,6 +595,14 @@ section{padding:82px 0}
   </div>
 </section>
 
+<section class="kr">
+  <div class="wrap">
+    <h2>Keep going</h2>
+    <div class="kr-g"><a href="/blog/redesign-website-without-losing-rankings/"><small>Redesign</small><b>Redesign without losing your rankings</b></a><a href="/web-design-portfolio/"><small>Portfolio</small><b>See recent sites we built</b></a><a href="/blog/responsive-web-design-explained/"><small>Mobile</small><b>Responsive web design, explained</b></a></div>
+    <p>Or start from the top: everything we do in <a href="/">Denver website design</a>, in one page.</p>
+  </div>
+</section>
+
 <section class="formsec" id="start">
   <div class="wrap">
     <div class="grid g2" style="gap:44px;align-items:start">
@@ -618,7 +648,8 @@ section{padding:82px 0}
         <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
         <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
         <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
-        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+        <p style="font-size:.86rem">1001 Bannock St #660<br>Denver, CO 80204<br><a class="eml" href="/contact/" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=">Email us</a></p>
+        <p style="font-size:.86rem"><a href="/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
       </div>
       <div>
         <h4>Web Design</h4>
@@ -647,19 +678,23 @@ section{padding:82px 0}
       <div>
         <h4>Guides &amp; Company</h4>
         <ul>
+          <li><a href="/web-design-portfolio/">Our work</a></li>
           <li><a href="/denver-web-design-pricing/">Pricing</a></li>
           <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
           <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
           <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
           <li><a href="/real-estate-website-design/">Real estate websites</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+          <li><a href="/blog/">Blog</a> &middot; <a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
         </ul>
       </div>
     </div>
+    <div class="ftr-x">
+      <p><b>Across Colorado:</b> <a href="/">Denver web design</a> &middot; <a href="/boulder-web-design/">Boulder web design</a> &middot; <a href="/web-design-fort-collins/">Fort Collins web design</a> &middot; <a href="/web-design-colorado/">Web design in Colorado</a></p>
+      <p><b>Also from our team:</b> <a href="https://eyetoad.com/">Denver SEO at eyetoad.com</a> &middot; <a href="https://conversationalaibot.com/">AI chatbots for business</a> &middot; <a href="https://www.buyweburl.com">Domains and hosting</a></p>
+    </div>
     <div class="ftr-b">
-      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
-      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Conversion engine: <a href="https://www.searchconverts.com">Search Converts</a> &middot; Denver, Colorado</p>
+      <p style="margin:0"><a href="/sitemap/">Sitemap</a> &middot; <a href="/sitemap.xml">XML sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/accessibility/">Accessibility</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
     </div>
   </div>
 </footer>
@@ -733,33 +768,7 @@ if('IntersectionObserver' in window&&!RM){
   ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
 })();
 
-/* form: honeypot + time trap + JS-assembled action */
-(function(){
-  var f=document.getElementById('leadform');if(!f)return;
-  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
-  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
-  if(document.readyState!=='loading'){loaded=Date.now();}
-  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(f._honey.value!==''){return;}
-    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
-    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
-    btn.disabled=true;btn.textContent='Sending…';
-    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
-    var fd=new FormData(f);
-    fd.delete('_honey');
-    fd.append('_subject','New lead — denver-webdesign.com');
-    fd.append('_template','table');
-    fd.append('_captcha','false');
-    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-      .then(function(r){
-        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
-        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
-      })
-      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
-  });
-})();
+
 </script>
 <script>
 /* before / after drag */
@@ -821,7 +830,7 @@ if('IntersectionObserver' in window&&!RM){
       list=['Inventory which pages currently get traffic before anything else','Insist on a URL map and redirects as part of the quote','Keep the content that already works instead of starting blank'];}
     else{col='#FF3D71';tag='Rebuild';title='This site is costing you customers';
       lead='On most of these measures the site is not doing the job. The good news is that a site scoring this way usually has little ranking history to protect, which makes a rebuild lower risk than it would be for a healthier site.';
-      list=['Check Search Console for anything that is ranking, then protect it','Prioritise speed, a visible phone number and one page per service','Get the structure right this time so you are not doing it again in two years'];}
+      list=['Check Search Console for anything that is ranking, then protect it','Prioritize speed, a visible phone number and one page per service','Get the structure right this time so you are not doing it again in two years'];}
     out.innerHTML='<span class="vtag" style="background:'+col+';color:#0D1424">'+tag+'</span>'+
       '<h3>'+title+'</h3><p>'+lead+'</p><ul><li>'+list.join('</li><li>')+'</li></ul>'+
       '<p style="margin-top:14px;font-size:.9rem">Read us your answers on the phone and we will tell you what they add up to. Free, and you are welcome to take the answer elsewhere. <b style="color:#fff">1-800-481-8638</b></p>';
@@ -831,7 +840,53 @@ if('IntersectionObserver' in window&&!RM){
 </script>
 
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/website-redesign-denver/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Website Redesign Denver", "item": "https://denver-webdesign.com/website-redesign-denver/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/website-redesign-denver/#service", "name": "Website redesign, Denver", "serviceType": "Website redesign", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": {"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, "description": "Denver website redesign that inventories existing URLs and traffic, maps every old address to a new one and redirects at launch, so search history is protected rather than discarded.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Custom-coded rebuild from $99 per month"}}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/website-redesign-denver/#howto", "name": "How to redesign a website without losing search rankings", "description": "The order of operations that protects existing search visibility during a website rebuild.", "totalTime": "P14D", "step": [{"@type": "HowToStep", "position": 1, "name": "Inventory", "text": "Pull every URL Google has indexed and every page currently receiving traffic, so you know what has value before anything changes."}, {"@type": "HowToStep", "position": 2, "name": "Map", "text": "Match every old address to a new one before building, so no indexed page is orphaned by accident."}, {"@type": "HowToStep", "position": 3, "name": "Build alongside", "text": "Build the new site separately while the existing site stays live and continues earning."}, {"@type": "HowToStep", "position": 4, "name": "Redirect and monitor", "text": "Publish redirects with the launch, resubmit the sitemap, and watch Search Console for crawl errors rather than assuming success."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/website-redesign-denver/#webpage", "url": "https://denver-webdesign.com/website-redesign-denver/", "name": "Website Redesign Denver | Rebuild Without Losing Your Rankings", "description": "A Denver website redesign that protects the search rankings you already earned. Take the 8-question check to find out whether you even need one. Call 1-800-481-8638.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/website-redesign-denver/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-08-28", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/website-redesign-denver/#faq", "mainEntity": [{"@type": "Question", "name": "Will a redesign hurt my Google rankings?", "acceptedAnswer": {"@type": "Answer", "text": "It can, and that's the main risk nobody mentions in the sales conversation. The damage comes from changing URLs without redirects, deleting pages that were ranking, or removing content Google valued. Done properly - inventory first, map every old address to a new one, redirect at launch - a rebuild usually improves things because the new site is faster and better structured."}}, {"@type": "Question", "name": "How much does a website redesign cost in Denver?", "acceptedAnswer": {"@type": "Answer", "text": "Denver agencies commonly quote $9,000 to $22,000 for a professional five-page site, and independent 2026 research puts most professional redesigns between $3,000 and $15,000. Our custom-coded sites start at $99 a month with no setup fee. A redesign that keeps existing content is often less work than starting from nothing."}}, {"@type": "Question", "name": "How long does a redesign take?", "acceptedAnswer": {"@type": "Answer", "text": "Simple rebuilds can go live within a week. Larger sites with a lot of pages to map take longer, usually two to four weeks. The variable that moves it most is how fast decisions get made, not how fast the code gets written. Your existing site stays live the entire time."}}, {"@type": "Question", "name": "Will my site be down during the rebuild?", "acceptedAnswer": {"@type": "Answer", "text": "No. The new site gets built separately while the current one keeps running and keeps earning. The switch happens once everything is ready and the redirects are in place."}}, {"@type": "Question", "name": "Can I keep my domain and my content?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your domain stays registered to you and doesn't change. Your content, photos and logo are yours. We'd generally rather keep good existing content than rewrite it, because content that's already ranking has proven itself."}}, {"@type": "Question", "name": "What if I only need a few things fixed?", "acceptedAnswer": {"@type": "Answer", "text": "Then that's what we'll tell you. Speed problems, a missing phone number, or three thin service pages don't require a rebuild. Call, describe it, and if a small fix is the answer you'll hear that rather than a pitch."}}, {"@type": "Question", "name": "How do I know which of my pages are worth keeping?", "acceptedAnswer": {"@type": "Answer", "text": "Google Search Console shows which pages actually get impressions and clicks - it's free and you may already have access. If you don't, that inventory is the first thing we do. It routinely turns up one or two pages doing most of the work that nobody knew about."}}, {"@type": "Question", "name": "Should I move to a different platform?", "acceptedAnswer": {"@type": "Answer", "text": "Depends on why you're unhappy. If the site is slow and you don't publish content often, static is usually the better home. If you post regularly and want to do it yourself, WordPress makes sense. Moving platforms for its own sake just adds risk."}}, {"@type": "Question", "name": "My designer disappeared and I can't access anything. Now what?", "acceptedAnswer": {"@type": "Answer", "text": "More common than you'd think. Usually recoverable - domain control can be regained through the registrar, and a site can be rebuilt from what's publicly visible plus archived copies. Call and tell us what access you still have. Start with the domain, because that's the piece that matters most."}}, {"@type": "Question", "name": "Do you redesign sites you didn't build?", "acceptedAnswer": {"@type": "Answer", "text": "Most of them, yes. That's what a redesign is. We'll want to see what's there before quoting, because a healthy site needing structural work and a site needing full replacement are very different jobs at very different prices."}}]}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/website-redesign-denver/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Website Redesign Denver", "item": "https://denver-webdesign.com/website-redesign-denver/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/website-redesign-denver/#service", "name": "Website redesign, Denver", "serviceType": "Website redesign", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": {"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, "description": "Denver website redesign that inventories existing URLs and traffic, maps every old address to a new one and redirects at launch, so search history is protected rather than discarded.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Custom-coded rebuild from $99 per month"}}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/website-redesign-denver/#howto", "name": "How to redesign a website without losing search rankings", "description": "The order of operations that protects existing search visibility during a website rebuild.", "totalTime": "P14D", "step": [{"@type": "HowToStep", "position": 1, "name": "Inventory", "text": "Pull every URL Google has indexed and every page currently receiving traffic, so you know what has value before anything changes."}, {"@type": "HowToStep", "position": 2, "name": "Map", "text": "Match every old address to a new one before building, so no indexed page is orphaned by accident."}, {"@type": "HowToStep", "position": 3, "name": "Build alongside", "text": "Build the new site separately while the existing site stays live and continues earning."}, {"@type": "HowToStep", "position": 4, "name": "Redirect and monitor", "text": "Publish redirects with the launch, resubmit the sitemap, and watch Search Console for crawl errors rather than assuming success."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/website-redesign-denver/#webpage", "url": "https://denver-webdesign.com/website-redesign-denver/", "name": "Website Redesign Denver | Rebuild Without Losing Your Rankings", "description": "A Denver website redesign that protects the search rankings you already earned. Take the 8-question check to find out whether you even need one. Call 1-800-481-8638.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/website-redesign-denver/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-09-20", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/website-redesign-denver/#faq", "mainEntity": [{"@type": "Question", "name": "Will a redesign hurt my Google rankings?", "acceptedAnswer": {"@type": "Answer", "text": "It can, and that's the main risk nobody mentions in the sales conversation. The damage comes from changing URLs without redirects, deleting pages that were ranking, or removing content Google valued. Done properly — inventory first, map every old address to a new one, redirect at launch — a rebuild usually improves things because the new site is faster and better structured."}}, {"@type": "Question", "name": "How much does a website redesign cost in Denver?", "acceptedAnswer": {"@type": "Answer", "text": "Denver agencies commonly quote $9,000 to $22,000 for a professional five-page site, and independent 2026 research puts most professional redesigns between $3,000 and $15,000. Our custom-coded sites start at $99 a month with no setup fee. A redesign that keeps existing content is often less work than starting from nothing."}}, {"@type": "Question", "name": "How long does a redesign take?", "acceptedAnswer": {"@type": "Answer", "text": "Simple rebuilds can go live within a week. Larger sites with a lot of pages to map take longer, usually two to four weeks. The variable that moves it most is how fast decisions get made, not how fast the code gets written. Your existing site stays live the entire time."}}, {"@type": "Question", "name": "Will my site be down during the rebuild?", "acceptedAnswer": {"@type": "Answer", "text": "No. The new site gets built separately while the current one keeps running and keeps earning. The switch happens once everything is ready and the redirects are in place."}}, {"@type": "Question", "name": "Can I keep my domain and my content?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your domain stays registered to you and doesn't change. Your content, photos and logo are yours. We'd generally rather keep good existing content than rewrite it, because content that's already ranking has proven itself."}}, {"@type": "Question", "name": "What if I only need a few things fixed?", "acceptedAnswer": {"@type": "Answer", "text": "Then that's what we'll tell you. Speed problems, a missing phone number, or three thin service pages don't require a rebuild. Call, describe it, and if a small fix is the answer you'll hear that rather than a pitch."}}, {"@type": "Question", "name": "How do I know which of my pages are worth keeping?", "acceptedAnswer": {"@type": "Answer", "text": "Google Search Console shows which pages actually get impressions and clicks — it's free and you may already have access. If you don't, that inventory is the first thing we do. It routinely turns up one or two pages doing most of the work that nobody knew about."}}, {"@type": "Question", "name": "Should I move to a different platform?", "acceptedAnswer": {"@type": "Answer", "text": "Depends on why you're unhappy. If the site is slow and you don't publish content often, static is usually the better home. If you post regularly and want to do it yourself, WordPress makes sense. Moving platforms for its own sake just adds risk. Custom vs template."}}, {"@type": "Question", "name": "My designer disappeared and I can't access anything. Now what?", "acceptedAnswer": {"@type": "Answer", "text": "More common than you'd think. Usually recoverable — domain control can be regained through the registrar, and a site can be rebuilt from what's publicly visible plus archived copies. Call and tell us what access you still have. Start with the domain, because that's the piece that matters most."}}, {"@type": "Question", "name": "Do you redesign sites you didn't build?", "acceptedAnswer": {"@type": "Answer", "text": "Most of them, yes. That's what a redesign is. We'll want to see what's there before quoting, because a healthy site needing structural work and a site needing full replacement are very different jobs at very different prices."}}]}]}
+</script>
+<script id="v2js">
+(function(){
+  var RMv=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* reading progress */
+  if(!RMv){var pb=document.createElement('div');pb.id='sprog';pb.setAttribute('aria-hidden','true');document.body.appendChild(pb);
+    var tk=false;function up(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;pb.style.transform='scaleX('+(m>0?Math.min(1,h.scrollTop/m):0)+')';tk=false;}
+    window.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up);}},{passive:true});up();}
+  /* card tilt */
+  if(!RMv&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){document.querySelectorAll('.tilt').forEach(function(el){
+    el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.classList.add('tilting');el.style.transform='perspective(900px) rotateX('+(-y*5).toFixed(2)+'deg) rotateY('+(x*6).toFixed(2)+'deg) translateY(-3px)';});
+    el.addEventListener('pointerleave',function(){el.classList.remove('tilting');el.style.transform='';});});}
+  if(RMv){document.querySelectorAll('svg').forEach(function(s){if(s.pauseAnimations)s.pauseAnimations();});}
+  /* contact links */
+  document.querySelectorAll('a.eml').forEach(function(a){try{var e=atob(a.dataset.a)+String.fromCharCode(64)+atob(a.dataset.b);a.href='mailto:'+e;a.textContent=e;}catch(x){}});
+  /* lead form */
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),lbl=btn?btn.textContent:'Send',loaded=Date.now(),human=false;
+  function mk(){human=true;}
+  window.addEventListener('pointerdown',mk,{once:true,capture:true});
+  window.addEventListener('keydown',mk,{once:true,capture:true});
+  var K=['aHR0cHM6Ly9mb3Jtc3VibWl0LmNvL2FqYXgv','aW5mbw==','ZXlldG9hZC5jb20='];
+  function say(c,m){if(!st)return;st.className='fstat '+c;st.textContent=m;}
+  function val(n){var el=f.querySelector('[name="'+n+'"]');return el?el.value.trim():null;}
+  function reset(){if(btn){btn.disabled=false;btn.textContent=lbl;}}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(val('name')===''||val('phone')===''){say('err','Please add your name and phone number so we can reach you.');return;}
+    var hp=val('_honey');
+    if((hp!==null&&hp!=='')||!human||Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    var body={};new FormData(f).forEach(function(v,k){if(k.charAt(0)!=='_')body[k]=String(v).trim();});
+    body.page=location.pathname;
+    body._subject='New lead \u2014 denver-webdesign.com'+location.pathname;
+    body._template='table';body._captcha='false';
+    var to=atob(K[1])+String.fromCharCode(64)+atob(K[2]);
+    fetch(atob(K[0])+to,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j};},function(){return{ok:r.ok,j:null};});})
+      .then(function(x){
+        if(x.ok&&x.j&&(x.j.success===true||x.j.success==='true')){f.reset();say('ok','Sent. Taking you to your confirmation\u2026');if(btn)btn.textContent='Sent';setTimeout(function(){location.href='/thank-you/';},700);}
+        else if(x.ok){say('warn','Sent, but we could not confirm delivery. If you do not hear from us by tomorrow, call 1-800-481-8638.');reset();}
+        else{throw 0;}
+      })
+      .catch(function(){say('warn','That did not go through. Please call 1-800-481-8638 so nothing gets missed.');reset();});
+  });
+})();
 </script>
 </body>
 </html>

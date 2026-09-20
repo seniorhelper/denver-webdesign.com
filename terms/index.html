@@ -20,6 +20,7 @@
 <meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
 <link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -292,6 +293,27 @@ section{padding:82px 0}
 .formsec .fbox .fstat.err{color:#9B1C1C!important}
 </style>
 
+<style id="v2">
+.nav a[aria-current="page"]{color:var(--magenta)}
+@media(max-width:1240px) and (min-width:1001px){.nav{gap:15px}.nav a{font-size:.9rem}.hdr .nav a.tel{font-size:1.28rem}.brand img{height:50px}}
+.ftr-x{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;font-size:.87rem;color:#6B7690}
+.ftr-x p{margin:0 0 8px}.ftr-x b{color:var(--ink);font-weight:600}
+.kick{display:block;font-family:var(--mono);font-size:max(.72rem,.26em);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 .9em;opacity:.85;line-height:1.3}
+span.kick2{display:block;line-height:1.4}
+@media(min-width:901px){.hero-r{min-height:560px}.pops .p1{top:6%;left:7%}.pops .p2{top:29%;right:4%}.pops .p3{top:53%;left:6%}.pops .p4{top:auto;bottom:6%;right:4%}}
+@media(min-width:901px) and (max-width:1180px){.pops .p1{left:5%}.pops .p3{left:4%}}
+.kr{padding:44px 0;background:#fff;border-top:1px solid var(--line)}
+.kr h2{font-size:clamp(1.35rem,2.4vw,1.75rem);margin-bottom:14px}
+.kr-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
+.kr-g a{display:block;border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--ink);background:var(--paper);transition:transform .25s,box-shadow .25s,border-color .25s}
+.kr-g a:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,15,31,.08);border-color:var(--cyan)}
+.kr-g small{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin-bottom:6px}
+.kr-g b{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.3;display:block}
+.kr p{margin:14px 0 0;font-size:.95rem}
+@media(hover:hover) and (pointer:fine){.tilt{will-change:transform;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .6s ease}.tilt.tilting{transition:transform .08s linear;box-shadow:0 22px 44px rgba(10,15,31,.14)}}
+#sprog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--cyan),var(--magenta),var(--amber));z-index:80;pointer-events:none}
+@media(prefers-reduced-motion:reduce){#sprog{display:none}.kr-g a{transition:none}}
+</style>
 </head>
 <body>
 <header class="hdr">
@@ -304,6 +326,7 @@ section{padding:82px 0}
       <a href="/denver-web-development/">Development</a>
       <a href="/app-development-denver/">Apps</a>
       <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/web-design-portfolio/">Work</a>
       <a href="/denver-web-design-pricing/">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
@@ -336,7 +359,7 @@ section{padding:82px 0}
 <p>Anything about search performance is a description of how these systems generally behave, not a promise about how yours will. Nobody controls Google's index or what an AI assistant chooses to recommend, and we say so throughout.</p>
 
 <h2 id="quotes">Prices shown on this site</h2>
-<p>Published prices are genuine starting points, not fixed offers. The rate for any particular project depends on size, complexity and how much optimisation is involved, and we say that on the pricing page rather than burying it. A quote becomes binding when it's given to you in writing for your specific project and you accept it.</p>
+<p>Published prices are genuine starting points, not fixed offers. The rate for any particular project depends on size, complexity and how much optimization is involved, and we say that on the pricing page rather than burying it. A quote becomes binding when it's given to you in writing for your specific project and you accept it.</p>
 
 <h2 id="client">If you become a client</h2>
 <p>The work itself is governed by a separate written agreement covering scope, price, payment terms, ownership, the buyout option on monthly plans, what happens if either side wants to end it, and everything else that actually matters. Read that agreement carefully. Ask questions before signing rather than afterwards, and get the answers in writing.</p>
@@ -360,7 +383,7 @@ section{padding:82px 0}
 <p>We may update this page. The date at the top shows when it last changed.</p>
 
 <h2 id="contact2">Contact</h2>
-<p>Questions about anything here: call <a href="tel:18004818638"><strong>1-800-481-8638</strong></a>. Eye To Ad Media, a Search Converts LLC company, 1001 Bannock St #660, Denver, CO 80204.</p>
+<p>Questions about anything here: call <a href="tel:18004818638"><strong>1-800-481-8638</strong></a>. Eye To Ad Media, 1001 Bannock St #660, Denver, CO 80204.</p>
 
     <div style="margin-top:44px;padding-top:26px;border-top:1px solid var(--hair7)">
       <a class="btn btn-acc2" href="tel:18004818638">Call 1-800-481-8638</a>
@@ -376,7 +399,8 @@ section{padding:82px 0}
         <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
         <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
         <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
-        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+        <p style="font-size:.86rem">1001 Bannock St #660<br>Denver, CO 80204<br><a class="eml" href="/contact/" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=">Email us</a></p>
+        <p style="font-size:.86rem"><a href="/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
       </div>
       <div>
         <h4>Web Design</h4>
@@ -405,19 +429,23 @@ section{padding:82px 0}
       <div>
         <h4>Guides &amp; Company</h4>
         <ul>
+          <li><a href="/web-design-portfolio/">Our work</a></li>
           <li><a href="/denver-web-design-pricing/">Pricing</a></li>
           <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
           <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
           <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
           <li><a href="/real-estate-website-design/">Real estate websites</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+          <li><a href="/blog/">Blog</a> &middot; <a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
         </ul>
       </div>
     </div>
+    <div class="ftr-x">
+      <p><b>Across Colorado:</b> <a href="/">Denver web design</a> &middot; <a href="/boulder-web-design/">Boulder web design</a> &middot; <a href="/web-design-fort-collins/">Fort Collins web design</a> &middot; <a href="/web-design-colorado/">Web design in Colorado</a></p>
+      <p><b>Also from our team:</b> <a href="https://eyetoad.com/">Denver SEO at eyetoad.com</a> &middot; <a href="https://conversationalaibot.com/">AI chatbots for business</a> &middot; <a href="https://www.buyweburl.com">Domains and hosting</a></p>
+    </div>
     <div class="ftr-b">
-      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
-      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Conversion engine: <a href="https://www.searchconverts.com">Search Converts</a> &middot; Denver, Colorado</p>
+      <p style="margin:0"><a href="/sitemap/">Sitemap</a> &middot; <a href="/sitemap.xml">XML sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/accessibility/">Accessibility</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
     </div>
   </div>
 </footer>
@@ -491,37 +519,57 @@ if('IntersectionObserver' in window&&!RM){
   ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
 })();
 
-/* form: honeypot + time trap + JS-assembled action */
-(function(){
-  var f=document.getElementById('leadform');if(!f)return;
-  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
-  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
-  if(document.readyState!=='loading'){loaded=Date.now();}
-  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(f._honey.value!==''){return;}
-    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
-    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
-    btn.disabled=true;btn.textContent='Sending…';
-    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
-    var fd=new FormData(f);
-    fd.delete('_honey');
-    fd.append('_subject','New lead — denver-webdesign.com');
-    fd.append('_template','table');
-    fd.append('_captcha','false');
-    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-      .then(function(r){
-        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
-        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
-      })
-      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
-  });
-})();
+
 </script>
 
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/terms/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Terms of use", "item": "https://denver-webdesign.com/terms/"}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/terms/#webpage", "url": "https://denver-webdesign.com/terms/", "name": "Terms of Use | Denver Web Design", "description": "Terms covering use of this website. Your client agreement is a separate document and that is the one that governs any work we do for you.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/terms/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-29", "dateModified": "2026-08-29"}]}
+</script>
+<script id="v2js">
+(function(){
+  var RMv=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* reading progress */
+  if(!RMv){var pb=document.createElement('div');pb.id='sprog';pb.setAttribute('aria-hidden','true');document.body.appendChild(pb);
+    var tk=false;function up(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;pb.style.transform='scaleX('+(m>0?Math.min(1,h.scrollTop/m):0)+')';tk=false;}
+    window.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up);}},{passive:true});up();}
+  /* card tilt */
+  if(!RMv&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){document.querySelectorAll('.tilt').forEach(function(el){
+    el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.classList.add('tilting');el.style.transform='perspective(900px) rotateX('+(-y*5).toFixed(2)+'deg) rotateY('+(x*6).toFixed(2)+'deg) translateY(-3px)';});
+    el.addEventListener('pointerleave',function(){el.classList.remove('tilting');el.style.transform='';});});}
+  if(RMv){document.querySelectorAll('svg').forEach(function(s){if(s.pauseAnimations)s.pauseAnimations();});}
+  /* contact links */
+  document.querySelectorAll('a.eml').forEach(function(a){try{var e=atob(a.dataset.a)+String.fromCharCode(64)+atob(a.dataset.b);a.href='mailto:'+e;a.textContent=e;}catch(x){}});
+  /* lead form */
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),lbl=btn?btn.textContent:'Send',loaded=Date.now(),human=false;
+  function mk(){human=true;}
+  window.addEventListener('pointerdown',mk,{once:true,capture:true});
+  window.addEventListener('keydown',mk,{once:true,capture:true});
+  var K=['aHR0cHM6Ly9mb3Jtc3VibWl0LmNvL2FqYXgv','aW5mbw==','ZXlldG9hZC5jb20='];
+  function say(c,m){if(!st)return;st.className='fstat '+c;st.textContent=m;}
+  function val(n){var el=f.querySelector('[name="'+n+'"]');return el?el.value.trim():null;}
+  function reset(){if(btn){btn.disabled=false;btn.textContent=lbl;}}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(val('name')===''||val('phone')===''){say('err','Please add your name and phone number so we can reach you.');return;}
+    var hp=val('_honey');
+    if((hp!==null&&hp!=='')||!human||Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    var body={};new FormData(f).forEach(function(v,k){if(k.charAt(0)!=='_')body[k]=String(v).trim();});
+    body.page=location.pathname;
+    body._subject='New lead \u2014 denver-webdesign.com'+location.pathname;
+    body._template='table';body._captcha='false';
+    var to=atob(K[1])+String.fromCharCode(64)+atob(K[2]);
+    fetch(atob(K[0])+to,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j};},function(){return{ok:r.ok,j:null};});})
+      .then(function(x){
+        if(x.ok&&x.j&&(x.j.success===true||x.j.success==='true')){f.reset();say('ok','Sent. Taking you to your confirmation\u2026');if(btn)btn.textContent='Sent';setTimeout(function(){location.href='/thank-you/';},700);}
+        else if(x.ok){say('warn','Sent, but we could not confirm delivery. If you do not hear from us by tomorrow, call 1-800-481-8638.');reset();}
+        else{throw 0;}
+      })
+      .catch(function(){say('warn','That did not go through. Please call 1-800-481-8638 so nothing gets missed.');reset();});
+  });
+})();
 </script>
 </body>
 </html>

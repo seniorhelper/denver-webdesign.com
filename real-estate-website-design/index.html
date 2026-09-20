@@ -20,6 +20,7 @@
 <meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
 <link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -342,6 +343,27 @@ section{padding:82px 0}
 .formsec .fbox .fstat.err{color:#9B1C1C!important}
 </style>
 
+<style id="v2">
+.nav a[aria-current="page"]{color:var(--magenta)}
+@media(max-width:1240px) and (min-width:1001px){.nav{gap:15px}.nav a{font-size:.9rem}.hdr .nav a.tel{font-size:1.28rem}.brand img{height:50px}}
+.ftr-x{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;font-size:.87rem;color:#6B7690}
+.ftr-x p{margin:0 0 8px}.ftr-x b{color:var(--ink);font-weight:600}
+.kick{display:block;font-family:var(--mono);font-size:max(.72rem,.26em);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 .9em;opacity:.85;line-height:1.3}
+span.kick2{display:block;line-height:1.4}
+@media(min-width:901px){.hero-r{min-height:560px}.pops .p1{top:6%;left:7%}.pops .p2{top:29%;right:4%}.pops .p3{top:53%;left:6%}.pops .p4{top:auto;bottom:6%;right:4%}}
+@media(min-width:901px) and (max-width:1180px){.pops .p1{left:5%}.pops .p3{left:4%}}
+.kr{padding:44px 0;background:#fff;border-top:1px solid var(--line)}
+.kr h2{font-size:clamp(1.35rem,2.4vw,1.75rem);margin-bottom:14px}
+.kr-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
+.kr-g a{display:block;border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--ink);background:var(--paper);transition:transform .25s,box-shadow .25s,border-color .25s}
+.kr-g a:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,15,31,.08);border-color:var(--cyan)}
+.kr-g small{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin-bottom:6px}
+.kr-g b{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.3;display:block}
+.kr p{margin:14px 0 0;font-size:.95rem}
+@media(hover:hover) and (pointer:fine){.tilt{will-change:transform;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .6s ease}.tilt.tilting{transition:transform .08s linear;box-shadow:0 22px 44px rgba(10,15,31,.14)}}
+#sprog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--cyan),var(--magenta),var(--amber));z-index:80;pointer-events:none}
+@media(prefers-reduced-motion:reduce){#sprog{display:none}.kr-g a{transition:none}}
+</style>
 </head>
 <body>
 <header class="hdr">
@@ -354,6 +376,7 @@ section{padding:82px 0}
       <a href="/denver-web-development/">Development</a>
       <a href="/app-development-denver/">Apps</a>
       <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/web-design-portfolio/">Work</a>
       <a href="/denver-web-design-pricing/">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
@@ -368,8 +391,7 @@ section{padding:82px 0}
   <div class="wrap">
     <div class="grid g2" style="gap:44px;align-items:center">
       <div>
-        <p class="re-lab">Real estate website design</p>
-        <h1>Your listings are on <span class="mintt">four hundred other</span> agent websites</h1>
+        <h1><span class="re-lab kick2">Real estate website design in Denver</span>Your listings are on <span class="mintt">four hundred other</span> agent websites</h1>
         <p class="lede" style="margin-top:20px">IDX puts the whole MLS on your site. It also puts the identical data on every other agent's site in your market. Nobody is going to find you because of a listing feed &mdash; and most agents are paying for a site built entirely around one.</p>
         <div class="cta-row" style="margin:28px 0 14px">
           <a class="btn btn-mint" href="tel:18004818638">Call 1-800-481-8638</a>
@@ -526,6 +548,14 @@ section{padding:82px 0}
   </div>
 </section>
 
+<section class="kr">
+  <div class="wrap">
+    <h2>Keep going</h2>
+    <div class="kr-g"><a href="/blog/responsive-web-design-explained/"><small>Mobile</small><b>Responsive web design, explained</b></a><a href="/web-design-portfolio/"><small>Portfolio</small><b>See recent sites we built</b></a></div>
+    <p>Or start from the top: everything we do in <a href="/">website design in Denver</a>, in one page.</p>
+  </div>
+</section>
+
 <section class="formsec" id="start">
   <div class="wrap">
     <div class="grid g2" style="gap:44px;align-items:start">
@@ -573,7 +603,8 @@ section{padding:82px 0}
         <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
         <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
         <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
-        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+        <p style="font-size:.86rem">1001 Bannock St #660<br>Denver, CO 80204<br><a class="eml" href="/contact/" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=">Email us</a></p>
+        <p style="font-size:.86rem"><a href="/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
       </div>
       <div>
         <h4>Web Design</h4>
@@ -602,19 +633,23 @@ section{padding:82px 0}
       <div>
         <h4>Guides &amp; Company</h4>
         <ul>
+          <li><a href="/web-design-portfolio/">Our work</a></li>
           <li><a href="/denver-web-design-pricing/">Pricing</a></li>
           <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
           <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
           <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
           <li><a href="/real-estate-website-design/">Real estate websites</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+          <li><a href="/blog/">Blog</a> &middot; <a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
         </ul>
       </div>
     </div>
+    <div class="ftr-x">
+      <p><b>Across Colorado:</b> <a href="/">Denver web design</a> &middot; <a href="/boulder-web-design/">Boulder web design</a> &middot; <a href="/web-design-fort-collins/">Fort Collins web design</a> &middot; <a href="/web-design-colorado/">Web design in Colorado</a></p>
+      <p><b>Also from our team:</b> <a href="https://eyetoad.com/">Denver SEO at eyetoad.com</a> &middot; <a href="https://conversationalaibot.com/">AI chatbots for business</a> &middot; <a href="https://www.buyweburl.com">Domains and hosting</a></p>
+    </div>
     <div class="ftr-b">
-      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
-      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Conversion engine: <a href="https://www.searchconverts.com">Search Converts</a> &middot; Denver, Colorado</p>
+      <p style="margin:0"><a href="/sitemap/">Sitemap</a> &middot; <a href="/sitemap.xml">XML sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/accessibility/">Accessibility</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
     </div>
   </div>
 </footer>
@@ -688,33 +723,7 @@ if('IntersectionObserver' in window&&!RM){
   ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
 })();
 
-/* form: honeypot + time trap + JS-assembled action */
-(function(){
-  var f=document.getElementById('leadform');if(!f)return;
-  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
-  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
-  if(document.readyState!=='loading'){loaded=Date.now();}
-  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(f._honey.value!==''){return;}
-    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
-    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
-    btn.disabled=true;btn.textContent='Sending…';
-    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
-    var fd=new FormData(f);
-    fd.delete('_honey');
-    fd.append('_subject','New lead — denver-webdesign.com');
-    fd.append('_template','table');
-    fd.append('_captcha','false');
-    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-      .then(function(r){
-        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
-        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
-      })
-      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
-  });
-})();
+
 </script>
 <script>
 (function(){
@@ -758,7 +767,53 @@ if('IntersectionObserver' in window&&!RM){
 </script>
 
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/real-estate-website-design/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Real Estate Website Design", "item": "https://denver-webdesign.com/real-estate-website-design/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/real-estate-website-design/#service", "name": "Real estate website design", "serviceType": "Real estate website design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "audience": {"@type": "BusinessAudience", "name": "Real estate agents, teams and brokerages"}, "description": "Agent websites built around original local content that earns search traffic, with IDX property search added as a conversion tool rather than a traffic strategy.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Custom-coded real estate website from $99 per month"}}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/real-estate-website-design/#webpage", "url": "https://denver-webdesign.com/real-estate-website-design/", "name": "Real Estate Website Design | IDX Alone Won't Rank You", "description": "Your listings are on every agent site in your market. What actually earns traffic, what IDX is genuinely for, and how to tell whether yours is worth what you pay.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/real-estate-website-design/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-29", "dateModified": "2026-08-29", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/real-estate-website-design/#faq", "mainEntity": [{"@type": "Question", "name": "Do IDX listing pages help my SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Not on their own. Those pages carry the same photos, descriptions and specs as every other agent site pulling the same feed, and duplicate content at scale doesn't build authority. The exception is a listing page with substantial original commentary you wrote - but that's your writing ranking, not the feed."}}, {"@type": "Question", "name": "What actually generates leads on a real estate website?", "acceptedAnswer": {"@type": "Answer", "text": "Published research consistently points at home valuation tools, IDX property search with saved-search alerts, market reports, and contact forms on listing detail pages. Underneath all of those sits the content that brought the visitor there in the first place, which is the part most agents skip."}}, {"@type": "Question", "name": "How much does a real estate website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Our custom-coded sites start at $99 a month with no setup fee. IDX is a separate ongoing cost from whichever provider connects to your MLS, and pricing varies enormously between a simple search widget and a full platform with a CRM attached. Get both numbers before committing to either."}}, {"@type": "Question", "name": "Do I need IDX at all?", "acceptedAnswer": {"@type": "Answer", "text": "If you work with buyers and you have content bringing people to the site, yes - it gives them a reason to return and register. If nobody currently visits your website, IDX is machinery with nothing to process. Build the content half first and add the feed once there's traffic to convert."}}, {"@type": "Question", "name": "Should I force visitors to register before searching?", "acceptedAnswer": {"@type": "Answer", "text": "It does increase lead volume, and it also sends a share of visitors straight back to the big portals where registration isn't required. It's worth testing rather than assuming. Capturing at the moment somebody saves a search generally converts better than a wall at the door."}}, {"@type": "Question", "name": "What content should I write?", "acceptedAnswer": {"@type": "Answer", "text": "The things only a local agent knows. What a neighbourhood is genuinely like to live in, what the commute is actually like, honest assessments including drawbacks. Six guides you wrote yourself will outperform sixty generated pages, because the generated ones exist identically on every competitor's site."}}, {"@type": "Question", "name": "Can you connect IDX to a custom site?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The important question is how it's integrated - an embedded widget behaves differently from a proper API integration where listings live on your own domain. The second is more work and it's the version that contributes anything to your search visibility."}}, {"@type": "Question", "name": "How long does it take to build a real estate website?", "acceptedAnswer": {"@type": "Answer", "text": "About a week for a straightforward agent site. IDX integration adds time because it depends on your MLS approving the feed and the provider connecting it, which is outside anyone's control. The content is usually the longest part, since neighbourhood guides have to be written rather than generated."}}, {"@type": "Question", "name": "Do I need a blog as a real estate agent?", "acceptedAnswer": {"@type": "Answer", "text": "Only if you'll keep it going. A blog with four posts from two years ago reads worse than no blog. Where it genuinely works is neighbourhood guides and honest market commentary, published steadily. Those are the pages that earn search traffic and give an IDX search something to convert."}}, {"@type": "Question", "name": "What is a home valuation tool and does it work?", "acceptedAnswer": {"@type": "Answer", "text": "A form where a homeowner enters their address and gets an estimate. It's consistently among the features most tied to lead generation because it captures sellers at the moment they're curious and before they've called anyone. Be honest about accuracy - an estimate that's wildly off costs you the credibility you just bought."}}, {"@type": "Question", "name": "Should I use a real estate platform or a custom site?", "acceptedAnswer": {"@type": "Answer", "text": "Platforms bundle IDX, a CRM and hosting, which is convenient and means you don't own much. A custom site with a separate IDX feed means you own the domain, the content and the data, and can change providers without rebuilding. Convenience versus control, same trade as everywhere else."}}, {"@type": "Question", "name": "Will my listings disappear when a property sells?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and that's part of why listing pages don't accumulate ranking value. The listing goes, the page goes, and whatever authority was building resets. Pages you write yourself - neighbourhood guides, market commentary, service areas - stay and compound."}}, {"@type": "Question", "name": "Can I rank against Zillow and Realtor.com?", "acceptedAnswer": {"@type": "Answer", "text": "Not for broad searches like homes for sale in Denver. Those are settled. Where a local agent genuinely competes is specific, human queries the portals handle badly - what a particular neighbourhood is like to live in, honest local market reads, hyper-specific area questions. That's the gap worth working."}}, {"@type": "Question", "name": "My brokerage gives me a website. Do I need my own?", "acceptedAnswer": {"@type": "Answer", "text": "The brokerage site is usually a profile page inside somebody else's domain, and it disappears if you move. Your own site with your own domain is an asset you keep. Worth having even if you also use whatever the brokerage provides."}}]}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/real-estate-website-design/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Real Estate Website Design", "item": "https://denver-webdesign.com/real-estate-website-design/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/real-estate-website-design/#service", "name": "Real estate website design", "serviceType": "Real estate website design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "audience": {"@type": "BusinessAudience", "name": "Real estate agents, teams and brokerages"}, "description": "Agent websites built around original local content that earns search traffic, with IDX property search added as a conversion tool rather than a traffic strategy.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Custom-coded real estate website from $99 per month"}}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/real-estate-website-design/#webpage", "url": "https://denver-webdesign.com/real-estate-website-design/", "name": "Real Estate Website Design | IDX Alone Won't Rank You", "description": "Your listings are on every agent site in your market. What actually earns traffic, what IDX is genuinely for, and how to tell whether yours is worth what you pay.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/real-estate-website-design/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-29", "dateModified": "2026-09-20", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/real-estate-website-design/#faq", "mainEntity": [{"@type": "Question", "name": "Do IDX listing pages help my SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Not on their own. Those pages carry the same photos, descriptions and specs as every other agent site pulling the same feed, and duplicate content at scale doesn't build authority. The exception is a listing page with substantial original commentary you wrote — but that's your writing ranking, not the feed."}}, {"@type": "Question", "name": "What actually generates leads on a real estate website?", "acceptedAnswer": {"@type": "Answer", "text": "Published research consistently points at home valuation tools, IDX property search with saved-search alerts, market reports, and contact forms on listing detail pages. Underneath all of those sits the content that brought the visitor there in the first place, which is the part most agents skip."}}, {"@type": "Question", "name": "How much does a real estate website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Our custom-coded sites start at $99 a month with no setup fee. IDX is a separate ongoing cost from whichever provider connects to your MLS, and pricing varies enormously between a simple search widget and a full platform with a CRM attached. Get both numbers before committing to either."}}, {"@type": "Question", "name": "Do I need IDX at all?", "acceptedAnswer": {"@type": "Answer", "text": "If you work with buyers and you have content bringing people to the site, yes — it gives them a reason to return and register. If nobody currently visits your website, IDX is machinery with nothing to process. Build the content half first and add the feed once there's traffic to convert."}}, {"@type": "Question", "name": "Should I force visitors to register before searching?", "acceptedAnswer": {"@type": "Answer", "text": "It does increase lead volume, and it also sends a share of visitors straight back to the big portals where registration isn't required. It's worth testing rather than assuming. Capturing at the moment somebody saves a search generally converts better than a wall at the door."}}, {"@type": "Question", "name": "What content should I write?", "acceptedAnswer": {"@type": "Answer", "text": "The things only a local agent knows. What a neighbourhood is genuinely like to live in, what the commute is actually like, honest assessments including drawbacks. Six guides you wrote yourself will outperform sixty generated pages, because the generated ones exist identically on every competitor's site."}}, {"@type": "Question", "name": "Can you connect IDX to a custom site?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The important question is how it's integrated — an embedded widget behaves differently from a proper API integration where listings live on your own domain. The second is more work and it's the version that contributes anything to your search visibility."}}, {"@type": "Question", "name": "How long does it take to build a real estate website?", "acceptedAnswer": {"@type": "Answer", "text": "About a week for a straightforward agent site. IDX integration adds time because it depends on your MLS approving the feed and the provider connecting it, which is outside anyone's control. The content is usually the longest part, since neighbourhood guides have to be written rather than generated."}}, {"@type": "Question", "name": "Do I need a blog as a real estate agent?", "acceptedAnswer": {"@type": "Answer", "text": "Only if you'll keep it going. A blog with four posts from two years ago reads worse than no blog. Where it genuinely works is neighbourhood guides and honest market commentary, published steadily. Those are the pages that earn search traffic and give an IDX search something to convert."}}, {"@type": "Question", "name": "What is a home valuation tool and does it work?", "acceptedAnswer": {"@type": "Answer", "text": "A form where a homeowner enters their address and gets an estimate. It's consistently among the features most tied to lead generation because it captures sellers at the moment they're curious and before they've called anyone. Be honest about accuracy - an estimate that's wildly off costs you the credibility you just bought."}}, {"@type": "Question", "name": "Should I use a real estate platform or a custom site?", "acceptedAnswer": {"@type": "Answer", "text": "Platforms bundle IDX, a CRM and hosting, which is convenient and means you don't own much. A custom site with a separate IDX feed means you own the domain, the content and the data, and can change providers without rebuilding. Convenience versus control, same trade as everywhere else."}}, {"@type": "Question", "name": "Will my listings disappear when a property sells?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and that's part of why listing pages don't accumulate ranking value. The listing goes, the page goes, and whatever authority was building resets. Pages you write yourself - neighbourhood guides, market commentary, service areas - stay and compound."}}, {"@type": "Question", "name": "Can I rank against Zillow and Realtor.com?", "acceptedAnswer": {"@type": "Answer", "text": "Not for broad searches like homes for sale in Denver. Those are settled. Where a local agent genuinely competes is specific, human queries the portals handle badly - what a particular neighbourhood is like to live in, honest local market reads, hyper-specific area questions. That's the gap worth working."}}, {"@type": "Question", "name": "My brokerage gives me a website. Do I need my own?", "acceptedAnswer": {"@type": "Answer", "text": "The brokerage site is usually a profile page inside somebody else's domain, and it disappears if you move. Your own site with your own domain is an asset you keep. Worth having even if you also use whatever the brokerage provides."}}]}]}
+</script>
+<script id="v2js">
+(function(){
+  var RMv=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* reading progress */
+  if(!RMv){var pb=document.createElement('div');pb.id='sprog';pb.setAttribute('aria-hidden','true');document.body.appendChild(pb);
+    var tk=false;function up(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;pb.style.transform='scaleX('+(m>0?Math.min(1,h.scrollTop/m):0)+')';tk=false;}
+    window.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up);}},{passive:true});up();}
+  /* card tilt */
+  if(!RMv&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){document.querySelectorAll('.tilt').forEach(function(el){
+    el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.classList.add('tilting');el.style.transform='perspective(900px) rotateX('+(-y*5).toFixed(2)+'deg) rotateY('+(x*6).toFixed(2)+'deg) translateY(-3px)';});
+    el.addEventListener('pointerleave',function(){el.classList.remove('tilting');el.style.transform='';});});}
+  if(RMv){document.querySelectorAll('svg').forEach(function(s){if(s.pauseAnimations)s.pauseAnimations();});}
+  /* contact links */
+  document.querySelectorAll('a.eml').forEach(function(a){try{var e=atob(a.dataset.a)+String.fromCharCode(64)+atob(a.dataset.b);a.href='mailto:'+e;a.textContent=e;}catch(x){}});
+  /* lead form */
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),lbl=btn?btn.textContent:'Send',loaded=Date.now(),human=false;
+  function mk(){human=true;}
+  window.addEventListener('pointerdown',mk,{once:true,capture:true});
+  window.addEventListener('keydown',mk,{once:true,capture:true});
+  var K=['aHR0cHM6Ly9mb3Jtc3VibWl0LmNvL2FqYXgv','aW5mbw==','ZXlldG9hZC5jb20='];
+  function say(c,m){if(!st)return;st.className='fstat '+c;st.textContent=m;}
+  function val(n){var el=f.querySelector('[name="'+n+'"]');return el?el.value.trim():null;}
+  function reset(){if(btn){btn.disabled=false;btn.textContent=lbl;}}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(val('name')===''||val('phone')===''){say('err','Please add your name and phone number so we can reach you.');return;}
+    var hp=val('_honey');
+    if((hp!==null&&hp!=='')||!human||Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    var body={};new FormData(f).forEach(function(v,k){if(k.charAt(0)!=='_')body[k]=String(v).trim();});
+    body.page=location.pathname;
+    body._subject='New lead \u2014 denver-webdesign.com'+location.pathname;
+    body._template='table';body._captcha='false';
+    var to=atob(K[1])+String.fromCharCode(64)+atob(K[2]);
+    fetch(atob(K[0])+to,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j};},function(){return{ok:r.ok,j:null};});})
+      .then(function(x){
+        if(x.ok&&x.j&&(x.j.success===true||x.j.success==='true')){f.reset();say('ok','Sent. Taking you to your confirmation\u2026');if(btn)btn.textContent='Sent';setTimeout(function(){location.href='/thank-you/';},700);}
+        else if(x.ok){say('warn','Sent, but we could not confirm delivery. If you do not hear from us by tomorrow, call 1-800-481-8638.');reset();}
+        else{throw 0;}
+      })
+      .catch(function(){say('warn','That did not go through. Please call 1-800-481-8638 so nothing gets missed.');reset();});
+  });
+})();
 </script>
 </body>
 </html>

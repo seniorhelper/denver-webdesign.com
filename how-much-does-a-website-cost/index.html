@@ -20,6 +20,7 @@
 <meta name="twitter:image" content="https://denver-webdesign.com/images/denver-web-designer.png">
 <link rel="icon" href="/images/denver-web-design-favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -334,6 +335,27 @@ section{padding:82px 0}
 .formsec .fbox .fstat.err{color:#9B1C1C!important}
 </style>
 
+<style id="v2">
+.nav a[aria-current="page"]{color:var(--magenta)}
+@media(max-width:1240px) and (min-width:1001px){.nav{gap:15px}.nav a{font-size:.9rem}.hdr .nav a.tel{font-size:1.28rem}.brand img{height:50px}}
+.ftr-x{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;font-size:.87rem;color:#6B7690}
+.ftr-x p{margin:0 0 8px}.ftr-x b{color:var(--ink);font-weight:600}
+.kick{display:block;font-family:var(--mono);font-size:max(.72rem,.26em);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 .9em;opacity:.85;line-height:1.3}
+span.kick2{display:block;line-height:1.4}
+@media(min-width:901px){.hero-r{min-height:560px}.pops .p1{top:6%;left:7%}.pops .p2{top:29%;right:4%}.pops .p3{top:53%;left:6%}.pops .p4{top:auto;bottom:6%;right:4%}}
+@media(min-width:901px) and (max-width:1180px){.pops .p1{left:5%}.pops .p3{left:4%}}
+.kr{padding:44px 0;background:#fff;border-top:1px solid var(--line)}
+.kr h2{font-size:clamp(1.35rem,2.4vw,1.75rem);margin-bottom:14px}
+.kr-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
+.kr-g a{display:block;border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--ink);background:var(--paper);transition:transform .25s,box-shadow .25s,border-color .25s}
+.kr-g a:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,15,31,.08);border-color:var(--cyan)}
+.kr-g small{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin-bottom:6px}
+.kr-g b{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.3;display:block}
+.kr p{margin:14px 0 0;font-size:.95rem}
+@media(hover:hover) and (pointer:fine){.tilt{will-change:transform;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .6s ease}.tilt.tilting{transition:transform .08s linear;box-shadow:0 22px 44px rgba(10,15,31,.14)}}
+#sprog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--cyan),var(--magenta),var(--amber));z-index:80;pointer-events:none}
+@media(prefers-reduced-motion:reduce){#sprog{display:none}.kr-g a{transition:none}}
+</style>
 </head>
 <body>
 <header class="hdr">
@@ -346,6 +368,7 @@ section{padding:82px 0}
       <a href="/denver-web-development/">Development</a>
       <a href="/app-development-denver/">Apps</a>
       <a href="/website-redesign-denver/">Redesign</a>
+      <a href="/web-design-portfolio/">Work</a>
       <a href="/denver-web-design-pricing/">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
@@ -482,7 +505,7 @@ section{padding:82px 0}
     <div class="grid g3 rv" style="margin-top:26px">
       <div class="card" style="padding:24px"><h3>A single landing page</h3><p style="margin:8px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">$100&ndash;$1,000</span><br><span style="font-size:.9rem">template-based</span></p><p style="margin:10px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">$1,500&ndash;$2,500+</span><br><span style="font-size:.9rem">custom and conversion-optimized</span></p></div>
       <div class="card" style="padding:24px"><h3>Custom design work alone</h3><p style="margin:8px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">$2,000&ndash;$10,000</span><br><span style="font-size:.9rem">depending on page count and brand complexity. A pre-built template runs $0 to $200.</span></p></div>
-      <div class="card" style="padding:24px"><h3>Custom ecommerce at scale</h3><p style="margin:8px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">$45,000&ndash;$250,000</span><br><span style="font-size:.9rem">full custom builds on enterprise or headless architecture, driven by catalogue size and integrations.</span></p></div>
+      <div class="card" style="padding:24px"><h3>Custom ecommerce at scale</h3><p style="margin:8px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">$45,000&ndash;$250,000</span><br><span style="font-size:.9rem">full custom builds on enterprise or headless architecture, driven by catalog size and integrations.</span></p></div>
       <div class="card" style="padding:24px"><h3>A web application or SaaS</h3><p style="margin:8px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">From $50,000</span><br><span style="font-size:.9rem">for a focused first version, regularly exceeding $500,000 for production systems with payments, roles and analytics.</span></p></div>
       <div class="card" style="padding:24px"><h3>Website redesign</h3><p style="margin:8px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">$3,000+</span><br><span style="font-size:.9rem">for small business sites, running past $250,000 for complex enterprise projects. <a href="/website-redesign-denver/">More on redesigns</a>.</span></p></div>
       <div class="card" style="padding:24px"><h3>A mobile app</h3><p style="margin:8px 0 0"><span class="figure" style="font-size:1.3rem;color:var(--ox)">Quoted per project</span><br><span style="font-size:.9rem">a different discipline with different economics. <a href="/how-much-does-an-app-cost/">What an app costs</a>.</span></p></div>
@@ -504,7 +527,7 @@ section{padding:82px 0}
       <details class="acc rv"><summary>Check what a small change costs</summary><div class="acc-b"><p>You'll need dozens of small edits over the years. If each one is a ticket, an estimate and a two-week wait, the real cost of the site is much higher than the quote suggests &mdash; or you simply stop updating it, which is worse.</p></div></details>
       <details class="acc rv"><summary>Run PageSpeed on their own website</summary><div class="acc-b"><p>Free, thirty seconds, and they can't argue with it. A supplier whose own site is slow on mobile is showing you their standard before you've paid anything.</p></div></details>
     </div>
-    <p class="rv" style="margin-top:24px"><a href="/downloads/12-questions-denver-web-designer.pdf" download><b>Download the free 12-question checklist</b></a> &mdash; no email required. Take it into every meeting.</p>
+    <p class="rv" style="margin-top:24px"><a href="/12-questions-denver-web-designer.pdf" download><b>Download the free 12-question checklist</b></a> &mdash; no email required. Take it into every meeting.</p>
   </div>
 </section>
 
@@ -553,6 +576,14 @@ section{padding:82px 0}
   </div>
 </section>
 
+<section class="kr">
+  <div class="wrap">
+    <h2>Keep going</h2>
+    <div class="kr-g"><a href="/blog/how-to-choose-a-web-design-company-denver/"><small>Hiring guide</small><b>How to choose a Denver web design company</b></a><a href="/blog/freelance-web-designer-vs-agency-denver/"><small>Hiring guide</small><b>Freelance web designer or agency?</b></a><a href="/denver-web-design-pricing/"><small>Pricing</small><b>Real published prices</b></a></div>
+    <p>Or start from the top: everything we do in <a href="/">Denver web design</a>, in one page.</p>
+  </div>
+</section>
+
 <section class="formsec" id="start">
   <div class="wrap">
     <div class="grid g2" style="gap:44px;align-items:start">
@@ -597,7 +628,8 @@ section{padding:82px 0}
         <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
         <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
         <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
-        <p style="font-size:.86rem"><a href="/downloads/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
+        <p style="font-size:.86rem">1001 Bannock St #660<br>Denver, CO 80204<br><a class="eml" href="/contact/" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=">Email us</a></p>
+        <p style="font-size:.86rem"><a href="/12-questions-denver-web-designer.pdf" download>Free checklist: 12 questions to ask any web designer</a></p>
       </div>
       <div>
         <h4>Web Design</h4>
@@ -626,19 +658,23 @@ section{padding:82px 0}
       <div>
         <h4>Guides &amp; Company</h4>
         <ul>
+          <li><a href="/web-design-portfolio/">Our work</a></li>
           <li><a href="/denver-web-design-pricing/">Pricing</a></li>
           <li><a href="/how-much-does-a-website-cost/">What a website costs</a></li>
           <li><a href="/how-much-does-an-app-cost/">What an app costs</a></li>
           <li><a href="/restaurant-website-design/">Restaurant websites</a></li>
           <li><a href="/real-estate-website-design/">Real estate websites</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
+          <li><a href="/blog/">Blog</a> &middot; <a href="/about/">About</a> &middot; <a href="/contact/">Contact</a></li>
         </ul>
       </div>
     </div>
+    <div class="ftr-x">
+      <p><b>Across Colorado:</b> <a href="/">Denver web design</a> &middot; <a href="/boulder-web-design/">Boulder web design</a> &middot; <a href="/web-design-fort-collins/">Fort Collins web design</a> &middot; <a href="/web-design-colorado/">Web design in Colorado</a></p>
+      <p><b>Also from our team:</b> <a href="https://eyetoad.com/">Denver SEO at eyetoad.com</a> &middot; <a href="https://conversationalaibot.com/">AI chatbots for business</a> &middot; <a href="https://www.buyweburl.com">Domains and hosting</a></p>
+    </div>
     <div class="ftr-b">
-      <p style="margin:0">© 2026 denver-webdesign.com · Powered by <a href="https://eyetoad.com/">Eye To Ad Media</a>, a <a href="https://www.searchconverts.com">Search Converts LLC</a> company. Denver, Colorado.</p>
-      <p style="margin:0"><a href="/accessibility/">Accessibility</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Conversion engine: <a href="https://www.searchconverts.com">Search Converts</a> &middot; Denver, Colorado</p>
+      <p style="margin:0"><a href="/sitemap/">Sitemap</a> &middot; <a href="/sitemap.xml">XML sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/accessibility/">Accessibility</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
     </div>
   </div>
 </footer>
@@ -712,38 +748,12 @@ if('IntersectionObserver' in window&&!RM){
   ['mouseup','mouseleave','touchend'].forEach(function(ev){c.addEventListener(ev,function(){drawing=false;});});
 })();
 
-/* form: honeypot + time trap + JS-assembled action */
-(function(){
-  var f=document.getElementById('leadform');if(!f)return;
-  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),loaded=0;
-  document.addEventListener('DOMContentLoaded',function(){loaded=Date.now();});
-  if(document.readyState!=='loading'){loaded=Date.now();}
-  function say(cls,msg){st.className='fstat '+cls;st.textContent=msg;}
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(f._honey.value!==''){return;}
-    if(Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
-    if(!f.name.value.trim()||!f.phone.value.trim()){say('err','Please add your name and phone number so we can reach you.');return;}
-    btn.disabled=true;btn.textContent='Sending…';
-    var parts=['https://','formsubmit.co/','info','@','eyetoad','.com'];
-    var fd=new FormData(f);
-    fd.delete('_honey');
-    fd.append('_subject','New lead — denver-webdesign.com');
-    fd.append('_template','table');
-    fd.append('_captcha','false');
-    fetch(parts.join(''),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-      .then(function(r){
-        if(r.ok){f.reset();say('ok','Sent. We received your request and will reply within one business day. If it is urgent, call 1-800-481-8638.');btn.textContent='Sent';}
-        else{say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';}
-      })
-      .catch(function(){say('warn','We could not confirm delivery. Please call 1-800-481-8638 so nothing gets missed.');btn.disabled=false;btn.textContent='Send my request';});
-  });
-})();
+
 </script>
 <script>
 (function(){
   var panel=document.getElementById('rtPanel'); if(!panel)return;
-  var D={"diy": ["DIY builder", "$0 up front &middot; $10&ndash;$50 a month", [["Platform subscription", "$10&ndash;$50 / mo"], ["Template", "included"], ["Your time", "a weekend or two"], ["Domain", "$10&ndash;$20 / yr"], ["SSL", "usually included"], ["Custom code", "not possible"]], "Year one, roughly $130&ndash;$620", "Right for a brand new business that needs something online this week for almost nothing. Wrong if the site is meant to generate customers, because search performance is limited by the platform."], "free": ["Freelancer", "$3,000&ndash;$8,000 up front", [["Design", "$2,000&ndash;$10,000 if custom"], ["Build", "included in project fee"], ["Copywriting", "$50&ndash;$150 / hr"], ["Hosting", "$2&ndash;$120 / mo, separate"], ["Maintenance", "usually hourly"], ["Ongoing edits", "billed per change"]], "Typically $3,000&ndash;$8,000 plus running costs", "Right when you know exactly what you want and can write a tight brief. The risk is what happens in eighteen months when something breaks and they've moved on."], "shop": ["Small shop", "From $99 a month, no setup fee", [["Custom design &amp; build", "included"], ["Hosting", "included"], ["SSL", "included"], ["Updates &amp; edits", "included"], ["Security &amp; backups", "included"], ["Search structure", "included"], ["Setup fee", "$0"]], "$1,188 a year &middot; $3,564 over three years", "Right for a local business that needs the phone to ring without a five-figure invoice. Note it is a lease with a buyout option at 24&ndash;36 months, not outright ownership from day one."], "bout": ["Boutique agency", "$8,000&ndash;$15,000 up front", [["Design", "20&ndash;40 hours of custom work"], ["Build", "55% of project cost"], ["Content", "often extra"], ["Hosting &amp; maintenance", "$1,100&ndash;$5,000 / yr"], ["Small edits", "ticket or hourly"], ["SEO campaign", "separate retainer"]], "Roughly $11,000&ndash;$30,000 over three years", "Right for a growing company with a real budget that wants a genuine design process. You own the site outright, which is worth something the monthly routes don't give you."], "full": ["Full agency", "$9,000&ndash;$22,000+ up front", [["Strategy &amp; discovery", "part of the fee"], ["Design", "custom, multiple rounds"], ["Build", "team, project managed"], ["Account management", "built into the price"], ["Maintenance", "retainer"], ["Three-year total on a $28k site", "$65,000&ndash;$95,000"]], "Six figures is normal at the top of this band", "Right when you have multiple stakeholders, a brand to protect and a marketing department to work with them. Genuine overkill for a five-page site for a sole trader."], "ecom": ["Custom ecommerce", "$45,000&ndash;$250,000", [["Platform", "enterprise or headless"], ["Catalogue complexity", "main cost driver"], ["ERP / inventory integration", "major factor"], ["Payments &amp; tax", "specialist work"], ["Extensions", "$100&ndash;$300 / yr"], ["Standard Shopify build", "far cheaper &mdash; ask first"]], "$45,000&ndash;$250,000 depending on scope", "Right for real catalogue businesses with integrations. Most stores don't need this &mdash; a standard Shopify build handles the majority at a fraction of the cost."]};
+  var D={"diy": ["DIY builder", "$0 up front &middot; $10&ndash;$50 a month", [["Platform subscription", "$10&ndash;$50 / mo"], ["Template", "included"], ["Your time", "a weekend or two"], ["Domain", "$10&ndash;$20 / yr"], ["SSL", "usually included"], ["Custom code", "not possible"]], "Year one, roughly $130&ndash;$620", "Right for a brand new business that needs something online this week for almost nothing. Wrong if the site is meant to generate customers, because search performance is limited by the platform."], "free": ["Freelancer", "$3,000&ndash;$8,000 up front", [["Design", "$2,000&ndash;$10,000 if custom"], ["Build", "included in project fee"], ["Copywriting", "$50&ndash;$150 / hr"], ["Hosting", "$2&ndash;$120 / mo, separate"], ["Maintenance", "usually hourly"], ["Ongoing edits", "billed per change"]], "Typically $3,000&ndash;$8,000 plus running costs", "Right when you know exactly what you want and can write a tight brief. The risk is what happens in eighteen months when something breaks and they've moved on."], "shop": ["Small shop", "From $99 a month, no setup fee", [["Custom design &amp; build", "included"], ["Hosting", "included"], ["SSL", "included"], ["Updates &amp; edits", "included"], ["Security &amp; backups", "included"], ["Search structure", "included"], ["Setup fee", "$0"]], "$1,188 a year &middot; $3,564 over three years", "Right for a local business that needs the phone to ring without a five-figure invoice. Note it is a lease with a buyout option at 24&ndash;36 months, not outright ownership from day one."], "bout": ["Boutique agency", "$8,000&ndash;$15,000 up front", [["Design", "20&ndash;40 hours of custom work"], ["Build", "55% of project cost"], ["Content", "often extra"], ["Hosting &amp; maintenance", "$1,100&ndash;$5,000 / yr"], ["Small edits", "ticket or hourly"], ["SEO campaign", "separate retainer"]], "Roughly $11,000&ndash;$30,000 over three years", "Right for a growing company with a real budget that wants a genuine design process. You own the site outright, which is worth something the monthly routes don't give you."], "full": ["Full agency", "$9,000&ndash;$22,000+ up front", [["Strategy &amp; discovery", "part of the fee"], ["Design", "custom, multiple rounds"], ["Build", "team, project managed"], ["Account management", "built into the price"], ["Maintenance", "retainer"], ["Three-year total on a $28k site", "$65,000&ndash;$95,000"]], "Six figures is normal at the top of this band", "Right when you have multiple stakeholders, a brand to protect and a marketing department to work with them. Genuine overkill for a five-page site for a sole trader."], "ecom": ["Custom ecommerce", "$45,000&ndash;$250,000", [["Platform", "enterprise or headless"], ["Catalog complexity", "main cost driver"], ["ERP / inventory integration", "major factor"], ["Payments &amp; tax", "specialist work"], ["Extensions", "$100&ndash;$300 / yr"], ["Standard Shopify build", "far cheaper &mdash; ask first"]], "$45,000&ndash;$250,000 depending on scope", "Right for real catalog businesses with integrations. Most stores don't need this &mdash; a standard Shopify build handles the majority at a fraction of the cost."]};
   var btns=document.querySelectorAll('.rt-btn');
   function show(k){
     var d=D[k]; if(!d)return;
@@ -764,7 +774,53 @@ if('IntersectionObserver' in window&&!RM){
 </script>
 
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "How Much Does a Website Cost", "item": "https://denver-webdesign.com/how-much-does-a-website-cost/"}]}, {"@type": "Article", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#article", "headline": "How much does a website cost? 2026 prices for every route", "description": "Real 2026 website costs: DIY builders, freelancers, agencies and custom ecommerce, plus the $1,100-$5,000 a year in running costs that never appear in a quote.", "author": {"@id": "https://denver-webdesign.com/#org"}, "publisher": {"@id": "https://denver-webdesign.com/#org"}, "datePublished": "2026-08-28", "dateModified": "2026-08-28", "inLanguage": "en-US", "about": {"@type": "Thing", "name": "Website design cost"}}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#howto", "name": "How to avoid overpaying for a website", "description": "Six checks that stop you comparing quotes for projects that are not the same work.", "totalTime": "PT1H", "step": [{"@type": "HowToStep", "position": 1, "name": "Write the scope first", "text": "Define page count, must-have features and deadline, then send the identical brief to every supplier so the quotes are comparable."}, {"@type": "HowToStep", "position": 2, "name": "Ask for the three-year total", "text": "Build price plus hosting, maintenance, edits and every recurring fee, not just the headline number."}, {"@type": "HowToStep", "position": 3, "name": "Skip functionality you cannot justify", "text": "If you cannot name the weekly task a feature removes, leave it out and add it later."}, {"@type": "HowToStep", "position": 4, "name": "Separate search structure from campaigns", "text": "Technical structure belongs in the build; ongoing content and link work is a separate retainer."}, {"@type": "HowToStep", "position": 5, "name": "Check the cost of a small edit", "text": "Ask what a ten-minute text change costs and how long it takes, because you will need many of them."}, {"@type": "HowToStep", "position": 6, "name": "Test their own website speed", "text": "Run Google PageSpeed Insights on the supplier's own site before you pay anything."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#webpage", "url": "https://denver-webdesign.com/how-much-does-a-website-cost/", "name": "How Much Does a Website Cost? 2026 Prices, Every Route", "description": "Real 2026 website costs: DIY builders, freelancers, agencies and custom ecommerce, plus the $1,100-$5,000 a year in running costs that never appear in a quote.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#bc"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-08-28", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#faq", "mainEntity": [{"@type": "Question", "name": "How much does a website cost in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Most professional small business websites land between $3,000 and $15,000, with freelancers typically $3,000 to $8,000 and boutique agencies $8,000 to $15,000. DIY builders run $10 to $50 a month. Custom ecommerce at scale runs $45,000 to $250,000, and web applications start around $50,000. Our custom-coded sites start at $99 a month."}}, {"@type": "Question", "name": "Why is there such a huge range?", "acceptedAnswer": {"@type": "Answer", "text": "Because a website describes wildly different products. A five-page brochure site and a platform with payments, logins and integrations are different disciplines. Within the small business band, the gap comes down to design originality, content work and how much technical structure is included."}}, {"@type": "Question", "name": "What is the cheapest way to get a website?", "acceptedAnswer": {"@type": "Answer", "text": "A DIY builder, roughly $10 to $50 a month, or around $5.99 on the plans we resell. You do the work and it will look like a template. That's genuinely fine if the site is a placeholder. It's a poor choice if the website is supposed to bring in customers, because you can't control the code underneath."}}, {"@type": "Question", "name": "Is a more expensive website better?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. Price correlates with design originality and scope, not with whether the thing gets you customers. Plenty of expensive sites are slow, poorly structured and invisible in search. The test is whether it loads fast, gets found and makes contacting you obvious, and you can check all three for free."}}, {"@type": "Question", "name": "How much should ongoing costs be?", "acceptedAnswer": {"@type": "Answer", "text": "Research puts the commonly overlooked running costs at $1,100 to $5,000 a year across hosting, security, backups, maintenance and tools. Hosting alone can be as little as $2 a month for a small site. If a supplier's ongoing fees sit far above that band, ask specifically what the money buys."}}, {"@type": "Question", "name": "Should I pay monthly or one lump sum?", "acceptedAnswer": {"@type": "Answer", "text": "Both are legitimate. A lump sum means you own the site outright and can walk away. Monthly removes the upfront barrier and usually bundles hosting and maintenance, but you need to check what happens at the end and whether you eventually own it. Ask that question before signing either way."}}, {"@type": "Question", "name": "Does the price include content and photos?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently not, and it's the most common gap in a quote. Copywriting runs $50 to $150 an hour and a photo shoot $500 to $2,500. Ask explicitly who is writing the words, because client to supply content is what stalls most website projects."}}, {"@type": "Question", "name": "How much does a website cost per month to run?", "acceptedAnswer": {"@type": "Answer", "text": "On a builder, $10 to $50. For a custom site, hosting from a few dollars plus whatever maintenance arrangement you have. Published guidance puts ongoing costs for custom sites at roughly $50 to $200 a month once maintenance is included. Ours is $99 with everything bundled."}}, {"@type": "Question", "name": "What does a website cost in Denver specifically?", "acceptedAnswer": {"@type": "Answer", "text": "Denver agencies commonly quote $9,000 to $22,000 for a professional five-page site, which sits at the upper end of national ranges. Our Denver pricing is published and starts at $99 a month."}}, {"@type": "Question", "name": "Can I build a website myself and save the money?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and for some businesses it's the right call. Budget a weekend or two, accept that it will look like a template, and be aware that search performance is limited by the platform. If the site is a formality, that's a fine trade. If it's meant to generate work, you're trading money for a much slower result."}}]}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "How Much Does a Website Cost", "item": "https://denver-webdesign.com/how-much-does-a-website-cost/"}]}, {"@type": "Article", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#article", "headline": "How much does a website cost? 2026 prices for every route", "description": "Real 2026 website costs: DIY builders, freelancers, agencies and custom ecommerce, plus the $1,100-$5,000 a year in running costs that never appear in a quote.", "author": {"@id": "https://denver-webdesign.com/#org"}, "publisher": {"@id": "https://denver-webdesign.com/#org"}, "datePublished": "2026-08-28", "dateModified": "2026-09-20", "inLanguage": "en-US", "about": {"@type": "Thing", "name": "Website design cost"}}, {"@type": "HowTo", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#howto", "name": "How to avoid overpaying for a website", "description": "Six checks that stop you comparing quotes for projects that are not the same work.", "totalTime": "PT1H", "step": [{"@type": "HowToStep", "position": 1, "name": "Write the scope first", "text": "Define page count, must-have features and deadline, then send the identical brief to every supplier so the quotes are comparable."}, {"@type": "HowToStep", "position": 2, "name": "Ask for the three-year total", "text": "Build price plus hosting, maintenance, edits and every recurring fee, not just the headline number."}, {"@type": "HowToStep", "position": 3, "name": "Skip functionality you cannot justify", "text": "If you cannot name the weekly task a feature removes, leave it out and add it later."}, {"@type": "HowToStep", "position": 4, "name": "Separate search structure from campaigns", "text": "Technical structure belongs in the build; ongoing content and link work is a separate retainer."}, {"@type": "HowToStep", "position": 5, "name": "Check the cost of a small edit", "text": "Ask what a ten-minute text change costs and how long it takes, because you will need many of them."}, {"@type": "HowToStep", "position": 6, "name": "Test their own website speed", "text": "Run Google PageSpeed Insights on the supplier's own site before you pay anything."}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#webpage", "url": "https://denver-webdesign.com/how-much-does-a-website-cost/", "name": "How Much Does a Website Cost? 2026 Prices, Every Route", "description": "Real 2026 website costs: DIY builders, freelancers, agencies and custom ecommerce, plus the $1,100-$5,000 a year in running costs that never appear in a quote.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#bc"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-09-20", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/how-much-does-a-website-cost/#faq", "mainEntity": [{"@type": "Question", "name": "How much does a website cost in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Most professional small business websites land between $3,000 and $15,000, with freelancers typically $3,000 to $8,000 and boutique agencies $8,000 to $15,000. DIY builders run $10 to $50 a month. Custom ecommerce at scale runs $45,000 to $250,000, and web applications start around $50,000. Our custom-coded sites start at $99 a month."}}, {"@type": "Question", "name": "Why is there such a huge range?", "acceptedAnswer": {"@type": "Answer", "text": "Because \"a website\" describes wildly different products. A five-page brochure site and a platform with payments, logins and integrations are different disciplines. Within the small business band, the gap comes down to design originality, content work and how much technical structure is included."}}, {"@type": "Question", "name": "What is the cheapest way to get a website?", "acceptedAnswer": {"@type": "Answer", "text": "A DIY builder, roughly $10 to $50 a month, or around $5.99 on the plans we resell. You do the work and it will look like a template. That's genuinely fine if the site is a placeholder. It's a poor choice if the website is supposed to bring in customers, because you can't control the code underneath."}}, {"@type": "Question", "name": "Is a more expensive website better?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. Price correlates with design originality and scope, not with whether the thing gets you customers. Plenty of expensive sites are slow, poorly structured and invisible in search. The test is whether it loads fast, gets found and makes contacting you obvious — and you can check all three for free."}}, {"@type": "Question", "name": "How much should ongoing costs be?", "acceptedAnswer": {"@type": "Answer", "text": "Research puts the commonly overlooked running costs at $1,100 to $5,000 a year across hosting, security, backups, maintenance and tools. Hosting alone can be as little as $2 a month for a small site. If a supplier's ongoing fees sit far above that band, ask specifically what the money buys."}}, {"@type": "Question", "name": "Should I pay monthly or one lump sum?", "acceptedAnswer": {"@type": "Answer", "text": "Both are legitimate. A lump sum means you own the site outright and can walk away. Monthly removes the upfront barrier and usually bundles hosting and maintenance, but you need to check what happens at the end and whether you eventually own it. Ask that question before signing either way."}}, {"@type": "Question", "name": "Does the price include content and photos?", "acceptedAnswer": {"@type": "Answer", "text": "Frequently not, and it's the most common gap in a quote. Copywriting runs $50 to $150 an hour and a photo shoot $500 to $2,500. Ask explicitly who is writing the words, because \"client to supply content\" is what stalls most website projects."}}, {"@type": "Question", "name": "How much does a website cost per month to run?", "acceptedAnswer": {"@type": "Answer", "text": "On a builder, $10 to $50. For a custom site, hosting from a few dollars plus whatever maintenance arrangement you have. Published guidance puts ongoing costs for custom sites at roughly $50 to $200 a month once maintenance is included. Ours is $99 with everything bundled."}}, {"@type": "Question", "name": "What does a website cost in Denver specifically?", "acceptedAnswer": {"@type": "Answer", "text": "Denver agencies commonly quote $9,000 to $22,000 for a professional five-page site, which sits at the upper end of national ranges. Our Denver pricing is published and starts at $99 a month."}}, {"@type": "Question", "name": "Can I build a website myself and save the money?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and for some businesses it's the right call. Budget a weekend or two, accept that it will look like a template, and be aware that search performance is limited by the platform. If the site is a formality, that's a fine trade. If it's meant to generate work, you're trading money for a much slower result."}}]}]}
+</script>
+<script id="v2js">
+(function(){
+  var RMv=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* reading progress */
+  if(!RMv){var pb=document.createElement('div');pb.id='sprog';pb.setAttribute('aria-hidden','true');document.body.appendChild(pb);
+    var tk=false;function up(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;pb.style.transform='scaleX('+(m>0?Math.min(1,h.scrollTop/m):0)+')';tk=false;}
+    window.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up);}},{passive:true});up();}
+  /* card tilt */
+  if(!RMv&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){document.querySelectorAll('.tilt').forEach(function(el){
+    el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.classList.add('tilting');el.style.transform='perspective(900px) rotateX('+(-y*5).toFixed(2)+'deg) rotateY('+(x*6).toFixed(2)+'deg) translateY(-3px)';});
+    el.addEventListener('pointerleave',function(){el.classList.remove('tilting');el.style.transform='';});});}
+  if(RMv){document.querySelectorAll('svg').forEach(function(s){if(s.pauseAnimations)s.pauseAnimations();});}
+  /* contact links */
+  document.querySelectorAll('a.eml').forEach(function(a){try{var e=atob(a.dataset.a)+String.fromCharCode(64)+atob(a.dataset.b);a.href='mailto:'+e;a.textContent=e;}catch(x){}});
+  /* lead form */
+  var f=document.getElementById('leadform');if(!f)return;
+  var st=document.getElementById('fstat'),btn=document.getElementById('fsubmit'),lbl=btn?btn.textContent:'Send',loaded=Date.now(),human=false;
+  function mk(){human=true;}
+  window.addEventListener('pointerdown',mk,{once:true,capture:true});
+  window.addEventListener('keydown',mk,{once:true,capture:true});
+  var K=['aHR0cHM6Ly9mb3Jtc3VibWl0LmNvL2FqYXgv','aW5mbw==','ZXlldG9hZC5jb20='];
+  function say(c,m){if(!st)return;st.className='fstat '+c;st.textContent=m;}
+  function val(n){var el=f.querySelector('[name="'+n+'"]');return el?el.value.trim():null;}
+  function reset(){if(btn){btn.disabled=false;btn.textContent=lbl;}}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(val('name')===''||val('phone')===''){say('err','Please add your name and phone number so we can reach you.');return;}
+    var hp=val('_honey');
+    if((hp!==null&&hp!=='')||!human||Date.now()-loaded<3500){say('warn','Please take a moment to fill the form out, then send it again.');return;}
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    var body={};new FormData(f).forEach(function(v,k){if(k.charAt(0)!=='_')body[k]=String(v).trim();});
+    body.page=location.pathname;
+    body._subject='New lead \u2014 denver-webdesign.com'+location.pathname;
+    body._template='table';body._captcha='false';
+    var to=atob(K[1])+String.fromCharCode(64)+atob(K[2]);
+    fetch(atob(K[0])+to,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j};},function(){return{ok:r.ok,j:null};});})
+      .then(function(x){
+        if(x.ok&&x.j&&(x.j.success===true||x.j.success==='true')){f.reset();say('ok','Sent. Taking you to your confirmation\u2026');if(btn)btn.textContent='Sent';setTimeout(function(){location.href='/thank-you/';},700);}
+        else if(x.ok){say('warn','Sent, but we could not confirm delivery. If you do not hear from us by tomorrow, call 1-800-481-8638.');reset();}
+        else{throw 0;}
+      })
+      .catch(function(){say('warn','That did not go through. Please call 1-800-481-8638 so nothing gets missed.');reset();});
+  });
+})();
 </script>
 </body>
 </html>

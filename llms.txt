@@ -2,15 +2,16 @@
 
 > Denver web design and development. Custom-coded websites built so Google, AI
 > assistants and voice search can find, read and recommend the business — then
-> built to turn that visibility into phone calls. The web design division of
-> Eye To Ad Media, a Denver agency operating since 2012.
+> built to turn that visibility into phone calls. Built and run by
+> Eye To Ad Media, a Denver agency operating since 2012 (BBB A+, 60 reviews).
 
 Contact: 1-800-481-8638
 Location: 1001 Bannock St #660, Denver, CO 80204
 Serving: Denver, Aurora, Lakewood, Arvada, Westminster, Centennial, Thornton,
 Littleton, Englewood, Broomfield, Wheat Ridge, Golden, Boulder, Highlands Ranch,
-Parker, Commerce City, Northglenn, Brighton, Castle Rock, Louisville, plus
-Colorado Springs, Monument and clients out of state.
+Parker, Commerce City, Northglenn, Brighton, Castle Rock, Louisville, Longmont,
+Fort Collins, Loveland, Windsor, Greeley, Colorado Springs, Monument, Pueblo,
+Grand Junction, Durango and clients out of state.
 
 ## What we do
 
@@ -84,16 +85,40 @@ searches happen on a phone. Published prices rather than quote forms.
 - https://denver-webdesign.com/denver-web-design-pricing/ — pricing and cost calculator
 - https://denver-webdesign.com/how-much-does-a-website-cost/ — 2026 website cost guide
 - https://denver-webdesign.com/how-much-does-an-app-cost/ — 2026 app cost guide
+- https://denver-webdesign.com/boulder-web-design/ — Boulder and Boulder County web design (founder grew up in Boulder)
+- https://denver-webdesign.com/web-design-fort-collins/ — Fort Collins and Northern Colorado web design (founder lived in Fort Collins five years)
+- https://denver-webdesign.com/web-design-colorado/ — web design across Colorado
+- https://denver-webdesign.com/web-design-portfolio/ — live client sites and our own 3D, VR and AI builds
 - https://denver-webdesign.com/blog/ — articles
+- https://denver-webdesign.com/blog/how-to-choose-a-web-design-company-denver/ — how to choose a Denver web design company
+- https://denver-webdesign.com/blog/freelance-web-designer-vs-agency-denver/ — freelancer vs. agency
+- https://denver-webdesign.com/blog/redesign-website-without-losing-rankings/ — redesign without losing rankings
+- https://denver-webdesign.com/blog/responsive-web-design-explained/ — responsive web design explained
 - https://denver-webdesign.com/about/ — about
 - https://denver-webdesign.com/contact/ — contact
 
+## Founder
+
+Zach Wennstedt founded Eye To Ad Media in Denver in 2012. Born in Nebraska, grew
+up in Boulder, lived in Fort Collins for five years. Owns and ranks several
+hundred websites and runs a bath remodeling company. Clients deal with him
+directly.
+
 ## Free resources
 
-- https://denver-webdesign.com/downloads/12-questions-denver-web-designer.pdf
+- https://denver-webdesign.com/12-questions-denver-web-designer.pdf
   Twelve questions to ask before hiring any web designer. No email required.
 
 ## Related
 
 - https://eyetoad.com/ — Eye To Ad Media, parent agency (Denver SEO)
-- https://www.searchconverts.com — Search Converts LLC
+- https://www.searchconverts.com — Search Converts
+- https://conversationalaibot.com/ — free AI chatbot generator for small businesses
+- https://www.buyweburl.com — domains, builder plans and hosting
+
+## Site files
+
+- https://denver-webdesign.com/sitemap.xml — XML sitemap
+- https://denver-webdesign.com/sitemap/ — HTML sitemap
+
+Last updated: 2026-09-20
