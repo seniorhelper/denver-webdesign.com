@@ -28,226 +28,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"></noscript>
-<style>
-:root{
-  --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
-  --cyan:#00E5FF; --magenta:#FF2D95; --amber:#FFA92B; --violet:#8B5CF6;
-  --mint:#B8F5DC; --lilac:#E3DBFF; --peach:#FFE0CC;
-  --paper:#FAFAFC; --line:#E4E8F0; --body:#414A63; --white:#fff;
-  --display:'Outfit',system-ui,sans-serif;
-  --text:'Inter',system-ui,sans-serif;
-  --mono:'JetBrains Mono',ui-monospace,monospace;
-  --wrap:1180px; --r:10px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}
-h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}
-h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}
-h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}
-p{margin:0 0 1.1em}
-a{color:#0B63D8;text-decoration:none}
-a:hover{text-decoration:underline}
-img{max-width:100%;height:auto;display:block}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
-section{padding:82px 0}
-:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
-
-.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}
-.eyebrow.on-dark{color:var(--cyan)}
-.lede{font-size:1.13rem;max-width:62ch}
-
-/* header */
-.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
-.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}
-.brand img{height:57px;width:auto}
-.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
-.nav a{color:var(--ink);font-weight:500;font-size:.94rem}
-.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}
-.hdr .nav a.tel:hover,.ftr a.tel:hover{color:var(--magenta);text-decoration:none}
-.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}
-@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}
-@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}
-
-.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}
-.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}
-.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
-.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-@media(max-width:1000px){
-  .burger{display:block}
-  .nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}
-  .nav.open{opacity:1;transform:none;pointer-events:auto}
-  .nav a{padding:13px 0;border-bottom:1px solid var(--line)}
-  .nav .tel{margin-top:14px;text-align:center;border-bottom:0}
-}
-
-/* hero */
-.hero{background:var(--ink);color:#fff;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}
-.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}
-.hero h1{color:#fff}
-.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}
-.hero-r{position:relative;min-height:530px;overflow:hidden}
-.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}
-.hero-r::after{content:"";position:absolute;inset:0;width:150px;background:linear-gradient(90deg,var(--ink),transparent);pointer-events:none}
-
-.pops{position:absolute;inset:0;z-index:5;pointer-events:none}
-.pop{position:absolute;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.98);border-radius:12px;padding:13px 16px;box-shadow:0 18px 44px rgba(3,7,18,.42);max-width:262px;opacity:0;transform:translateY(18px) scale(.92)}
-.pop.show{opacity:1;transform:none;transition:opacity .55s cubic-bezier(.2,.9,.3,1),transform .6s cubic-bezier(.2,1.35,.4,1)}
-.pop-ic{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center}
-.pop-ic svg{width:19px;height:19px;stroke-width:2.1;fill:none}
-.pop b{display:block;font-family:var(--display);font-weight:600;font-size:.98rem;color:var(--ink);line-height:1.2;letter-spacing:-.02em}
-.pop em{display:block;font-style:normal;font-size:.79rem;color:#5A6784;margin-top:4px;line-height:1.4}
-.p1{top:7%;left:-4%}.p2{top:31%;right:4%}.p3{top:55%;left:1%}.p4{top:78%;right:2%}
-.float{animation:fl 6s ease-in-out infinite}
-.p2 .float{animation-delay:-1.6s}.p3 .float{animation-delay:-3.1s}.p4 .float{animation-delay:-4.4s}
-@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-@media(max-width:1180px){.pop{max-width:224px;padding:11px 13px}.p1{left:-1%}.p3{left:2%}}
-@media(max-width:900px){
-  .hero-r{min-height:0;height:auto;padding:0}
-  .hero-r picture,.hero-r img{position:relative;height:230px}
-  .hero-r::after{display:none}
-  .pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}
-  .pop{position:static;max-width:none;opacity:1;transform:none}
-  .float{animation:none}
-}
-.hero-tag{display:none}
-.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}
-.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}
-.btn:hover{text-decoration:none;transform:translateY(-2px)}
-.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}
-.btn-s{border-color:var(--cyan);color:var(--cyan)}
-.btn-d{background:var(--ink);color:#fff;width:100%}
-.microtrust{font-size:.87rem;color:#8497BA}
-@media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr}
-  .hero-l{padding:52px 22px 44px}
-  .hero-r{min-height:260px;order:2}
-  .hero-r::after{display:none}
-}
-
-/* trustbar */
-.tbar{background:var(--ink-2);color:#C3CFE8;padding:17px 0;font-size:.9rem}
-.tbar ul{display:flex;flex-wrap:wrap;gap:12px 34px;list-style:none;margin:0;padding:0;justify-content:center}
-.tbar li{display:flex;align-items:center;gap:9px}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
-
-/* generic cards */
-.grid{display:grid;gap:20px}
-.g2{grid-template-columns:repeat(2,1fr)}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:920px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.card h3{margin-bottom:.4em}
-.card p{margin:0;font-size:.97rem}
-.pill{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
-.p-mint{background:var(--mint);color:#065F46}
-.p-lilac{background:var(--lilac);color:#4C1D95}
-.p-peach{background:var(--peach);color:#9A3412}
-.p-cyan{background:#CCF7FE;color:#0E5A6B}
-
-/* reveal */
-.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-.rv.in{opacity:1;transform:none}
-
-/* scratch demo */
-.demo{background:var(--ink);color:#fff;position:relative;overflow:hidden}
-.demo h2,.demo h3{color:#fff}
-.demo p{color:#AFBDD8}
-.scratch-wrap{background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:26px}
-.ticket{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(130deg,#12B3D6,#8B5CF6 48%,#FF2D95);display:grid;place-items:center;text-align:center;padding:22px}
-.ticket-prize{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff;line-height:1.15}
-.ticket-prize small{display:block;font-family:var(--text);font-weight:400;font-size:.82rem;color:rgba(255,255,255,.86);margin-top:9px;letter-spacing:0}
-#scratch{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
-#scratch.done{opacity:0;pointer-events:none;transition:opacity .5s}
-.scratch-hint{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8FA2C4;text-align:center;margin:14px 0 0}
-
-/* accordion */
-.acc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
-.acc+.acc{margin-top:12px}
-.acc summary{cursor:pointer;padding:20px 54px 20px 22px;font-family:var(--display);font-weight:600;color:var(--ink);font-size:1.06rem;list-style:none;position:relative}
-.acc summary::-webkit-details-marker{display:none}
-.acc summary::after{content:"";position:absolute;right:22px;top:50%;width:11px;height:11px;border-right:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
-.acc[open] summary::after{transform:translateY(-30%) rotate(225deg)}
-.acc .acc-b{padding:0 22px 22px;font-size:.99rem}
-.acc .acc-b p:last-child{margin-bottom:0}
-
-/* fuse */
-.fuse-sec{background:linear-gradient(180deg,var(--ink) 0%,#160B22 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
-.fuse-sec h2{color:#fff}
-.fuse-sec p{color:#B9A9CE}
-.fuse-svg{width:100%;max-width:620px;margin:0 auto 8px;display:block}
-#fusepath{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s linear}
-.lit #fusepath{stroke-dashoffset:0}
-.boom{font-family:var(--display);font-weight:700;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:-.03em;opacity:0;transform:scale(.8)}
-.lit .boom{opacity:1;transform:none;transition:opacity .4s 2.5s,transform .5s 2.5s cubic-bezier(.2,1.5,.4,1)}
-
-/* pricing */
-.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
-@media(max-width:900px){.tiers{grid-template-columns:1fr}}
-.tier{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff}
-.tier.feature{border:2px solid var(--ink);position:relative;box-shadow:0 18px 44px rgba(10,15,31,.11)}
-.tier.feature::before{content:"Most Denver businesses pick this";position:absolute;top:-13px;left:22px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
-.amt{font-family:var(--mono);font-size:2.5rem;color:var(--ink);line-height:1;margin:6px 0 4px}
-.amt small{font-family:var(--text);font-size:.86rem;color:var(--body);font-weight:400}
-.tier ul{list-style:none;padding:0;margin:18px 0 0;font-size:.95rem}
-.tier li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}
-.tier li::before{content:"";position:absolute;left:2px;top:15px;width:11px;height:6px;border-left:2px solid var(--magenta);border-bottom:2px solid var(--magenta);transform:rotate(-45deg)}
-
-/* signal flow */
-.flow{background:#fff}
-.flowbox{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,#fff,#F6F8FD)}
-.flow-svg{width:100%;height:auto}
-.flow-svg .fl{stroke-dasharray:6 9;animation:dash 2.4s linear infinite}
-@keyframes dash{to{stroke-dashoffset:-30}}
-
-/* stat bars */
-.bars{margin:26px 0 0}
-.bar-row{margin-bottom:17px}
-.bar-lab{display:flex;justify-content:space-between;font-size:.92rem;margin-bottom:6px}
-.bar-lab b{font-family:var(--mono);color:var(--ink)}
-.bar-t{height:11px;background:#EDF1F8;border-radius:99px;overflow:hidden}
-.bar-f{height:100%;width:0;border-radius:99px;transition:width 1.3s cubic-bezier(.2,.8,.3,1)}
-
-/* form */
-.formsec{background:var(--ink-2);color:#fff}
-.formsec h2{color:#fff}
-.formsec p{color:#B0BFDA}
-.fbox{background:#fff;border-radius:18px;padding:28px;max-width:660px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:600px){.frow{grid-template-columns:1fr}}
-.fbox label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin:0 0 6px}
-.fbox input,.fbox select,.fbox textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.97rem;background:#fff;color:var(--ink);margin-bottom:14px}
-.fbox input:focus,.fbox select:focus,.fbox textarea:focus{border-color:var(--cyan);outline:none;box-shadow:0 0 0 3px rgba(0,229,255,.2)}
-.fbox textarea{min-height:96px;resize:vertical}
-.fnote{font-size:.83rem;color:var(--body);margin:12px 0 0}
-.fstat{margin:14px 0 0;font-size:.92rem;padding:12px 14px;border-radius:10px;display:none}
-.fstat.ok{display:block;background:#E7FBF1;color:#065F46}
-.fstat.warn{display:block;background:#FEF6E7;color:#92400E}
-.fstat.err{display:block;background:#FEECEC;color:#9B1C1C}
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-
-/* footer */
-.ftr{background:#fff;border-top:1px solid var(--line);padding:56px 0 30px;font-size:.93rem}
-.ftr h4{font-size:.75rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
-.ftr ul{list-style:none;padding:0;margin:0}
-.ftr li{margin-bottom:9px}
-.ftr a{color:var(--body)}
-.ftr img{height:51px;margin-bottom:16px}
-.ftr-b{border-top:1px solid var(--line);margin-top:34px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.87rem;color:#6B7690}
-
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
-  .rv{opacity:1;transform:none}
-  html{scroll-behavior:auto}
-}
-.kr h2{color:var(--ink)!important}.kr p{color:var(--body)!important}
-</style>
+<style>:root{--ink:#0A0F1F;--ink-2:#111A33;--ink-3:#1B2547;--cyan:#00E5FF;--magenta:#FF2D95;--amber:#FFA92B;--violet:#8B5CF6;--mint:#B8F5DC;--lilac:#E3DBFF;--peach:#FFE0CC;--paper:#FAFAFC;--line:#E4E8F0;--body:#414A63;--white:#fff;--display:'Outfit',system-ui,sans-serif;--text:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;--wrap:1180px;--r:10px;}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--text);color:var(--body);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.06;margin:0 0 .5em;letter-spacing:-.025em}h1{font-size:clamp(2rem,3.5vw,2.85rem);font-weight:700;letter-spacing:-.028em}h2{font-size:clamp(1.95rem,3.8vw,2.85rem);font-weight:700}h3{font-size:1.3rem;font-weight:600;line-height:1.22;letter-spacing:-.02em}p{margin:0 0 1.1em}a{color:#0B63D8;text-decoration:none}img{max-width:100%;height:auto;display:block}.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}section{padding:82px 0}.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);margin:0 0 14px}.eyebrow.on-dark{color:var(--cyan)}.lede{font-size:1.13rem;max-width:62ch}.hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}.hdr-in{display:flex;align-items:center;gap:18px;height:94px;max-width:var(--wrap);margin:0 auto;padding:0 22px}.brand img{height:57px;width:auto}.nav{margin-left:auto;display:flex;gap:22px;align-items:center}.nav a{color:var(--ink);font-weight:500;font-size:.94rem}.hdr .nav a.tel,.ftr a.tel{font-family:var(--display);font-weight:700;color:var(--ink);background:none;padding:0;font-size:1.62rem;letter-spacing:-.03em;white-space:nowrap;display:inline-block}.telm{display:none;margin-left:auto;font-family:var(--display);font-weight:700;font-size:1.22rem;color:var(--ink);letter-spacing:-.03em;white-space:nowrap}@media(max-width:1000px){.telm{display:block}.burger{margin-left:12px}}@media(max-width:430px){.telm{font-size:1.02rem}.brand img{height:44px}.hdr-in{height:78px;gap:10px}}.burger{display:none;background:none;border:0;padding:10px;cursor:pointer}.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .25s}@media(max-width:1000px){.burger{display:block}.nav{position:fixed;inset:76px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:14px 22px 28px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;max-height:calc(100vh - 76px);overflow:auto}.nav.open{opacity:1;transform:none;pointer-events:auto}.nav a{padding:13px 0;border-bottom:1px solid var(--line)}.nav .tel{margin-top:14px;text-align:center;border-bottom:0}}.hero{background:var(--ink);color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);align-items:stretch}.hero-l{padding:78px 52px 78px max(22px,calc((100vw - var(--wrap))/2 + 22px))}.hero h1{color:#fff}.grad{background:linear-gradient(96deg,var(--cyan),var(--magenta) 52%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#B6C2DE;font-size:1.1rem;max-width:46ch}.hero-r{position:relative;min-height:530px;overflow:hidden}.hero-r picture,.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 58%}@media(max-width:900px){.hero-r{min-height:0;height:auto;padding:0}.hero-r picture,.hero-r img{position:relative;height:230px}.hero-r::after{display:none}.pops{position:relative;display:grid;gap:10px;padding:18px 22px 6px;pointer-events:auto}.pop{position:static;max-width:none;opacity:1;transform:none}.float{animation:none}}.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin:30px 0 20px}.btn{display:inline-block;font-family:var(--display);font-weight:600;padding:15px 26px;border-radius:5px;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .16s,box-shadow .16s;letter-spacing:-.01em}.btn-p{background:linear-gradient(96deg,var(--magenta),var(--amber));color:#fff}.btn-s{border-color:var(--cyan);color:var(--cyan)}.btn-d{background:var(--ink);color:#fff;width:100%}.microtrust{font-size:.87rem;color:#8497BA}@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-l{padding:52px 22px 44px}.hero-r{min-height:260px;order:2}.hero-r::after{display:none}}.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}.rv.in{opacity:1;transform:none}@media(max-width:900px){.tiers{grid-template-columns:1fr}}.nav a[aria-current="page"]{color:var(--magenta)}@media(max-width:1240px) and (min-width:1001px){.nav{gap:15px}.nav a{font-size:.9rem}.hdr .nav a.tel{font-size:1.28rem}.brand img{height:50px}}#sprog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--cyan),var(--magenta),var(--amber));z-index:80;pointer-events:none}
+.hero-tag{display:none}</style>
+<link rel="preload" href="/dwd.min.css?v=1" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/dwd.min.css?v=1"></noscript>
 <style>
 /* ===== PAGE THEME: atelier / bespoke ===== */
 .at{--coal:#1C1A17;--coal2:#262320;--cream:#F5F0E6;--cream2:#EBE4D6;--brass:#C9A227;--sage:#7A8B72;--rust:#A8563A;--muted:#8A8477;--hair:#DCD4C2}
@@ -342,32 +126,12 @@ section{padding:82px 0}
 .formsec .fbox .fstat.err{color:#9B1C1C!important}
 </style>
 
-<style id="v2">
-.nav a[aria-current="page"]{color:var(--magenta)}
-@media(max-width:1240px) and (min-width:1001px){.nav{gap:15px}.nav a{font-size:.9rem}.hdr .nav a.tel{font-size:1.28rem}.brand img{height:50px}}
-.ftr-x{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;font-size:.87rem;color:#6B7690}
-.ftr-x p{margin:0 0 8px}.ftr-x b{color:var(--ink);font-weight:600}
-.kick{display:block;font-family:var(--mono);font-size:max(.72rem,.26em);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 .9em;opacity:.85;line-height:1.3}
-span.kick2{display:block;line-height:1.4}
-@media(min-width:901px){.hero-r{min-height:560px}.pops .p1{top:6%;left:7%}.pops .p2{top:29%;right:4%}.pops .p3{top:53%;left:6%}.pops .p4{top:auto;bottom:6%;right:4%}}
-@media(min-width:901px) and (max-width:1180px){.pops .p1{left:5%}.pops .p3{left:4%}}
-.kr{padding:44px 0;background:#fff;border-top:1px solid var(--line)}
-.kr h2{font-size:clamp(1.35rem,2.4vw,1.75rem);margin-bottom:14px}
-.kr-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
-.kr-g a{display:block;border:1px solid var(--line);border-radius:12px;padding:16px 18px;color:var(--ink);background:var(--paper);transition:transform .25s,box-shadow .25s,border-color .25s}
-.kr-g a:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,15,31,.08);border-color:var(--cyan)}
-.kr-g small{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin-bottom:6px}
-.kr-g b{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.3;display:block}
-.kr p{margin:14px 0 0;font-size:.95rem}
-@media(hover:hover) and (pointer:fine){.tilt{will-change:transform;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,opacity .6s ease}.tilt.tilting{transition:transform .08s linear;box-shadow:0 22px 44px rgba(10,15,31,.14)}}
-#sprog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--cyan),var(--magenta),var(--amber));z-index:80;pointer-events:none}
-@media(prefers-reduced-motion:reduce){#sprog{display:none}.kr-g a{transition:none}}
-</style>
+
 </head>
 <body>
 <header class="hdr">
   <div class="hdr-in">
-    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="251" height="57"></a>
+    <a class="brand" href="/" aria-label="Denver Web Design home"><img src="/images/denver-web-design-logo.webp" alt="denver-webdesign.com" width="251" height="57"></a>
     <a class="telm" href="tel:18004818638">1-800-481-8638</a>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav class="nav" id="nav">
@@ -503,7 +267,7 @@ span.kick2{display:block;line-height:1.4}
       <div class="sp-row rv"><div class="sp-n">04</div><div>
         <span class="sp-tag tg-hi">Actually custom</span>
         <h3 style="margin-top:10px">Designed and coded from nothing</h3>
-        <p>Structure decided by what your business needs, then written by hand. Nothing loads that you don't use. Published research puts custom design alone at $2,000 to $10,000, involving 20 to 40 hours of design work before a line of code exists. It's what we do, and it's the reason the sites are fast. Larger brands can also get <a href="https://eyetoad.com/custom-website-design/">custom website design</a> from Eye To Ad Media as part of a full marketing program.</p>
+        <p>Structure decided by what your business needs, then written by hand. Nothing loads that you don't use. Published research puts custom design alone at $2,000 to $10,000, involving 20 to 40 hours of design work before a line of code exists. It's what we do, and it's the reason the sites are fast. Larger brands can also get custom website design from Eye To Ad Media as part of a full marketing program.</p>
       </div></div>
     </div>
   </div>
@@ -668,7 +432,7 @@ span.kick2{display:block;line-height:1.4}
   <div class="wrap">
     <div class="grid g4">
       <div>
-        <img src="/images/denver-web-design-logo.png" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
+        <img src="/images/denver-web-design-logo.webp" alt="denver-webdesign.com" width="225" height="51" loading="lazy">
         <p style="font-size:.92rem">Denver web design built to bring in customers. Custom-coded sites from $99 a month, no setup fee.</p>
         <p><a class="tel" href="tel:18004818638">1-800-481-8638</a></p>
         <p style="font-size:.86rem">1001 Bannock St #660<br>Denver, CO 80204<br><a class="eml" href="/contact/" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=">Email us</a></p>
@@ -716,7 +480,7 @@ span.kick2{display:block;line-height:1.4}
       <p style="margin:14px 0 0"><a href="https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/#sealclick" target="_blank" rel="nofollow noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-200-65-bbb-90228702.png" width="200" height="65" alt="Search Converts LLC BBB Business Review" loading="lazy" style="width:200px;height:65px;margin:0"></a></p>
     </div>
     <div class="ftr-b">
-      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Denver, Colorado</p>
+      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by Eye To Ad Media &middot; Denver, Colorado</p>
       <p style="margin:0"><a href="/sitemap/">Sitemap</a> &middot; <a href="/sitemap.xml">XML sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/accessibility/">Accessibility</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
     </div>
   </div>
@@ -820,7 +584,7 @@ if('IntersectionObserver' in window&&!RM){
 </script>
 
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/custom-websites/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Custom Websites", "item": "https://denver-webdesign.com/custom-websites/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/custom-websites/#service", "name": "Custom website design and development", "serviceType": "Custom website design", "provider": {"@id": "https://denver-webdesign.com/#org"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "description": "Websites designed and hand-coded for one business rather than adapted from a theme, with structure decided by the services being sold and nothing loading that is not used.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Hand-coded custom website from $99 per month, no setup fee"}}, {"@type": "ItemList", "@id": "https://denver-webdesign.com/custom-websites/#ladder", "name": "Four things sold as a custom website", "numberOfItems": 4, "itemListOrder": "https://schema.org/ItemListOrderAscending", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Template with your logo and colors"}, {"@type": "ListItem", "position": 2, "name": "Template assembled with a page builder"}, {"@type": "ListItem", "position": 3, "name": "Custom design on a standard framework"}, {"@type": "ListItem", "position": 4, "name": "Designed and coded from nothing"}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/custom-websites/#webpage", "url": "https://denver-webdesign.com/custom-websites/", "name": "Custom Websites | Everyone Says Custom. Few Mean It.", "description": "What custom actually means, the four different things sold under that word, and how to tell which one you're being quoted. Hand-coded custom sites from $99/month.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/custom-websites/#bc"}, "about": {"@id": "https://denver-webdesign.com/#org"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-09-20", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/custom-websites/#faq", "mainEntity": [{"@type": "Question", "name": "What does a custom website actually mean?", "acceptedAnswer": {"@type": "Answer", "text": "Properly, it means the design and structure were created for your business rather than adapted from an existing layout. In practice the word gets used for anything from a theme with your logo added to a site coded from nothing. Ask specifically what it's built on and whether a page builder is involved — the answers separate the two."}}, {"@type": "Question", "name": "How much does a custom website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Published 2026 research puts custom design work alone at $2,000 to $10,000 depending on page count and brand complexity, with a pre-built template at $0 to $200. Full custom builds from agencies commonly land between $8,000 and $22,000. Ours start at $99 a month with no setup fee."}}, {"@type": "Question", "name": "Is a custom website better for SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically, but it removes the main obstacles. Custom code means you control the heading structure, the schema, the URL structure and the page weight rather than working around what a theme decided. A well-built template site beats a badly built custom one — the advantage is in what's possible, not what's guaranteed."}}, {"@type": "Question", "name": "Will my site look like everyone else's?", "acceptedAnswer": {"@type": "Answer", "text": "Not if it's genuinely custom. The reason so many local business sites feel familiar is that a handful of popular themes cover an enormous share of the web. If looking distinct matters in your market, that's one of the clearest arguments for building rather than buying a layout."}}, {"@type": "Question", "name": "Can I edit a custom site myself?", "acceptedAnswer": {"@type": "Answer", "text": "Depends how it's built. Ours are static, so edits come to us and usually happen the same day at no extra cost. If editing it yourself is genuinely important, say so at the start and we'll build on something that supports it — usually WordPress, with the maintenance that comes with it."}}, {"@type": "Question", "name": "How long does a custom website take?", "acceptedAnswer": {"@type": "Answer", "text": "Some single-page sites go live within 24 hours. A typical multi-page business site takes a week or more. The build is rarely the constraint — content and decisions are. We write the copy from a phone call so that doesn't stall on you."}}, {"@type": "Question", "name": "What if I already have a template site?", "acceptedAnswer": {"@type": "Answer", "text": "Don't throw it out reflexively. If it ranks and converts, that history has value. We'd look at whether specific fixes solve the problem before recommending a rebuild. More on redesigns."}}, {"@type": "Question", "name": "Do I own a custom website?", "acceptedAnswer": {"@type": "Answer", "text": "Your domain and your content are yours regardless. On our monthly plans the site itself is leased with a buyout option at 24 to 36 months, priced on its value then. Ask any supplier this question before signing, and get the answer in writing — it's the one people forget."}}, {"@type": "Question", "name": "Is custom worth it for a small business?", "acceptedAnswer": {"@type": "Answer", "text": "It depends whether the website is meant to generate customers or just exist. If it's decoration, a template is fine and cheaper. If it's supposed to bring in work, the things custom gives you — speed, structure, distinctiveness — are the things that make that happen. More for small businesses."}}, {"@type": "Question", "name": "Can a custom site be built cheaply?", "acceptedAnswer": {"@type": "Answer", "text": "Not as a one-off — the design hours are real. The monthly model works because the cost spreads out and we keep the relationship rather than disappearing after the invoice clears. That's how a genuinely hand-built site starts at $99 rather than $9,000."}}]}]}
+{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://denver-webdesign.com/#website", "url": "https://denver-webdesign.com/", "name": "Denver Web Design", "publisher": {"@id": "https://denver-webdesign.com/#organization"}, "inLanguage": "en-US"}, {"@type": "Organization", "@id": "https://denver-webdesign.com/#organization", "name": "Denver Web Design", "url": "https://denver-webdesign.com/", "logo": "https://denver-webdesign.com/images/denver-web-design-logo.png", "parentOrganization": {"@id": "https://eyetoad.com/#organization", "@type": "Organization", "name": "Eye To Ad Media", "url": "https://eyetoad.com/"}}, {"@type": "BreadcrumbList", "@id": "https://denver-webdesign.com/custom-websites/#bc", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://denver-webdesign.com/"}, {"@type": "ListItem", "position": 2, "name": "Custom Websites", "item": "https://denver-webdesign.com/custom-websites/"}]}, {"@type": "Service", "@id": "https://denver-webdesign.com/custom-websites/#service", "name": "Custom website design and development", "serviceType": "Custom website design", "provider": {"@id": "https://denver-webdesign.com/#organization"}, "areaServed": [{"@type": "City", "name": "Denver", "containedInPlace": {"@type": "State", "name": "Colorado"}}, {"@type": "Country", "name": "United States"}], "description": "Websites designed and hand-coded for one business rather than adapted from a theme, with structure decided by the services being sold and nothing loading that is not used.", "offers": {"@type": "Offer", "price": "99", "priceCurrency": "USD", "description": "Hand-coded custom website from $99 per month, no setup fee"}}, {"@type": "ItemList", "@id": "https://denver-webdesign.com/custom-websites/#ladder", "name": "Four things sold as a custom website", "numberOfItems": 4, "itemListOrder": "https://schema.org/ItemListOrderAscending", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Template with your logo and colors"}, {"@type": "ListItem", "position": 2, "name": "Template assembled with a page builder"}, {"@type": "ListItem", "position": 3, "name": "Custom design on a standard framework"}, {"@type": "ListItem", "position": 4, "name": "Designed and coded from nothing"}]}, {"@type": "WebPage", "@id": "https://denver-webdesign.com/custom-websites/#webpage", "url": "https://denver-webdesign.com/custom-websites/", "name": "Custom Websites | Everyone Says Custom. Few Mean It.", "description": "What custom actually means, the four different things sold under that word, and how to tell which one you're being quoted. Hand-coded custom sites from $99/month.", "isPartOf": {"@id": "https://denver-webdesign.com/#website"}, "breadcrumb": {"@id": "https://denver-webdesign.com/custom-websites/#bc"}, "about": {"@id": "https://denver-webdesign.com/#organization"}, "inLanguage": "en-US", "datePublished": "2026-08-28", "dateModified": "2026-09-20", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede", ".acc-b"]}}, {"@type": "FAQPage", "@id": "https://denver-webdesign.com/custom-websites/#faq", "mainEntity": [{"@type": "Question", "name": "What does a custom website actually mean?", "acceptedAnswer": {"@type": "Answer", "text": "Properly, it means the design and structure were created for your business rather than adapted from an existing layout. In practice the word gets used for anything from a theme with your logo added to a site coded from nothing. Ask specifically what it's built on and whether a page builder is involved — the answers separate the two."}}, {"@type": "Question", "name": "How much does a custom website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Published 2026 research puts custom design work alone at $2,000 to $10,000 depending on page count and brand complexity, with a pre-built template at $0 to $200. Full custom builds from agencies commonly land between $8,000 and $22,000. Ours start at $99 a month with no setup fee."}}, {"@type": "Question", "name": "Is a custom website better for SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically, but it removes the main obstacles. Custom code means you control the heading structure, the schema, the URL structure and the page weight rather than working around what a theme decided. A well-built template site beats a badly built custom one — the advantage is in what's possible, not what's guaranteed."}}, {"@type": "Question", "name": "Will my site look like everyone else's?", "acceptedAnswer": {"@type": "Answer", "text": "Not if it's genuinely custom. The reason so many local business sites feel familiar is that a handful of popular themes cover an enormous share of the web. If looking distinct matters in your market, that's one of the clearest arguments for building rather than buying a layout."}}, {"@type": "Question", "name": "Can I edit a custom site myself?", "acceptedAnswer": {"@type": "Answer", "text": "Depends how it's built. Ours are static, so edits come to us and usually happen the same day at no extra cost. If editing it yourself is genuinely important, say so at the start and we'll build on something that supports it — usually WordPress, with the maintenance that comes with it."}}, {"@type": "Question", "name": "How long does a custom website take?", "acceptedAnswer": {"@type": "Answer", "text": "Some single-page sites go live within 24 hours. A typical multi-page business site takes a week or more. The build is rarely the constraint — content and decisions are. We write the copy from a phone call so that doesn't stall on you."}}, {"@type": "Question", "name": "What if I already have a template site?", "acceptedAnswer": {"@type": "Answer", "text": "Don't throw it out reflexively. If it ranks and converts, that history has value. We'd look at whether specific fixes solve the problem before recommending a rebuild. More on redesigns."}}, {"@type": "Question", "name": "Do I own a custom website?", "acceptedAnswer": {"@type": "Answer", "text": "Your domain and your content are yours regardless. On our monthly plans the site itself is leased with a buyout option at 24 to 36 months, priced on its value then. Ask any supplier this question before signing, and get the answer in writing — it's the one people forget."}}, {"@type": "Question", "name": "Is custom worth it for a small business?", "acceptedAnswer": {"@type": "Answer", "text": "It depends whether the website is meant to generate customers or just exist. If it's decoration, a template is fine and cheaper. If it's supposed to bring in work, the things custom gives you — speed, structure, distinctiveness — are the things that make that happen. More for small businesses."}}, {"@type": "Question", "name": "Can a custom site be built cheaply?", "acceptedAnswer": {"@type": "Answer", "text": "Not as a one-off — the design hours are real. The monthly model works because the cost spreads out and we keep the relationship rather than disappearing after the invoice clears. That's how a genuinely hand-built site starts at $99 rather than $9,000."}}]}]}
 </script>
 <script id="v2js">
 (function(){
