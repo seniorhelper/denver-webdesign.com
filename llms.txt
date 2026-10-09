@@ -21,6 +21,7 @@ Grand Junction, Durango and clients out of state.
 - iOS, Android, progressive web apps and web applications
 - Website redesigns that protect existing search rankings
 - SEO structure, AI search visibility and conversion optimization
+- AI agents built into websites that book, quote, answer and hand off to a person
 - Hosting, maintenance and ongoing updates
 
 ## Pricing
@@ -82,6 +83,7 @@ searches happen on a phone. Published prices rather than quote forms.
 - https://denver-webdesign.com/real-estate-website-design/ — real estate websites
 - https://denver-webdesign.com/denver-seo-web-design/ — SEO built into the build
 - https://denver-webdesign.com/ai-ready-websites-denver/ — AI search visibility
+- https://denver-webdesign.com/ai-agent-website-integration/ — AI agent built into your website: booking, instant estimates, intake, answers from your own pages, order status, lead capture and handoff to a person; quoted as a fixed price after a free 30-minute workflow audit
 - https://denver-webdesign.com/denver-web-design-pricing/ — pricing and cost calculator
 - https://denver-webdesign.com/how-much-does-a-website-cost/ — 2026 website cost guide
 - https://denver-webdesign.com/how-much-does-an-app-cost/ — 2026 app cost guide
@@ -125,4 +127,4 @@ directly.
 - https://denver-webdesign.com/sitemap.xml — XML sitemap
 - https://denver-webdesign.com/sitemap/ — HTML sitemap
 
-Last updated: 2026-09-20
+Last updated: 2026-10-09
