@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="--GE0egPYcv95sK9Qe--vkD7_sGLPe0trt_mmsZi0Rs" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://seal-alaskaoregonwesternwashington.bbb.org; connect-src 'self' https://formsubmit.co https://unpkg.com; base-uri 'self'; form-action 'self' https://formsubmit.co; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
 <title>App Development Denver | We'll Tell You If You Don't Need One</title>
 <meta name="description" content="Denver app development for iOS and Android. Most businesses asking for an app need a website instead - we'll say so. When an app is right, we build it properly.">
 <link rel="canonical" href="https://denver-webdesign.com/app-development-denver/">
@@ -23,7 +27,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"></noscript>
 <style>
 :root{
   --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
@@ -242,6 +246,7 @@ section{padding:82px 0}
   .rv{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+.kr h2{color:var(--ink)!important}.kr p{color:var(--body)!important}
 </style>
 <style>
 /* ===== PAGE THEME: neon glass / device ===== */
@@ -623,7 +628,7 @@ span.kick2{display:block;line-height:1.4}
       <details class="acc rv"><summary>Who owns the app when it's finished?</summary><div class="acc-b"><p>Ask this of anyone you're considering, and get it in writing. Your store accounts should be registered to your business, not to the developer, because that's the piece that's genuinely painful to recover later. Same principle as owning your domain name.</p></div></details>
       <details class="acc rv"><summary>What happens after launch?</summary><div class="acc-b"><p>Apps need ongoing maintenance in a way websites don't. iOS and Android both push major updates roughly annually and can break things that worked fine. Budget for that from the start rather than discovering it when the app stops opening.</p></div></details>
       <details class="acc rv"><summary>Can you build an app for my existing website?</summary><div class="acc-b"><p>Usually, and it's worth asking whether you need to. If your site already does the job on a phone, an app often duplicates it for a large cost. If there's a genuine workflow that needs offline access, notifications or device features, that's a real reason and we'll build it.</p></div></details>
-      <details class="acc rv"><summary>Do you only work with Denver businesses?</summary><div class="acc-b"><p>Denver metro is home and where most of our clients are, and we also work along the Front Range including <a href="https://www.websitedesignercoloradosprings.com">Colorado Springs</a> and out of state. App work is largely location independent anyway &mdash; most of it happens on calls and shared screens.</p></div></details>
+      <details class="acc rv"><summary>Do you only work with Denver businesses?</summary><div class="acc-b"><p>Denver metro is home and where most of our clients are, and we also work along the Front Range including Colorado Springs and out of state. App work is largely location independent anyway &mdash; most of it happens on calls and shared screens.</p></div></details>
       <details class="acc rv"><summary>What if my idea turns out not to be worth building?</summary><div class="acc-b"><p>We'd tell you. Talking somebody out of a $50,000 project they don't need is a worse quarter for us and a much better outcome for them, and it's the reason people come back with the projects that are worth doing.</p></div></details>
     </div>
   </div>
@@ -649,20 +654,20 @@ span.kick2{display:block;line-height:1.4}
       </div>
       <form class="fbox" id="leadform" novalidate>
         <div class="frow">
-          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80"></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required maxlength="25"></div>
         </div>
         <label for="f-biz">Business name</label>
-        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <input id="f-biz" name="business" type="text" autocomplete="organization" maxlength="120">
         <label for="f-site">Current website (if you have one)</label>
-        <input id="f-site" name="current_website" type="text" placeholder="yourbusiness.com">
+        <input id="f-site" name="current_website" type="text" placeholder="yourbusiness.com" maxlength="200">
         <label for="f-need">What are you thinking about?</label>
         <select id="f-need" name="project_type">
           <option>Booking or scheduling app</option><option>Ordering or loyalty app</option><option>Field or crew tool</option>
           <option>Membership or customer portal</option><option>Not sure if I need an app</option><option>Website instead</option>
         </select>
         <label for="f-msg">What problem should it solve?</label>
-        <textarea id="f-msg" name="message"></textarea>
+        <textarea id="f-msg" name="message" maxlength="2000"></textarea>
         <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
         <button class="btn btn-d" type="submit" id="fsubmit">Send my request</button>
         <p class="fnote">We'll never share your details. No newsletter, no spam, no automated call sequence.</p>
@@ -723,10 +728,10 @@ span.kick2{display:block;line-height:1.4}
     </div>
     <div class="ftr-x">
       <p><b>Across Colorado:</b> <a href="/">Denver web design</a> &middot; <a href="/boulder-web-design/">Boulder web design</a> &middot; <a href="/web-design-fort-collins/">Fort Collins web design</a> &middot; <a href="/web-design-colorado/">Web design in Colorado</a></p>
-      <p><b>Also from our team:</b> <a href="https://eyetoad.com/">Denver SEO at eyetoad.com</a> &middot; <a href="https://conversationalaibot.com/">AI chatbots for business</a> &middot; <a href="https://www.buyweburl.com">Domains and hosting</a></p>
+      <p style="margin:14px 0 0"><a href="https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/#sealclick" target="_blank" rel="nofollow noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-200-65-bbb-90228702.png" width="200" height="65" alt="Search Converts LLC BBB Business Review" loading="lazy" style="width:200px;height:65px;margin:0"></a></p>
     </div>
     <div class="ftr-b">
-      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Conversion engine: <a href="https://www.searchconverts.com">Search Converts</a> &middot; Denver, Colorado</p>
+      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Denver, Colorado</p>
       <p style="margin:0"><a href="/sitemap/">Sitemap</a> &middot; <a href="/sitemap.xml">XML sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/accessibility/">Accessibility</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
     </div>
   </div>

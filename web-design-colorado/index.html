@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="--GE0egPYcv95sK9Qe--vkD7_sGLPe0trt_mmsZi0Rs" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://seal-alaskaoregonwesternwashington.bbb.org; connect-src 'self' https://formsubmit.co https://unpkg.com; base-uri 'self'; form-action 'self' https://formsubmit.co; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
 <title>Web Design Colorado | Custom Website Design Across the State</title>
 <meta name="description" content="Colorado web design from a Denver studio founded in 2012. Custom-coded websites from $99/mo for businesses from Grand Junction to Greeley, built for Google, AI search and calls.">
 <link rel="canonical" href="https://denver-webdesign.com/web-design-colorado/">
@@ -25,7 +29,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"></noscript>
 <style>
 :root{
   --ink:#0A0F1F; --ink-2:#111A33; --ink-3:#1B2547;
@@ -276,6 +280,7 @@ section{padding:82px 0}
 .formsec .fbox .fstat.ok{color:#065F46!important}
 .formsec .fbox .fstat.warn{color:#92400E!important}
 .formsec .fbox .fstat.err{color:#9B1C1C!important}
+.kr h2{color:var(--ink)!important}.kr p{color:var(--body)!important}
 </style>
 <style id="v2">
 .nav a[aria-current="page"]{color:var(--magenta)}
@@ -447,7 +452,7 @@ a.card{display:block;color:inherit}a.card:hover{text-decoration:none}
       <a class="card rv tilt" href="/"><span class="pill p-cyan">Home base</span><h3>Denver metro</h3><p>Our office is at 1001 Bannock St. Denver web design is where we started, and where most of our clients are, from Aurora to Arvada.</p></a>
       <a class="card rv tilt" href="/boulder-web-design/"><span class="pill p-lilac">Boulder County</span><h3>Boulder and Longmont</h3><p>The founder grew up in Boulder. Design-literate customers, expensive clicks, and a real need for sites that rank on their own.</p></a>
       <a class="card rv tilt" href="/web-design-fort-collins/"><span class="pill p-peach">Northern Colorado</span><h3>Fort Collins, Loveland, Greeley</h3><p>Five years living in Fort Collins. Fast-growing search demand, low ad competition, and room to win.</p></a>
-      <div class="card rv tilt"><span class="pill p-mint">Southern Front Range</span><h3>Colorado Springs, Monument, Pueblo</h3><p>Searches for web design in Colorado Springs have surged. Military families, contractors and a busy small business scene all shopping on phones.</p></div>
+      <div class="card rv tilt"><span class="pill p-mint">Southern Front Range</span><h3>Colorado Springs, Monument, Pueblo</h3><p>Military families, contractors and a busy small business scene, all shopping on phones. Based there? Compare <a href="https://websitedesignercoloradosprings.com/">Colorado Springs web design</a> options built for that market.</p></div>
       <div class="card rv tilt"><span class="pill p-mint">Douglas County</span><h3>Castle Rock, Parker, Highlands Ranch</h3><p>Suburban service businesses competing with Denver companies for the same searches, and winning when their local pages are stronger.</p></div>
       <div class="card rv tilt"><span class="pill p-mint">Mountains and Western Slope</span><h3>Vail, Summit County, Grand Junction, Durango, Montrose</h3><p>Tourism and seasonal businesses where most visitors search from out of state before they ever arrive.</p></div>
     </div>
@@ -586,15 +591,15 @@ a.card{display:block;color:inherit}a.card:hover{text-decoration:none}
 
       <form class="fbox" id="leadform" novalidate>
         <div class="frow">
-          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80"></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required maxlength="25"></div>
         </div>
         <label for="f-biz">Business name</label>
-        <input id="f-biz" name="business" type="text" autocomplete="organization">
+        <input id="f-biz" name="business" type="text" autocomplete="organization" maxlength="120">
         <label for="f-city">City</label>
         <input id="f-city" name="city" type="text" autocomplete="address-level2" value="">
         <label for="f-site">Current website (if you have one)</label>
-        <input id="f-site" name="current_website" type="text" placeholder="yourbusiness.com">
+        <input id="f-site" name="current_website" type="text" placeholder="yourbusiness.com" maxlength="200">
         <label for="f-need">What do you need?</label>
         <select id="f-need" name="project_type">
           <option>New website</option>
@@ -606,7 +611,7 @@ a.card{display:block;color:inherit}a.card:hover{text-decoration:none}
           <option>Not sure yet</option>
         </select>
         <label for="f-msg">Anything else we should know?</label>
-        <textarea id="f-msg" name="message"></textarea>
+        <textarea id="f-msg" name="message" maxlength="2000"></textarea>
 
         <div class="hp" aria-hidden="true"><label for="_honey">Leave this field empty</label><input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
 
@@ -667,10 +672,10 @@ a.card{display:block;color:inherit}a.card:hover{text-decoration:none}
     </div>
     <div class="ftr-x">
       <p><b>Across Colorado:</b> <a href="/">Denver web design</a> &middot; <a href="/boulder-web-design/">Boulder web design</a> &middot; <a href="/web-design-fort-collins/">Fort Collins web design</a> &middot; <a href="/web-design-colorado/">Web design in Colorado</a></p>
-      <p><b>Also from our team:</b> <a href="https://eyetoad.com/">Denver SEO at eyetoad.com</a> &middot; <a href="https://conversationalaibot.com/">AI chatbots for business</a> &middot; <a href="https://www.buyweburl.com">Domains and hosting</a></p>
+      <p style="margin:14px 0 0"><a href="https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/#sealclick" target="_blank" rel="nofollow noopener"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-200-65-bbb-90228702.png" width="200" height="65" alt="Search Converts LLC BBB Business Review" loading="lazy" style="width:200px;height:65px;margin:0"></a></p>
     </div>
     <div class="ftr-b">
-      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Conversion engine: <a href="https://www.searchconverts.com">Search Converts</a> &middot; Denver, Colorado</p>
+      <p style="margin:0">&copy; 2026 denver-webdesign.com &middot; Powered by <a href="https://eyetoad.com/">eyetoad.com</a> &middot; Denver, Colorado</p>
       <p style="margin:0"><a href="/sitemap/">Sitemap</a> &middot; <a href="/sitemap.xml">XML sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/accessibility/">Accessibility</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
     </div>
   </div>
