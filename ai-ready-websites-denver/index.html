@@ -584,7 +584,7 @@ if('IntersectionObserver' in window&&!RM){
     var hp=f.querySelector('[name="_honey"]');
     if((hp&&hp.value!=='')||!human||Date.now()-loaded<2500){say('warn','One moment, then try again.');return;}
     var em=document.getElementById('d-email').value.trim();
-    if(!em||em.indexOf(String.fromCharCode(64))<1||em.indexOf('.')<3){say('err','Please add a valid email address.');return;}
+    if(!em||em.indexOf(String.fromCharCode(64))<1||em.lastIndexOf('.')<em.indexOf(String.fromCharCode(64))+2){say('err','Please add a valid email address.');return;}
     btn.disabled=true;btn.textContent='Sending\u2026';
     var to=atob(K[1])+String.fromCharCode(64)+atob(K[2]);
     fetch(atob(K[0])+to,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email:em,request:'Business Growth Notes signup',_subject:'Newsletter signup - denver-webdesign.com',_template:'table',_captcha:'false'})})
