@@ -111,6 +111,10 @@ hundred websites and runs a bath remodeling company. Clients deal with him
 directly.
 
 ## Free resources
+- [Your Service Site Needs a Public Price Page: Google's AI Asks for Quotes](https://denver-webdesign.com/blog/public-price-page-ai-quotes/): Google's AI now calls businesses for prices and books local services. How to design a price page that answers before the call without giving away the quote.
+- [Google Is Testing an Official Site Box in AI Answers: Be Obviously Official](https://denver-webdesign.com/blog/official-site-box-ai-answers/): The October 15, 2026 update pushes links higher and tests an official-sites box. What makes a site read as official, and the design decisions that get you in.
+- [Only 48% of Mobile Sites Pass Core Web Vitals: A Redesign Checklist](https://denver-webdesign.com/blog/core-web-vitals-redesign-checklist/): The decisions during a redesign that decide whether the new site passes Google's thresholds the week it launches, in the order they come up.
+- [What an AI Agent-Ready Website Means in 2026 (Mostly Accessibility)](https://denver-webdesign.com/blog/what-an-agent-ready-website-means/): AI agents now visit websites to get quotes and book. What "agent-ready" requires per Chrome's own toolkit, and why it is mostly accessibility done right.
 
 - https://denver-webdesign.com/12-questions-denver-web-designer.pdf
   Twelve questions to ask before hiring any web designer. No email required.
