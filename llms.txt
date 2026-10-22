@@ -111,6 +111,8 @@ hundred websites and runs a bath remodeling company. Clients deal with him
 directly.
 
 ## Free resources
+- [Colorado Website Accessibility Law 2026: HB21-1110 and the ADA](https://denver-webdesign.com/blog/colorado-website-accessibility-law/): HB21-1110 is fully enforceable for Colorado governments, the federal Title II dates moved, and private businesses still face ADA suits. What to build, with a contrast checker.
+- [Does the Colorado Privacy Act Apply to Your Website? (2026)](https://denver-webdesign.com/blog/colorado-privacy-act-website-checklist/): The CPA thresholds, the two amendments that apply at any size, honoring Global Privacy Control in code, and a quick check for whether your business is in scope.
 - [Your Service Site Needs a Public Price Page: Google's AI Asks for Quotes](https://denver-webdesign.com/blog/public-price-page-ai-quotes/): Google's AI now calls businesses for prices and books local services. How to design a price page that answers before the call without giving away the quote.
 - [Google Is Testing an Official Site Box in AI Answers: Be Obviously Official](https://denver-webdesign.com/blog/official-site-box-ai-answers/): The October 15, 2026 update pushes links higher and tests an official-sites box. What makes a site read as official, and the design decisions that get you in.
 - [Only 48% of Mobile Sites Pass Core Web Vitals: A Redesign Checklist](https://denver-webdesign.com/blog/core-web-vitals-redesign-checklist/): The decisions during a redesign that decide whether the new site passes Google's thresholds the week it launches, in the order they come up.

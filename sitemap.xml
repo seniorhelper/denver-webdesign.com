@@ -152,7 +152,7 @@
   </url>
   <url>
     <loc>https://denver-webdesign.com/blog/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -285,6 +285,18 @@
   <url>
     <loc>https://denver-webdesign.com/blog/what-an-agent-ready-website-means/</loc>
     <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://denver-webdesign.com/blog/colorado-website-accessibility-law/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://denver-webdesign.com/blog/colorado-privacy-act-website-checklist/</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
